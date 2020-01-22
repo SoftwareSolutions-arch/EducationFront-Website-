@@ -1,0 +1,403 @@
+<app-header></app-header>
+
+<header class="header has-transparent has-sticky sticky-jump transparent">
+
+
+  <div class="mainContainer">
+    <div class="headingBanner">
+      <div class="container">
+        <h1 class="h1">Arts, Sciences, Education, University</h1>
+
+      </div>
+    </div>
+    <section class="sectionLayout grayBg companionSection">
+      <div class="container">
+        <div id="sticky-anchor"></div>
+        <div class="row domainWrap">
+          <div class="">
+            <div class="leftCol" id="sticky">
+
+              <div class="asideNav">
+                <a href="#latestArticle"><i class="careers-articles"></i>Featured Articles</a>
+                <a href="#latestNews"><i class="careers-news"></i>Latest News</a>
+                <a href="#exam"><i class="careers-exam"></i>Exams</a>
+                <a href="#samplePaper"><i class="careers-samplePaper"></i>Sample Papers</a>
+                <a href="#qna"><i class="careers-qna"></i>QnA</a>
+
+                <a href="#admissionOpen"><i class="careers-admissionsOpen"></i>Admissions Open</a>
+
+                <a href="#collegePredictor"><i class="careers-college-predictors"></i>College Predictors</a>
+                <a href="#otherPredictor"><i class="careers-otherProducts"></i>Other Products</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-8">
+            <div class="rightCol">
+              <div class="cardBlk" id="latestArticle">
+                <h3 class="heading"><span>Featured Articles</span> <a href="/articles" target="_blank">VIEW ALL</a></h3>
+                <div class="article withTime">
+                  <div class="banner">
+                    <img src="././assets/img/art1.jpg" alt="" data-pagespeed-url-hash="3251571546"
+                      onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
+                    <div class="caption">
+                      <a href="/articles/how-crack-nift-entrance">How to crack NIFT entrance?</a>
+                    </div>
+                  </div>
+                  <div class="articleBox withImg">
+                    <div class="articleBoxInn">
+                      <div class="thumb">
+                        <a href="/articles/nid-dat-last-minute-tips-important-things-carry"><img
+                            src="https://static.careers360.mobi/media/presets/45X45/article_images/2018/01/04/NID-DAT_prep_tips.jpg"
+                            alt="" data-pagespeed-url-hash="1994991954"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></div>
+                      <a href="/articles/nid-dat-last-minute-tips-important-things-carry" class="arTitle">
+                        <div class="detail">
+                          NID DAT: Last Minute Tips &amp; Important...
+                        </div>
+                      </a>
+                      <div class="bottomStrip">
+                        <span class="timeStrip">04 Jan 2018</span>
+                        <span class="userStrip">By: <a href="/user/367477">Nancy Johri</a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="articleBox withImg">
+                    <div class="articleBoxInn">
+                      <div class="thumb">
+                        <a href="/articles/design-careers-you-should-look-out-for"><img
+                            src="https://static.careers360.mobi/media/presets/45X45/article_images/2017/12/28/Design_Careers.jpg"
+                            alt="" data-pagespeed-url-hash="3631946205"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></div>
+                      <a href="/articles/design-careers-you-should-look-out-for" class="arTitle">
+                        <div class="detail">
+                          Design Careers you should look out for
+                        </div>
+                      </a>
+                      <div class="bottomStrip">
+                        <span class="timeStrip">28 Dec 2017</span>
+                        <span class="userStrip">By: <a href="/user/">Team Careers360</a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="articleBox withImg">
+                    <div class="articleBoxInn">
+                      <div class="thumb">
+                        <a
+                          href="/articles/design-internship-experience-how-nift-kannur-student-rishabh-nayak-learned-apply-theory"><img
+                            src="https://static.careers360.mobi/media/presets/45X45/article_images/2017/10/23/NIFT-Kannur_internship_experience.jpg"
+                            alt="" data-pagespeed-url-hash="671938241"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></div>
+                      <a href="/articles/design-internship-experience-how-nift-kannur-student-rishabh-nayak-learned-apply-theory"
+                        class="arTitle">
+                        <div class="detail">
+                          Design Internship Experience: How NIF...
+                        </div>
+                      </a>
+                      <div class="bottomStrip">
+                        <span class="timeStrip">23 Oct 2017</span>
+                        <span class="userStrip">By: <a href="/user/367477">Nancy Johri</a></span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="cardBlk" id="exam">
+              <h3 class="heading"><span>Exams</span> <a href="./exam_in_india/" target="_blank">VIEW ALL</a></h3>
+              <div class="examBock">
+                <div class="block" *ngFor="let exam of Exams">
+                  <div class="thumb">
+                    <img src='././assets/images/iit-jam-2020.jpg' style="height: auto">
+                  </div>
+                  <div class="detail">
+                    <div class="contBlk">
+                      <label class="title">{{exam.name}}</label>
+                      <p>Application Process: <span>{{exam.applicationprocess}}</span></p>
+                      <p>Exam Date: <span>{{exam.declarationofresult}}</span></p>
+                      <p>Declaration of Result: <span>{{exam.date}}</span></p>
+                    </div>
+                    <div class="btnGroup">
+                      <button class="button btn-lineGray popup" mat-raised-button (click)="openDialog()">Get Updates
+                      </button>
+                      <button class="button btn-primary popup" mat-raised-button (click)="openDialog()">Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+            <div class="cardBlk domainCarousels " id="samplePaper">
+              <h3 class="heading"><span>Sample Papers</span>
+
+                <a class="cursor_pointer" (click)=redirect_paper(); target="_blank">VIEW
+                  ALL</a></h3>
+
+              <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="container">
+                </div>
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="col-item papers-box">
+                          <div class="photo papers-new">
+                            <img class="img-responsive paperimg" src='././assets/images/papers.jpg' alt="courses">
+                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                          </div>
+                          <div class="info">
+                            <div class="row">
+                              <div class="price col-md-6">
+                                <h5 class="heading-styl">
+                                  JAM Physics Sample Paper 2017</h5>
+
+
+                              </div>
+                              <div class="rating hidden-sm col-md-6">
+                                <p><i class="fa fa-download"></i> 6+ Downloads </p>
+                              </div>
+                            </div>
+
+                            <div class="clearfix">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="col-item papers-box">
+                          <div class="photo papers-new">
+                            <img class="img-responsive paperimg" src='././assets/images/papers.jpg' alt="courses">
+                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                          </div>
+                          <div class="info">
+                            <div class="row">
+                              <div class="price col-md-6">
+                                <h5 class="heading-styl">
+                                  JAM Physics Sample Paper 2017</h5>
+
+                              </div>
+                              <div class="rating col-md-6">
+                                <p><i class="fa fa-download"></i> 6+ Downloads </p>
+                              </div>
+                            </div>
+
+                            <div class="clearfix">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 hidden">
+                        <div class="col-item papers-box">
+                          <div class="photo papers-new">
+                            <img src='././assets/images/papers.jpg' class="img-responsive" alt="a" />
+                          </div>
+                          <div class="info">
+                            <div class="row">
+                              <div class="price col-md-6">
+                                <h5 class="heading-styl">
+                                  JAM Physics Sample Paper 2017</h5>
+
+                              </div>
+                              <div class="rating hidden-sm col-md-6">
+                                <p><i class="fa fa-download"></i> 6+ Downloads </p>
+                              </div>
+                            </div>
+
+                            <div class="clearfix">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 hidden">
+                        <div class="col-item papers-box">
+                          <div class="photo papers-new">
+                            <img src='././assets/images/papers.jpg' class="img-responsive" alt="a" />
+                          </div>
+                          <div class="info">
+                            <div class="row">
+                              <div class="price col-md-6">
+                                <h5 class="heading-styl">
+                                  JAM Physics Sample Paper 2017</h5>
+
+                              </div>
+                              <div class="rating col-md-6">
+                                <p><i class="fa fa-download"></i> 6+ Downloads </p>
+                              </div>
+                            </div>
+
+                            <div class="clearfix">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="col-item papers-box">
+                          <div class="photo papers-new">
+                            <img class="img-responsive paperimg" src='././assets/images/papers.jpg' alt="courses">
+                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                          </div>
+                          <div class="info">
+                            <div class="row">
+                              <div class="price col-md-6">
+                                <h5 class="heading-styl">
+                                  JAM Physics Sample Paper 2017</h5>
+
+                              </div>
+                              <div class="rating col-md-6">
+                                <p><i class="fa fa-download"></i> 6+ Downloads </p>
+                              </div>
+                            </div>
+
+                            <div class="clearfix">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="col-item papers-box">
+                          <div class="photo papers-new">
+                            <img class="img-responsive paperimg" src='././assets/images/papers.jpg' alt="courses">
+                            <a><i class="fa fa-link" aria-hidden="true"></i></a>
+                          </div>
+                          <div class="info">
+                            <div class="row">
+                              <div class="price col-md-6">
+                                <h5 class="heading-styl">
+                                  JAM Physics Sample Paper 2017</h5>
+
+                              </div>
+                              <div class="rating col-md-6">
+                                <p><i class="fa fa-download"></i> 6+ Downloads </p>
+                              </div>
+                            </div>
+
+                            <div class="clearfix">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 hidden">
+                        <div class="col-item papers-box">
+                          <div class="photo papers-new">
+                            <img src='././assets/images/papers.jpg' class="img-responsive" alt="a" />
+                          </div>
+                          <div class="info">
+                            <div class="row">
+                              <div class="price col-md-6">
+                                <h5 class="heading-styl">
+                                  Next Sample Product</h5>
+
+                              </div>
+                              <div class="rating hidden-sm col-md-6">
+                                <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                </i><i class="fa fa-star"></i>
+                              </div>
+                            </div>
+
+                            <div class="clearfix">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-3 hidden">
+                        <div class="col-item papers-box">
+                          <div class="photo papers-new">
+                            <img src='././assets/images/papers.jpg' class="img-responsive" alt="a" />
+                          </div>
+                          <div class="info">
+                            <div class="row">
+                              <div class="price col-md-6">
+                                <h5 class="heading-styl">
+                                  Sample Product</h5>
+
+                              </div>
+                              <div class="rating hidden-sm col-md-6">
+                                <p><i class="fa fa-download"></i> 6+ Downloads </p>
+                              </div>
+                            </div>
+
+                            <div class="clearfix">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+                <div class="owl-nav nav-top">
+                  <div class="owl-prev">
+                    <i class="careers-big-arrow-left"></i>
+                  </div>
+                  <div class="owl-next"><i class="careers-big-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+            <link href="https://static.careers360.mobi/css/frontend/desktop/features/qna/qna.css" rel="stylesheet">
+
+
+
+
+
+
+
+            <div class="cardBlk" id="collegePredictor">
+              <h3 class="heading"><span>College Predictors</span>
+
+              </h3>
+              <div class="article predictorBlk">
+                <div class="banner orangeGradient">
+                  <div class="detailBanner">
+                    <h3>Predict your College Admission <br>chances in your preferred Colleges</h3>
+                    <h5>Download your personalized report with<br> your Admission chances based on <br>cutoffs, caste,
+                      gender, home state<br> and other quotas</h5>
+                  </div>
+                  <img src="https://static.careers360.mobi/images/home/cPredictorBanner.svg" alt="" class="banrAbsolute"
+                    width="222" height="138" data-pagespeed-url-hash="2845491649"
+                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="articleBox">
+                  <a href="https://design.careers360.com/nift-college-predictor?icn=nift-clgpd_landing-page&ici=prediction-section_design_domain_home"
+                    target="_blank">
+                    <div class="detail">NIFT College Predictor</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="cardBlk" id="otherPredictor">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+
+
+
+  <app-footer></app-footer>

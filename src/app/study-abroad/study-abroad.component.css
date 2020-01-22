@@ -1,0 +1,1575 @@
+.headingBanner {
+  width: 100%;
+  padding: 95px 0 45px;
+  text-align: center;
+  color: #fff;
+  
+      background: #002147
+  }
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+element.style {
+  margin-top: 0px;
+  top: 40px;
+}
+#sticky.stick {
+  position: fixed;
+}
+#sticky.stick {
+  margin-left: 0 !important;
+}
+.companionSection .leftCol {
+  width: 300px;
+  float: left;
+  background: #fff;
+  margin-right: 20px;
+  box-shadow: 0px 3px 8px 0 rgba(102, 102, 102, 0.12);
+
+}
+
+.companionSection .asideNav a:hover, .companionSection .asideNav a.active {
+  color: #333333;
+}
+.companionSection .asideNav a {
+  border-top: 1px solid #f2f2f2;
+  display: block;
+  padding: 15px;
+  font-size: 14px;
+}
+a, a:link {
+  text-decoration: none!important;
+}
+a {
+  background-color: transparent;
+  zoom: 1;
+}
+companionSection .asideNav a:hover i, .companionSection .asideNav a.active i {
+  color: #e56c5b;
+}
+.companionSection .asideNav a i {
+  color: #ccc;
+  margin-right: 10px;
+  font-size: 1.6rem;
+  width: 20px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: -2px;
+}
+.companionSection .asideNav a {
+  border-top: 1px solid #f2f2f2;
+  display: block;
+  padding: 15px;
+  font-size: 14px;
+  color: #666666;
+}
+a, a:link {
+  text-decoration: none!important;
+}
+a {
+  background-color: transparent;
+}
+.article .banner {
+  width: 543px;
+  height: 273px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+article .banner img {
+  display: block;
+}
+img {
+  max-width: 100%;
+}
+.article .banner .caption {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 50px 20px 15px;
+  background: linear-gradient(to top, #000 0, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.01) 83%);
+  color: #fff;}
+  .companionSection .rightCol .cardBlk {
+      padding: 15px 20px;
+      border-radius: 4px;
+}
+.cardBlk {
+  overflow-wrap: break-word;
+  background-color: #fff;
+}
+.companionSection .rightCol .heading {
+  color: #333333;
+  font-size: 18px;
+  border-bottom: 2px solid #f2f2f2;
+  padding-bottom: 6px;
+  margin: 0 0 15px;
+}
+.article .articleBox .articleBoxInn {
+  position: relative;
+}
+.article .articleBox .thumb {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+  
+}
+.article .articleBox.withImg a {
+  color: #333333;
+  
+}
+.companionSection .rightCol .cardBlk {
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+.cardBlk {
+  overflow-wrap: break-word;
+  background-color: #fff;
+}
+.companionSection .rightCol .cardBlk {
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+.cardBlk:not(:first-child) {
+  margin-top: 20px;
+}
+.companionSection .rightCol {
+  width: 860px;
+  position: relative;
+  float: right;
+}
+cardBlk:not(:first-child) {
+  margin-top: 20px;
+}
+.cardBlk {
+  overflow-wrap: break-word;
+  background-color: #fff;}
+  .companionSection .rightCol .heading {
+      color: #595656;
+      font-size: 18px;
+      border-bottom: 2px solid #f2f2f2;
+      padding-bottom: 6px;
+      margin: 0 0 15px;
+      letter-spacing: 0.5;
+  }
+  h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+  }
+  .companionSection .rightCol .heading span {
+      display: inline-block;
+      padding-bottom: 6px;
+      margin-bottom: -10px;
+      padding-right: 10px;
+  }
+  a {
+      background-color: transparent;
+      color: #3A4D95;
+      display: inline-block;
+      zoom: 1;
+  }
+  .article {
+      overflow: hidden;
+  }
+  .companionSection .rightCol {
+      width: 860px;
+      position: relative;
+      float: right;
+      box-shadow: 0px 3px 8px 0 rgba(102, 102, 102, 0.12);
+  }
+  .companionSection .rightCol .cardBlk {
+      padding: 15px 20px;
+      border-radius: 4px;
+}
+.cardBlk {
+  overflow-wrap: break-word;
+  background-color: #fff;
+}
+h3, h4, h5, h6 {
+  font-weight: 600;
+}
+.article .articleBox {
+  width: calc(100% - 558px);
+  float: left;
+}
+.article .articleBox .articleBoxInn {
+  position: relative;
+}
+.article .articleBox .thumb {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+}
+.article .articleBox.withImg .arTitle {
+  min-height: 40px;
+  overflow: hidden;
+}
+.article .articleBox.withImg a {
+  color: #333333;
+}
+.article .articleBox a {
+  display: block;
+}
+a, a:link {
+  text-decoration: none!important;
+}
+a {
+  background-color: transparent;
+  zoom: 1;
+}
+.article .articleBox .detail {
+  width: 100%;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-right: 40px;
+  color: #333333;}
+  .article .articleBox {
+      width: calc(100% - 558px);
+      float: left;
+  }
+  .article .articleBox.withImg .bottomStrip {
+      color: #563b3b;
+      font-size: 1rem;
+      margin-top: 2px;
+      padding-bottom: 7px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #f2f2f2;
+      width: calc(100% - 60px);
+      float: right;
+  }
+  .companionSection .rightCol .heading a {
+      float: right;
+      font-size: 12px;
+      text-transform: uppercase;
+      position: relative;
+      margin-top: 5px;
+  }
+  a, a:link {
+      text-decoration: none!important;
+  }
+  a {
+      background-color: transparent;
+      color: #3A4D95;
+      display: inline-block;
+  zoom: 1;
+}
+.examBock {
+  overflow: hidden;
+  margin: -10px -20px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.examBock .block {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+  padding: 0 20px;
+}.examBock .block > div {
+  height: 100%;
+  border-bottom: 1px solid #f2f2f2;
+  overflow: hidden;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.examBock .thumb {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+}
+.examBock .thumb img {
+  width: 100%;
+  border-radius: 2px;
+}
+img {
+  max-width: 100%;
+}
+.examBock .detail {
+  width: calc(100% - 65px);
+  float: left;
+}
+.examBock .contBlk {
+  min-height: 110px;
+}
+.examBock .detail .title {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+a, a:link {
+  text-decoration: none!important;
+}
+a {
+  background-color: transparent;
+  color: #3A4D95;
+  zoom: 1;
+}
+.examBock .detail p {
+  font-size: 12px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #999999;
+}
+.examBock .detail p span {
+  color: #333333;
+}
+
+.btnGroup {
+  display: inline-block;
+}
+.examBock .detail .button {
+  font-weight: normal;
+  min-width: 150px;
+  line-height: 28px;
+  margin-top: 17px;
+}
+.button.btn-lineGray {
+  background-color: #f2f2f2;
+  color: #666666;
+  border: 1px solid #e5e5e5;
+}
+a, a:link {
+  text-decoration: none!important;
+}
+.button {
+  position: relative;
+  overflow: hidden;
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+}
+.examBock .detail .button.btn-primary {
+  margin-left: 17px;
+}
+.examBock .detail .button {
+  font-weight: normal;
+  min-width: 150px;
+  line-height: 28px;
+  margin-top: 17px;
+  width: 20px;
+
+}
+.button.btn-primary {
+  background-color: #e56c5b;
+  color: #fff;
+  border: 1px solid #e56c5b;
+}
+.ebookCarousel .owl-item {
+  width: 360px !important;
+  margin-right: 20px !important;
+}
+.domainCarousels .owl-item {
+  float: left;
+}
+.ebookCarousel .owl-item > div {
+  padding: 15px;
+  position: relative;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.ebookCarousel .thumb {
+  float: left;
+  width: 130px;
+  height: 180px;
+  margin-right: 15px;
+  position: relative;
+}
+.ebookCarousel .thumb img {
+  display: block;
+}
+img {
+  max-width: 100%;
+}
+.ebookCarousel .ebookInfo {
+  width: 180px;
+  float: left;
+}
+.ebookCarousel .ebookInfo h5 {
+  font-size: 16px;
+  color: #333333;
+  line-height: 28px;
+  margin: 0;
+  margin-top: -6px;
+  height: 60px;
+  overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+.ebookCarousel .ebookInfo h5 a {
+  color: #333333;
+}
+a, a:link {
+  text-decoration: none!important;
+}
+a {
+  background-color: transparent;
+  display: inline-block;
+  zoom: 1;
+}
+.ebookCarousel .ebookInfo .breif {
+  font-size: 12px;
+  color: #999999;
+  margin: 10px 0 0;
+}
+.ebookCarousel .ebookInfo .breif i {
+  vertical-align: top;
+  margin-right: 7px;
+}
+
+#qna.cardBlk {
+  padding: 20px;
+}
+.companionSection .rightCol .cardBlk {
+  border-radius: 4px;
+}
+.cardBlk {
+  overflow-wrap: break-word;
+  background-color: #fff;
+}
+.companionSection .rightCol .heading span {
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: -10px;
+  padding-right: 10px;
+}
+.text-right {
+  text-align: right;
+}
+.marginT20 {
+  margin-top: 20px;
+}
+.domainCarousels .owl-nav {
+  text-align: right;
+}
+.domainCarousels .owl-prev {
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  width: 30px;
+  height: 30px;
+  line-height: 12px;
+  margin-left: 7px;
+  padding: 7px;
+  cursor: pointer;
+}
+.owl-prev {
+  left: -15px;
+}
+div.owl-item:not(.active) {
+  opacity: .8;
+}
+.ebookCarousel .owl-item {
+  width: 360px !important;
+  margin-right: 20px !important;
+}
+.domainCarousels .owl-item {
+  float: left;
+}
+.ebookCarousel .owl-item {
+  width: 360px !important;
+  margin-right: 20px !important;
+}
+.domainCarousels .owl-item {
+  float: left;
+}
+.domainCarousels .owl-nav {
+  text-align: right;
+}
+.companionSection .rightCol .heading span {
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: -10px;
+  padding-right: 10px;
+}
+#qna.cardBlk .cardBlk {
+  margin: 0;
+  border: 1px solid #e5e5e5;
+  padding: 10px 15px 0;
+  margin-bottom: 15px;
+}
+request i.careers-edit {
+  font-size: 10px;
+}
+.companionSection .rightCol .cardBlk {
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+.cardBlk.commonQna-Block {
+  margin-top: -5px!important;
+}
+.commonQna-Block a.ask.popup {
+  font-size: 18px;
+  width: 100%;
+  line-height: 1.6em;
+  color: #333;
+  font-weight: 600;
+}
+.cardBlk.commonQna-Block .ask {
+  padding: 15px;
+  background: #e5e5e5;
+}
+a, a:link {
+  text-decoration: none!important;
+}
+.commonQna-Block .ask.popup .button.btn-green {
+  float: right;
+}
+.button.btn-green {
+  background-color: #02A569;
+  color: #fff;
+  border: 1px solid #02A569;
+}
+.button {
+  position: relative;
+  overflow: hidden;
+}
+.btn-small {
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 28px;
+  min-width: 100px;
+}
+commonQna-Block a.ask.popup {
+  font-size: 18px;
+  width: 100%;
+  line-height: 1.6em;
+  color: #333;
+  font-weight: 600;
+}
+.cardBlk.commonQna-Block .ask {
+  padding: 15px;
+  background: #e5e5e5;
+}
+a, a:link {
+  text-decoration: none!important;
+}
+.admissionOuter {
+  overflow: hidden;
+  margin: 0 -25px;
+}
+.admissionOuter h5 {
+  width: calc(100% - 160px);
+  float: right;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #333333;
+  margin: -2px 10px 0 15px;
+}
+.admissionOuter .button {
+  min-width: 80px;
+  float: right;
+}
+.button.btn-primary {
+  background-color: #e56c5b;
+  color: #fff;
+  border: 1px solid #e56c5b;
+}
+.admissionOuter {
+  overflow: hidden;
+  margin: 0 -25px;
+}
+.admissionOuter .block {
+  height: 90px;
+  width: 50%;
+  padding: 0 25px;
+  float: left;
+}
+.article .banner.orangeGradient {
+  background: -webkit-linear-gradient(top, #fff1d9 0%, #fff7dd 100%);
+}
+.article .banner {
+  width: 543px;
+  height: 273px;
+  border-radius: 2px;
+  float: left;
+  margin-right: 15px;
+  position: relative;
+  background-color: #caf0f7;
+}
+.article .detailBanner {
+  position: absolute;
+  top: 40px;
+  left: 35px;
+}
+.article .detailBanner h3 {
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+article .detailBanner h5 {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  margin: 0;
+  font-weight: normal;
+}
+.article.predictorBlk .banrAbsolute {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.article .banner img {
+  display: block;
+}
+img {
+  max-width: 100%;
+}
+#collegePredictor .articleBox a {
+  padding-bottom: 0px;
+  line-height: 68px;
+  min-height: 68px;
+  overflow: hidden;
+}
+.otherPredictor {
+  overflow: hidden;
+}
+.otherPredictor > div {
+  text-align: center;
+  width: 20%;
+  float: left;
+  padding: 45px 0;
+}
+a {
+  background-color: transparent;
+  color: #3A4D95;
+  display: inline-block;
+  zoom: 1;
+}
+.footerTabs {
+  border: none;
+  padding: 40px 0;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-bottom-right-radius: 4px;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.text-center {
+  text-align: center;
+}
+.footerTabs .ui-tabs-nav {
+  background: transparent;
+  width: auto;
+  border: 0;
+  border-bottom: solid 1px #ccc;
+}
+
+.ui-tabs .ui-tabs-nav {
+  margin: 0;
+  padding: .2em .2em 0;
+}
+.footerTabs .ui-tabs-nav li.ui-state-active {
+  background: transparent;
+  border-bottom: solid 2px #d63c24;
+}
+.footerTabs {
+  border: none;
+  padding: 40px 0;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-bottom-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  border-bottom-left-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-top-right-radius: 4px;
+}
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+  border-top-left-radius: 4px;
+}
+.commonFooter .sectionLayout {
+  padding: 70px 0;
+}
+.app-block {
+  background-color: #e5e5e5;
+}
+.sec-testimonials {
+  background-color: #fff;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  float: left;
+}
+.overview-section.overViewLeft {
+  margin: 0 0 0 46px;
+}
+.admissionOuter .thumb {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  float: left;
+  position: relative;
+}
+img {
+  max-width: 100%;
+}
+.admissionOuter h5 {
+  width: calc(100% - 160px);
+  float: left;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+  color: #333;
+  margin: -2px 10px 0 15px;
+}
+.admissionOuter .button {
+  min-width: 80px;
+  float: right;
+}
+.button.btn-primary {
+  background-color: #e56c5b;
+  color: #fff;
+  border: 1px solid #e56c5b;
+}
+.button {
+  position: relative;
+  overflow: hidden;
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  line-height: 28px;
+  transition: all .3s ease;
+}
+.sectionLayout{
+      padding-top: 40px;
+  background: #f2f2f2;
+}
+
+.rightCol{
+  float: none!important;
+}
+
+.caption a{
+  color: #fff;
+  text-decoration: underline!important;
+  font-size: 18px;
+}
+.timeStrip{
+color: #999999;
+  font-size: 10px;
+  margin-top: 2px;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f2f2f2;
+  
+  float: left;
+}
+
+.userStrip{
+  float: right;
+  font-size: 10px;
+  color: #8e8c8c;
+}
+
+.userStrip a{
+display: inline-block!important;
+}
+
+.article .articleBox .detail:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
+  right: 3px;
+  margin-left: 2px;
+  margin-bottom: 1px;
+  display: inline-block;
+  border-top: 1px solid #666666;
+  border-right: 1px solid #666666;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.careers-articles:before {
+  content: "\e959";
+}
+
+.careers-articles:before {
+  content: "\e959";
+}
+
+@font-face {
+  font-family: 'careers-fonts';
+  src: url("https://static.careers360.mobi/fonts/careers-fonts.eot?jtja9e");
+  src: url("https://static.careers360.mobi/fonts/careers-fonts.eot?jtja9e#iefix") format("embedded-opentype"), url("https://static.careers360.mobi/fonts/careers-fonts.ttf?jtja9e") format("truetype"), url("https://static.careers360.mobi/fonts/careers-fonts.woff?jtja9e") format("woff"), url("https://static.careers360.mobi/fonts/careers-fonts.svg?jtja9e#careers-fonts") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="careers-"], [class*=" careers-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'careers-fonts' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: middle;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.careers-thumb-up:before {
+  content: "\e930";
+  color: #02a569; }
+
+.careers-arrow-sign-back:before {
+  content: "\e931"; }
+
+.careers-arrow-sign-down:before {
+  content: "\e932"; }
+
+.careers-arrow-sign-next:before {
+  content: "\e933"; }
+
+.careers-arrow-sign-up:before {
+  content: "\e934"; }
+
+.careers-pop-up:before {
+  content: "\e935"; }
+
+.careers-thumb-down:before {
+  content: "\e936";
+  color: #e56c5b; }
+
+.careers-hospital:before {
+  content: "\e915"; }
+
+.careers-info-tip:before {
+  content: "\e916"; }
+
+.careers-it-infrastructure:before {
+  content: "\e917"; }
+
+.careers-laboratories:before {
+  content: "\e918"; }
+
+.careers-library:before {
+  content: "\e919"; }
+
+.careers-medical:before {
+  content: "\e91a"; }
+
+.careers-moot-court:before {
+  content: "\e91b"; }
+
+.careers-navigation:before {
+  content: "\e91c"; }
+
+.careers-parking:before {
+  content: "\e91d"; }
+
+.careers-school:before {
+  content: "\e91e"; }
+
+.careers-seat:before {
+  content: "\e91f"; }
+
+.careers-sports:before {
+  content: "\e920"; }
+
+.careers-swimming-pool:before {
+  content: "\e921"; }
+
+.careers-transport:before {
+  content: "\e922"; }
+
+.careers-wifi:before {
+  content: "\e923"; }
+
+.careers-ac-classrooms:before {
+  content: "\e924"; }
+
+.careers-alumni:before {
+  content: "\e925"; }
+
+.careers-auditorium:before {
+  content: "\e926"; }
+
+.careers-banks-facilities:before {
+  content: "\e927"; }
+
+.careers-boarding:before {
+  content: "\e928"; }
+
+.careers-books:before {
+  content: "\e929"; }
+
+.careers-boys-hostel:before {
+  content: "\e92a"; }
+
+.careers-cafeteria:before {
+  content: "\e92b"; }
+
+.careers-convenience-store:before {
+  content: "\e92c"; }
+
+.careers-girls-hostel:before {
+  content: "\e92d"; }
+
+.careers-guest-room:before {
+  content: "\e92e"; }
+
+.careers-gym:before {
+  content: "\e92f"; }
+
+.careers-indian-rupee {
+  font-size: 80%;
+  vertical-align: baseline; }
+  .careers-indian-rupee:before {
+    content: "\e914"; }
+
+.careers-shape-e-books:before {
+  content: "\e910";
+  color: #999; }
+
+.careers-shape-exams:before {
+  content: "\e911";
+  color: #999; }
+
+.careers-shape-colleges:before {
+  content: "\e912";
+  color: #999; }
+
+.careers-shape-students:before {
+  content: "\e913";
+  color: #999; }
+
+.careers-bg-right:before {
+  content: "\e905";
+  color: #02a569; }
+
+.careers-s-arrow-right:before {
+  content: "\e906"; }
+
+.careers-s-arrow-left:before {
+  content: "\e907"; }
+
+.careers-bg-cross:before {
+  content: "\e908";
+  color: #666; }
+
+.careers-cross:before {
+  content: "\e909"; }
+
+.careers-big-arrow-left:before {
+  content: "\e90a"; }
+
+.careers-big-arrow-right:before {
+  content: "\e90b"; }
+
+.careers-big-arrow-down:before {
+  content: "\e90c"; }
+
+.careers-big-arrow-up:before {
+  content: "\e90d"; }
+
+.careers-s-arrow-up:before {
+  content: "\e90e"; }
+
+.careers-s-arrow-down:before {
+  content: "\e90f"; }
+
+.careers-burger-menu:before {
+  content: "\e904"; }
+
+.careers-youtube:before {
+  content: "\e901";
+  color: #e5e5e5; }
+
+.careers-twitter:before {
+  content: "\e902";
+  color: #e5e5e5; }
+
+.careers-facebook:before {
+  content: "\e903";
+  color: #e5e5e5; }
+
+.careers-search-icon:before {
+  content: "\e900";
+  color: #fff; }
+
+.careers-download:before {
+  content: "\e937"; }
+
+.careers-like-bg:before {
+  content: "\e938";
+  color: #02a569; }
+
+.careers-share:before {
+  content: "\e939";
+  color: #fff; }
+
+.careers-announcment:before {
+  content: '\e93a';
+  color: #02a569; }
+
+.careers-comment:before {
+  content: '\e93b'; }
+
+.careers-edit:before {
+  content: '\e93c';
+  color: #ccc; }
+
+.careers-eye:before {
+  content: '\e93d';
+  color: #999; }
+
+.careers-follow:before {
+  content: '\e93e'; }
+
+.careers-Following:before {
+  content: '\e93f';
+  color: #02a569; }
+
+.careers-like:before {
+  content: '\e940';
+  color: #3a4d95; }
+
+.careers-Liked:before {
+  content: '\e941';
+  color: #3a4d95; }
+
+.careers-more:before {
+  content: '\e942';
+  color: #3a4d95; }
+
+.careers-reply:before {
+  content: '\e943'; }
+
+.careers-share1:before {
+  content: '\e944';
+  color: #3a4d95; }
+
+.careers-badge-white-path1:before {
+  content: '\e945';
+  color: black; }
+
+.careers-badge-white-path2:before {
+  content: '\e946';
+  margin-left: -1em;
+  color: white; }
+
+.careers-tick:before {
+  content: '\e947';
+  color: #00a66a; }
+
+.careers-tick3:before {
+  content: '\e948';
+  color: #3a4d95; }
+
+.careers-edit-answer:before {
+  content: '\e949';
+  color: #ccc; }
+
+.careers-tick2:before {
+  content: '\e94a'; }
+
+.careers-question:before {
+  content: '\e94b';
+  color: #ccc; }
+
+.careers-answer:before {
+  content: '\e94c';
+  color: #ccc; }
+
+.careers-edit_profile:before {
+  content: '\e94d';
+  color: #fff; }
+
+.careers-dashboard:before {
+  content: '\e94e';
+  color: #e56c5b; }
+
+.careers-followers:before {
+  content: '\e94f';
+  color: #ccc; }
+
+.careers-notification:before {
+  content: '\e950';
+  color: #ccc; }
+
+.careers-Following1:before {
+  content: '\e951';
+  color: #ccc; }
+
+.careers-comment1:before {
+  content: '\e953';
+  color: #3a4d95; }
+
+.careers-ranking:before {
+  content: "\e93b"; }
+
+.careers-rank-predictors:before {
+  content: "\e943"; }
+
+.careers-counselling:before {
+  content: "\e94a"; }
+
+.careers-otherProducts:before {
+  content: "\e952"; }
+
+.careers-exam:before {
+  content: "\e954"; }
+
+.careers-admissionsOpen:before {
+  content: "\e955"; }
+
+.careers-college-predictors:before {
+  content: "\e956"; }
+
+.careers-samplePaper:before {
+  content: "\e957"; }
+
+.careers-qna:before {
+  content: '\e958'; }
+
+.careers-articles:before {
+  content: "\e959"; }
+
+.careers-preparation:before {
+  content: "\e95a"; }
+
+.careers-board:before {
+  content: "\e95b"; }
+
+.careers-location:before {
+  content: "\e95c"; }
+
+.careers-mail:before {
+  content: "\e95d"; }
+
+.careers-phone:before {
+  content: "\e95e"; }
+
+.careers-web:before {
+  content: "\e95f"; }
+
+.careers-news:before {
+  content: "\e960"; }
+
+.careers-ans-later:before {
+  content: "\e961";
+  color: #3a4d95; }
+
+.careers-delete:before {
+  content: "\e962";
+  color: #3a4d95; }
+
+.careers-report:before {
+  content: "\e963";
+  color: #3a4d95; }
+
+.careers-request-answer:before {
+  content: "\e964";
+  color: #02a569; }
+
+.careers-school-icon:before {
+  content: "\e965"; }
+
+  .companionSection .asideNav a i {
+      color: #ccc;
+      margin-right: 10px;
+      font-size: 17px;
+      width: 20px;
+      vertical-align: middle;
+      display: inline-block;
+      margin-top: -2px;
+  }
+
+  .companionSection .asideNav a i:hover{
+      color: #fdc800;
+  }
+
+   .heading a {
+      float: right;
+      font-size: 12px;
+      text-transform: uppercase;
+      position: relative;
+      margin-top: 5px;
+  }
+
+ .heading a:after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      margin-left: 2px;
+      margin-bottom: 1px;
+      display: inline-block;
+      border-top: 1px solid #3a4d95;
+      border-right: 1px solid #3a4d95;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+  }
+
+  .heading span{
+      color: #333;
+  font-size: 18px;
+  }
+
+
+  .owl-next,  .owl-prev {
+      display: inline-block;
+      border: 1px solid #e5e5e5;
+      width: 30px;
+      height: 30px;
+      line-height: 12px;
+      margin-left: 7px;
+      padding: 7px;
+      cursor: pointer;
+  }
+
+  .btn-primary{
+      font-size: 13px;
+  }
+
+  .btn-lineGray{
+      font-size: 13px;
+  }
+
+
+  .cardBlk{
+  width: 860px;
+  box-shadow: 0px 3px 8px 0 rgba(102, 102, 102, 0.12);
+    }
+
+
+.noAnswer{
+  width: 100%;
+}
+
+#otherPredictor{
+  margin-bottom: 30px;
+}
+
+.hidden{
+  display: none;
+}
+
+.papers-new img{
+  float: left;
+}
+
+.fa-link{
+  display: none;
+}
+
+.papers-box{
+
+  border: 1px solid #d0c7c7;
+  padding: 0px 10px;
+}
+
+.paperimg{
+  padding: 18px 0px;
+}
+
+.heading-styl {
+  font-size: 16px;
+  color:#534f4f;
+  line-height: 28px;
+  margin: 0;
+  margin-top: -6px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.nav-top{
+  margin-top: 20px;
+}
+
+
+
+.rankingList li {
+  width: 50%;
+  list-style: none;
+  float: left;
+  padding-bottom: 14px;
+}
+
+.college-rank{
+  height: 310px;
+}
+
+.btn-green{
+  font-size: 14px!important;
+}
+
+#collegePredictor .articleBox a, #rankPredictor .articleBox a {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 0px;
+  line-height: 68px;
+  min-height: 68px;
+  overflow: hidden;
+}
+.article .articleBox a {
+  display: block;
+}
+
+.article .detailBanner h5 {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333333;
+  margin: 0;
+  font-weight: normal;
+}
+
+.article .detailBanner h3 {
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+
+div#exam, div#latestArticle, div#samplePaper, div#collegeRanking {
+padding: 10px 15px;
+}
+.info {
+padding-top: 20px;
+}
+.showResult {
+padding-bottom: 10px;
+}
+
+
+.cardBlk.commonQna-Block {
+margin: 30px 0px !IMPORTANT;
+}
+div#admissionOpen, div#collegePredictor, div#collegeRanking, div#samplePaper, div#latestArticle, div#exam    {
+padding: 15px;
+}
+.requestFollow {
+margin-bottom: 15px;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+.companionSection .rightCol,
+.cardBlk{
+  width: 100% !important;
+}
+.questionListData p {
+  word-break: break-all;
+}
+.text-right {
+  text-align: center;
+}
+.examBock .detail .button {
+  width: 100px;
+  min-width: inherit;
+}
+.sectionLayout {
+  padding-top: 0px;
+}
+h3.cardSubHeading {
+  font-size: 20px;
+}
+.banner {
+    margin-bottom: 20px;
+}
+h1.h1 {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+.requestFollow {
+    margin-bottom: 20px;
+}
+.requestFollow {
+    margin-bottom: 20px;
+    display: inline-flex;
+}
+.request.add-answer-listing {
+    margin-right: 20px;
+}
+div#exam, div#latestArticle, div#samplePaper {
+    padding: 10px 15px;
+}
+.heading-styl {
+  height: auto;
+}
+ul.rankingList li {
+width: 100% !important;
+}
+div#collegeRanking {
+height: auto;
+display: inline-block;
+width: 100%;
+}
+div#qna {
+margin-bottom: 30px;
+} 
+.companionSection .leftCol{
+width: 92%;
+margin: 30px auto 0px;
+float: none;
+}
+.rightCol {
+display: inline-block;
+}
+a.ask.popup {
+text-align: center;
+}
+a.ask.popup span.button.btn-green.btn-small {
+display: block;
+margin-top: 15px;
+}
+.admissionOuter {
+width: 100%;
+margin-top: 15px !important;
+display: inline-block;
+}
+.admissionOuter .block {
+height: auto;
+padding: 0 0px 0 20px;
+float: left;
+}
+.article .banner.orangeGradient {
+height: 580px !IMPORTANT;
+text-align: center;
+  padding-top: 20px;
+}
+.article.predictorBlk .banrAbsolute{
+bottom: 30px;
+}
+.article.predictorBlk {
+max-height: 600px;
+}
+.cardBlk.commonQna-Block, div#admissionOpen {
+width: 100%;
+}
+.headingBanner {
+padding: 11px 0 5px;
+}
+.commonQna-Block .ask.popup .button.btn-green {
+float: none;
+}
+
+
+}/* (max-width: 767px) */
+
+@media only screen and (min-width:500px)  and (max-width: 767px) {
+  .banner {
+    display: inline-block;
+    min-height: 300px;
+  }
+
+}  /* (min-width:500px)  and (max-width: 767px) */
+@media only screen and (min-width: 768px)  and (max-width: 991px) {
+.mainContainer  .headingBanner{
+      padding: 25px 0 25px !important;
+}
+.article .articleBox {
+  width: 100%;
+  margin-top: 15px;
+}
+.examBock .detail .button {
+  min-width: 110px;
+}
+div#exam {
+    padding: 10px 15px;
+}
+div#qna {
+  margin-bottom: 30px;
+} 
+.authorWidget .authorImg {
+    width: 100px;
+    height: 100px;
+}
+div#qna {
+  width: 100%;
+}
+.rightCol, div#latestArticle, div#exam, div#samplePaper, div#collegeRanking, div#otherPredictor {
+width: 100% !IMPORTANT;
+}
+.cardBlk.commonQna-Block, div#admissionOpen, div#collegePredictor {
+width: 100%;
+}
+.companionSection .leftCol {
+width: 28%;
+}
+.examBock .block {
+width: 100%;
+}
+
+
+}/* (min-width: 768px)  and (max-width: 991px) */
+
+
+@media only screen and (min-width: 992px)  and (max-width: 1149px) {
+
+.authorWidget .authorImg {
+width: 100px;
+height: 100px;
+}
+.rightCol, div#latestArticle, div#exam, div#samplePaper, div#collegeRanking, div#qna {
+width: 100% !IMPORTANT;
+}
+.cardBlk.commonQna-Block, div#admissionOpen, div#collegePredictor, div#otherPredictor {
+width: 100%;
+}
+.article .articleBox {
+width: auto;
+}
+.examBock .block {
+width: 1000%;
+}
+
+}/* (min-width: 768px)  and (max-width: 991px) */
+

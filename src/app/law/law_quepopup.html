@@ -1,0 +1,73 @@
+<style>
+
+        img.small-loader {
+            width: 20%;
+            border-radius: 10%;
+        
+        }
+        
+        button.button.cancel2 {
+            width: auto;
+            margin: 4px;
+            BACKGROUND-COLOR: rgb(170, 22, 22);
+            border: none;
+            float: top;
+            position: absolute;
+            top: 11%;
+            right: 25%;
+            /* font-size: 18px; */
+            padding: 4px 3px;
+        }
+        
+        button.submit.button {
+            width: auto;
+            margin: 1px 40%;
+            background-color: black;
+            border-radius: 20%;
+        }
+        </style>
+        
+        <div class="row">
+            <div class="container question_form">
+        <form id="anaPostFormQues" action="" accept-charset="utf-8" method="post" novalidate="novalidate"
+            name="anaPostFormQues">
+            
+            <div id="qsn-post" class="post-col">
+                <div class="opacticy-col"><img border="0"
+                        src='././assets/images/source.gif'
+                        class="small-loader"></div>
+                <div class="post-qstn">
+                    <h3 class="post-h2">Need guidance on career and education? Ask our experts</h3>
+                    <p class="txt-count" id="qstn-input_counter_outer">Characters <span id="qstn-input_counter">0</span>/140</p>
+                   <input type="text" placeholder="Enter Your Name">
+                   
+                  
+                    <div style="display:none;">
+                        <p class="err0r-msg" id="qstn-input_error">The Answer must contain atleast 20 characters.</p>
+                    </div>
+                  
+                  
+                </div>
+                <div id="more-qstns-posting" class="more-qstns" style="overflow: hidden; display: block;">
+                    
+                    <div id="more-ques-posting" style="overflow: hidden; display: block;">
+                       
+                        <textarea onkeypress="handleCharacterInTextField(event);" class="more-input" id="more-input-posting"
+                            minlength="20" maxlength="300" onkeyup="autoGrowField(this,300);textKey(this)" caption="Description"
+                            validate="validateStr" placeholder="Give Information like score, education background etc."
+                            onpaste="handlePastedTextInTextField('more-input-posting');" tabindex="3"
+                            style="overflow-y: hidden;"></textarea>
+                        <div style="display:none;">
+                            <p class="err0r-msg" id="more-input-posting_error">The Answer must contain atleast 20 characters.
+                            </p>
+                        </div>
+                       
+                    </div>
+                    <mat-dialog-actions>
+                            <button mat-button mat-dialog-close class="button cancel2">X</button>
+                            <button type="button" value="Submit" class="submit button">Submit</button>
+                          </mat-dialog-actions>
+                </div>
+            </div>
+        </form>
+        </div>

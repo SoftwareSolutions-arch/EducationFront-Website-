@@ -1,0 +1,9 @@
+.footer-box {
+    cursor: pointer;
+}
+.footer-box img.img-responsive {
+    width: auto;
+}
+.footer-area-bottom .payment-method img {
+    padding-left: 5px;
+}

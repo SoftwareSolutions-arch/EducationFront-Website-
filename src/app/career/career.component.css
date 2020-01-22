@@ -1,0 +1,404 @@
+#content-wrapper {
+    width: 988px;
+    margin: 0 auto;
+    background: #fff url('//images.shiksha.ws/public/images/home-shade.gif') left top repeat-y;
+    padding: 0 4px;
+}
+a, article, aside, b, body *, dd, div, dt, h1, h2, h3, h4, h5, h6, i, input, li, ol, option, p, section, select, span, strong, ul {
+    font-family: 'Open Sans',sans-serif!important;
+}
+#main-wrapper {
+    margin-top: 1px;
+}
+.wrapperFxd {
+    background: #fff;
+    width: 988px;
+    float: left;
+}
+#headerAdSlot {
+    display: table;
+    width: 1020px;
+    margin: 0 auto;
+}
+#headerAdSlot-1>div, #headerAdSlot-2>div {
+    display: block;
+    background: #eee;
+    margin: 0 auto 0;
+}
+#headerAdSlot-1, #headerAdSlot-2 {
+    display: table-cell;
+    vertical-align: top;
+}
+#headerAdSlot-1>div, #headerAdSlot-2>div {
+    display: block;
+    background: #eee;
+    margin: 0 auto 0;
+}
+.showMessages {
+    background: #fffdd6;
+    border: 1px solid #facb9d;
+    padding: 7px 10px;
+}
+.career-wrapper {
+    width: 945px;
+    margin: 0 auto;
+    clear: left;
+}
+
+.sheet-wrapper {
+    /* background: url('//images.shiksha.ws/public/images/careers/mid-sheet.jpg') 0 -23px repeat-y; */
+    width: 100%;
+    float: left;
+    background: #fff;
+}
+.sheet-top-effect {
+    /* background: url('//images.shiksha.ws/public/images/careers/top-sheet.jpg') 0 0 no-repeat; */
+    width: 100%;
+    float: left;
+}
+.sheet-bot-effect {
+    /* background: url('//images.shiksha.ws/public/images/careers/bot-sheet.jpg') 0 bottom no-repeat; */
+    width: 100%;
+    float: left;
+    padding-bottom: 80px;
+}
+element.style {
+    padding: 10px 0px;
+}
+a:active, a:hover, a:link, a:visited {
+    color: #008489;
+    text-decoration: none;
+}
+a, article, aside, b, body *, dd, div, dt, h1, h2, h3, h4, h5, h6, i, input, li, ol, option, p, section, select, span, strong, ul {
+    font-family: 'Open Sans',sans-serif!important;
+}
+
+a:active, a:hover, a:link, a:visited {
+    color: #008489;
+    text-decoration: none;
+}
+.icons {
+    background-image: url('https://images.shiksha.ws/pwa/public/images/desktop/shiksha-icons-sprite-6.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.homeType1 {
+    background-position: -439px -24px;
+}
+.ic_brdcrm {
+    width: 18px;
+    height: 16px;
+}
+.career-contents {
+    margin: 62px 0 50px 0px;
+    width: 770px;
+    color: #323232;
+}
+h1.choice-option, h2.stream-title, h5.stream-sub-title {
+    font: 400 24px 'Open Sans',sans-serif;
+    color: #838383;
+    display: block;
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+}
+h2.stream-title span {
+    color: #f36600;
+    font-size: 30px;
+}
+a:link, a:visited {
+    color: #008489;
+    text-decoration: none;
+}
+h5.stream-sub-title {
+    font: 700 34px 'Open Sans',sans-serif;
+    font-style: italic;
+    background-position: 240px -33px;
+    margin: 7px 0 0 0;
+    
+}
+h5.stream-sub-title {
+    color: #838383;
+    display: block;
+    float: left;
+    width: 100%;
+}
+h5.stream-sub-title {
+    background-image: url('//images.shiksha.ws/public/images/careers/career-sprite.gif');
+    background-repeat: no-repeat;
+}
+h1.choice-option {
+    color: #000;
+    font-size: 25px;
+    margin: 3px 0 35px 0;
+}
+h1.choice-option, h2.stream-title, h5.stream-sub-title {
+    font: 400 24px 'Open Sans',sans-serif;
+    float: left;
+    width: 100%;
+}
+.career-stream-col {
+    width: 525px;
+    float: left;
+}
+ul.stream-details li {
+    float: left;
+    width: 100%;
+    margin-bottom: 25px;
+    background: url('/src/assets/images/stream-bg.png') 0 0 no-repeat;
+    width: 494px;
+    height: 193px;
+    padding: 10px 15px 10px 20px;
+}
+ul.stream-details li h2 {
+    font: 700 21px 'Open Sans',sans-serif;
+    color: #323232;
+    float: left;
+    width: 100%;
+    margin-bottom: 6px;
+}
+ul.stream-details li h2 {
+    font: 700 21px 'Open Sans',sans-serif;
+    color: #323232;}
+
+    ul.stream-details div.figure {
+        width: 194px;
+        height: 125px;
+        float: left;
+        border: 1px solid #d6dddb;
+    }
+    ul.stream-details div.details {
+        margin-left: 208px;
+        font-size: 15px;
+        color: #242424;
+        line-height: 20px;
+        padding-right: 10px;
+        position: relative;
+    }
+    strong {
+        font-weight: 600;
+    }
+    ul.stream-details div.details {
+        font-size: 15px;
+        color: #242424;
+        line-height: 20px;}
+        .choice-cloud {
+            position: absolute;
+            left: -35px;
+            top: 55px;
+        }
+        .choice-details {
+            background: url('/src/assets/images/cloud-pattern.gif') 0 0 repeat;
+            border: 2px solid #a8e8da;
+            padding: 16px 18px;
+    font: 700 14px 'Open Sans',sans-serif;
+    color: #323232;
+}
+ul.stream-details li {
+    float: left;
+    margin-bottom: 25px;
+    background: url('/src/assets/images/stream-bg.png') 0 0 no-repeat;
+    width: 494px;
+    height: 193px;
+    padding: 10px 15px 10px 20px;
+}
+.stick {
+    position: fixed;
+}
+.career-selection-top {
+    width: 230px;
+    background: url('/src/assets/images/selection-bot.png') left top no-repeat;
+    float: left;
+}
+.career-sel-bot {
+    background: url('/src/assets/images/selection-bot.png') left bottom no-repeat;
+    float: left;
+    width: 100%;
+}
+.career-sel-content {
+    width: 230px;
+    background: url('/src/assets/images/selection-mid.png') 0 0 repeat-y;
+    margin: 25px 0;
+    float: left;
+}
+.career-sel-content .contents {
+    padding: 0 20px;
+    position: relative;
+}
+.career-selection-col h4 {
+    color: #f36600;
+    font-size: 23px;
+    font-style: italic;
+    font-weight: 400;
+}
+.career-selection-col h4, ul.stream-details li h2 {
+    font: 700 21px 'Open Sans',sans-serif;
+    float: left;
+    width: 100%;
+    margin-bottom: 6px;
+}
+ul.selection-items {
+    padding: 0 0 0 11px;
+}
+ul.selection-items li {
+    margin-bottom: 3px;
+}
+.career-sel-content .contents h6 {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+ul.selection-items li {
+    height: 147px;
+    margin-bottom: 3px;
+}
+.drag {
+    position: relative;
+}
+ul.selection-items div.figure {
+    width: 160px;
+    height: 96px;
+    padding: 2px;
+    border: 2px dashed #cdcdc4;
+    position: relative;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+ul.selection-items div.figure img {
+    width: 160px;
+    height: 96px;
+    border-radius: 10px;
+    cursor: move;
+}
+div.figure .close, div.figure .close-inactive {
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    background-position: 0 -79px;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+}
+ul.selection-items li em {
+    font-size: 16px;
+    color: #7e7e7e;
+    display: block;
+    text-align: center;
+}
+.font-italic, em {
+    font-style: italic;
+}
+ul.selection-items li {
+    height: 147px;
+    margin-bottom: 3px;
+}
+.drag {
+    position: relative;
+}
+ul.selection-items li.button-row {
+    text-align: center;
+    margin-bottom: 2px;
+    height: auto;
+}
+ul.selection-items li.button-row .gray-button {
+    font-size: 18px!important;
+    background-position: 0 10px!important;
+    color: #999;
+    background-color: #fff;
+    cursor: auto!important;
+    outline: 0!important;
+}
+.user-tips {
+    background: url('/src/assets/images/tips-arrow.png') left bottom no-repeat;
+    font: 400 14px 'Open Sans',sans-serif;
+    padding: 0 0 82px 33px;
+    position: absolute;
+    right: -198px;
+    top: 70px;
+    width: 135px;
+    color: #716f6f;
+}
+ul.selection-items li.button-row .gray-button {
+    font-size: 18px!important;
+    background-position: 0 10px!important;
+    color: #999;
+    background-color: #fff;
+    cursor: auto!important;
+    outline: 0!important;
+}
+.sheet-wrapper {
+    background: #fff;
+    margin-bottom: 80px;
+    padding-top: 20px;
+}
+.sheet-wrapper {
+    box-shadow: 0px 0px 8px #ccc;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+
+div#content-wrapper, .career-wrapper, div#career-stream, .career-contents, div#career-selection-widget, .career-sel-content {
+    width: 100%;
+}
+ul#stream-details li {
+    width: 100%;
+    height: auto;
+    padding: 10px 15px 10px 0px;
+}
+ul.stream-details li .figure {
+    width: 100% !important;
+    height: auto !IMPORTANT;
+}
+ul.stream-details li .details {
+    margin: 0px !important;
+    width: 100%;
+    margin-top: 15px !important;
+    display: inline-block;
+}
+.career-contents {
+    margin: 0px !important;
+}
+h5.stream-sub-title {
+    background: none !important;
+}
+h2.stream-title span{
+    font-size: 23px;
+}
+h1.choice-option, h5.stream-sub-title {
+    font-size: 19px !important;
+}
+.contents {
+    padding: 0px !important;
+}
+ul.selection-items div.figure {
+    width: 100%;
+    height: 110px;
+}
+ul.selection-items {
+    padding: 0px;
+}
+li.drag {
+    margin-bottom: 25px !important;
+}
+ul.selection-items li {
+    height: auto;
+    text-align: center;
+}
+ul.selection-items li.button-row .gray-button{
+    font-size: 16px!important;
+    padding: 10px 20px;
+}
+.career-selection-col h4{
+    text-align: center;
+}
+.career-offers {
+    text-align: center;
+}
+.sheet-bot-effect {
+    padding-bottom: 20px;
+}
+
+
+
+}/* (max-width: 767px)  */

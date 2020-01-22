@@ -1,0 +1,11 @@
+.back{
+    background-color: yellow;
+}
+.space {
+    padding-top: 50px;
+}
+.select_exam_box ul li {
+    display: inline-block;
+    width: 18%;
+    margin: 1%;
+}

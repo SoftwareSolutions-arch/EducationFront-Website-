@@ -1,0 +1,586 @@
+<app-header></app-header>
+<br>
+<div class="container">
+    <div class="row">
+            <table border="0" cellpadding="0" cellspacing="0" align="center" style="border:0px"><tbody><tr><td><a href="http://www.ieplads.com/bmsjs/bms_hits.php?banner=149570" target="_blank"><img src="https://static.ieplads.com/bmsjs/banners/2019/shiksha/SGU_13Nov/468x60.gif" border="0&quot;" vspace="2"></a></td></tr><tr><td height="1"></td></tr></tbody></table>
+        <div class="col-md-12">
+            <div class="section-partition">
+                <div class="group-card gap">
+                    <div class="new-row">
+                        <div class="col-md-3 case210">
+                            <a class="logo-img">
+                                <img class="img-m cursor-point"
+                                    src="https://images.shiksha.com/mediadata/images/1504590879phpMwnfk8_210x157.jpg"
+                                    alt="IITK - Main Building" title="IITK - Main Building" ga-attr="HEADER_IMAGE">
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <h1 class="head-3 right-head">{{collegeDetauils.title}}<span
+                                    class="location-of-clg"></span></h1>
+                            <a class="shrt-list shortlist-site-tour" ga-attr="SHORTLIST" cta-type="shortlist" customcallback="listingShortlistCallback"
+                                customactiontype="ND_InstituteDetailPage">Shortlist
+                                <span style="display: none;" class="srpHoverCntnt">
+                                    <p>Save your shortlist, get updates, college recommendations etc.</p>
+                                </span>
+                            </a>
+                            <div class="location-of-clg">
+                                Public/Government | Established 1959|
+                                <span class="rating-block">
+                                    <i class="empty_stars starBg">
+                                        <i style="width: 94%" class="full_starts starBg"></i>
+                                    </i>
+                                    <b class="icons bold_arw"></b>
+                                    <div class="rating_popup">
+                                        <div class="inline-rating">
+                                            <div class="table_row">
+                                                <div class="fill_cell"><a class="view_rvws" ga-attr="Header_reviews" href="#" target="_blank">View all 116 reviews<i class="sprite-str arw_l"></i></a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                                <a class="view_rvws"
+                                    href="#" target="_blank">{{ReviewList.length}}</a>
+                                | <a class="view_rvws qstn" ga-attr="Header_AnsweredQuestions"
+                                    href="#"
+                                    target="_blank">
+                                    <i class="qstn_ico"></i>155 Answered Questions
+                                </a>
+                            </div>
+                            <div class="new-row top-inst-widget">
+                                <div class="right-data-col col-md-6">
+                                    <div class="para-1">
+                                        Autonomous Institute <div class="tp-block">
+                                            <i class="info-icn"></i>
+                                            <div class="tooltip top">
+                                                <div class="tooltip-arrow"></div>
+                                                <div class="tooltip-inner">
+                                                    Autonomous Institute is one which is independent of State control
+                                                    over
+                                                    day-to-day operations and curriculum. Such an institute falls under
+                                                    the
+                                                    administrative control of the Department of Higher Education but is
+                                                    free
+                                                    from external control over its academic matters. </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="para-1">
+                                        Ranked 5 for <a target="_blank"
+                                            href="#">IITs</a>
+                                        by NIRF 2019 <span class="more-lnk-div">
+                                            <a href="javascript:void(0);" class="more-data-lnk link">+6 more</a>
+                                            <div class="small-popup" style="display:none;">
+                                                <ul>
+                                                    <li>Ranked 4 for <a target="_blank"
+                                                            href="#">Engineering</a>
+                                                        by India Today 2019</li>
+                                                    <li>Ranked 1 for <a target="_blank"
+                                                            href="#">Engineering</a>
+                                                        by Times 2019</li>
+                                                    <li>Ranked 22 for <a target="_blank"
+                                                            href="#">MBA</a>
+                                                        by NIRF 2019</li>
+                                                    <li>Ranked 6 for <a target="_blank"
+                                                            href="#">University</a>
+                                                        by Outlook 2019</li>
+                                                    <li>Ranked 5 for <a target="_blank"
+                                                            href="#">Engineering</a>
+                                                        by Outlook 2019</li>
+                                                    <li>Ranked 4 for <a target="_blank"
+                                                            href="#">Engineering</a>
+                                                        by The Week 2019</li>
+                                                </ul>
+                                            </div>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="right-data-col col-md-6">
+                                    <div class="para-1">
+                                        Institute of National Importance <div class="tp-block">
+                                            <i class="info-icn"></i>
+                                            <div class="tooltip top">
+                                                <div class="tooltip-arrow"></div>
+                                                <div class="tooltip-inner">Institute of National Importance </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btns-col" id="CTASection">
+                                        <a class="button button--secondary btn-medium cmp-btn compare-site-tour" (click)="ShortList()">Shortlist</a>
+                                        <a class="button button--orange btn-pm deb-site-tour"  cta-type="download_brochure" (click)="DownloadBrouchere()">Brochuer Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <ul class="top-menu">
+        <li class=""><a (click)="scrollToElement(highlights)">Highlights</a></li>
+        <li class=""><a (click)="scrollToElement(quickFacts)">Course&Fee</a></li>
+        <li class=""><a (click)="scrollToElement(Scholarship)">Scholarship</a></li>
+        <li class=""><a (click)="scrollToElement(collegeDepartment)">Colleges</a></li>
+        <li class=""><a (click)="scrollToElement(courseOffered)">Cutoff</a></li>
+        <li class=""><a (click)="scrollToElement(examsCutoff)">Articles</a></li>
+        <li class=""><a (click)="scrollToElement(placements)">Placements</a></li>
+        <li class=""><a (click)="scrollToElement(facilities)">Facilities</a></li>
+        <li class=""><a (click)="scrollToElement(review)">Reviews</a></li>
+    </ul>
+    <div #highlights>
+            <div class="new-row">
+                <div class="courses-offered listingTuple" id="course-offer">
+                    <div class="group-card gap no__pad course_fee">
+                        <div class="min_top_box">
+                            <h2 class="head-1 gap heading">Highlights<span class="para-6"></span>
+                            </h2>
+                        </div>
+                        <div class="cmn-cl">
+                            <div class="col-md-12" style="color:1px solid gray !important" *ngFor="let college of Highlities| paginate: { itemsPerPage: 10, currentPage: p }">
+                                <a href="" target="_blank" ga-attr="FEATURED_COURSE">
+                                    <div class="college-block lt-col">
+                                        <div class="offered-name">
+                                            <p class="para-1" title="{{college[0]}}">
+                                                {{college[0]}}</p>
+                                        </div>
+                                        <i class="arr__after"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div *ngIf="CollegeList.length>=1">
+                                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+    <div #quickFacts>
+        <div class="new-row">
+            <div class="courses-offered listingTuple" id="course-offer">
+                <div class="group-card gap no__pad course_fee">
+                    <div class="min_top_box">
+                        <h2 class="head-1 gap heading">Courses &amp; Fees <span class="para-6"></span>
+                        </h2>
+                        <div class="brwse-data">
+                            <div class="browse-course-col listingTuple" id="browseByCourseSec">
+                                <div class="brs-crs-cont">
+                                    <div class="browse-head default">Browse by Courses</div>
+                                </div>
+                                <div class="c-ofr-widget">
+                                    <div class="courses-offeredbtn c-ofr-lnk" ga-optlabel="Click_BIP_Tag"
+                                        ga-attr="BIP_TAG">
+                                        <a target="_blank" href="#">B.E./ B.Tech</a>
+                                    </div>
+                                    <div class="courses-offeredbtn c-ofr-lnk" ga-optlabel="Click_BIP_Tag"
+                                        ga-attr="BIP_TAG">
+                                        <a target="_blank" href="#">B.Sc.</a>
+                                    </div>
+                                    <div class="courses-offeredbtn c-ofr-lnk" ga-optlabel="Click_BIP_Tag"
+                                        ga-attr="BIP_TAG">
+                                        <a target="_blank" href="#">M.Des</a>
+                                    </div>
+                                    <div class="courses-offeredbtn c-ofr-lnk" ga-optlabel="Click_BIP_Tag"
+                                        ga-attr="BIP_TAG">
+                                        <a target="_blank" href="#">M.E./M.Tech</a>
+                                    </div>
+                                    <div class="courses-offeredbtn c-ofr-lnk" ga-optlabel="Click_BIP_Tag"
+                                        ga-attr="BIP_TAG">
+                                        <a target="_blank" href="#">M.Sc.</a>
+                                    </div>
+                                    <div class="courses-offeredbtn c-ofr-lnk" ga-optlabel="Click_BIP_Tag"
+                                        ga-attr="BIP_TAG">
+                                        <a target="_blank" href="#">MBA/PGDM</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="browse-course-col" id="streamByCourseSec">
+                                <div class="brs-crs-cont">
+                                    <div class="browse-head default">Browse by Streams</div>
+                                </div>
+                                <div class="c-ofr-widget">
+                                    <div class="courses-offeredbtn c-ofr-lnk" ga-optlabel="Click_SIP_Tag"
+                                        ga-attr="SIP_TAG">
+                                        <a target="_blank" href="#">Business
+                                            &amp; Management Studies</a></div>
+                                    <div class="courses-offeredbtn c-ofr-lnk" ga-optlabel="Click_SIP_Tag"
+                                        ga-attr="SIP_TAG">
+                                        <a target="_blank" href="#">Design</a>
+                                    </div>
+                                    <div class="courses-offeredbtn c-ofr-lnk" ga-optlabel="Click_SIP_Tag"
+                                        ga-attr="SIP_TAG">
+                                        <a target="_blank" href="#">Engineering</a>
+                                    </div>
+                                    <div class="courses-offeredbtn c-ofr-lnk" ga-optlabel="Click_SIP_Tag"
+                                        ga-attr="SIP_TAG">
+                                        <a target="_blank" href="#">Humanities
+                                            &amp; Social Sciences</a></div>
+                                    <div class="courses-offeredbtn c-ofr-lnk" ga-optlabel="Click_SIP_Tag"
+                                        ga-attr="SIP_TAG">
+                                        <a target="_blank" href="#">Science</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cmn-cl">
+                        <div class="col-md-6" style="color:1px solid gray !important" *ngFor="let course of CourseList| paginate: { itemsPerPage: 10, currentPage: p }">
+                            <a href="" target="_blank" ga-attr="FEATURED_COURSE">
+                                <div class="college-block lt-col">
+                                    <div class="offered-name">
+                                        <p class="para-1" title="{{course.title}}">
+                                            {{course.title}}</p>
+                                    </div> 
+                                    <div class="extra_info n-b">
+                                        <p class="para-4 st">{{course.attribute}} </p>
+                                    </div>
+                                    
+                                    <i class="arr__after"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div *ngIf="CourseList.length>=1">
+                            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div #Scholarship>
+            <div class="new-row">
+                <div class="courses-offered listingTuple" id="course-offer">
+                    <div class="group-card gap no__pad course_fee">
+                        <div class="min_top_box">
+                            <h2 class="head-1 gap heading">Scholarship<span class="para-6"></span>
+                            </h2>
+                        </div>
+                        <div class="cmn-cl">
+                            <div class="col-md-12" style="color:1px solid gray !important" *ngFor="let scholarship of Scholarship| paginate: { itemsPerPage: 10, currentPage: p }">
+                                <a href="" target="_blank" ga-attr="FEATURED_COURSE">
+                                    <div class="college-block lt-col">
+                                        <div class="offered-name">
+                                            <p class="para-1" title="{{scholarship.title}}">
+                                                {{scholarship.title}}</p>
+                                            <p class="of-txts" style="margin-top: 8px;"
+                                                title="{{scholarship.title}}"></p>                                    </div>
+                                        <div class="extra_info n-b">
+                                            <p class="para-4 st">{{scholarship.detailText}} </p>
+                                        </div>                                        
+                                        <i class="arr__after"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div *ngIf="Scholarship.length>=1">
+                                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+    <div #review class="second_box">
+        <div class="group-card no__pad gap course_fee">
+            <h2 class="head-1 gap heading">Student Alumni Reviews <span class="para-6">(Showing 4 of 116 reviews)</span></h2>
+            <div class="group-card pad-off rvw-crd">
+                <div class="rvw-h">
+                    <div class="rvwBlock">
+                        <div class="rvwLeft">
+                            <h2 class="ratingAll">Overall Rating <span>(Out of 5)</span></h2>
+                            <div class="rvwScore">
+                                <h3>4.7</h3>
+                                <div class="infrontRvws">
+                                    <i class="empty_stars">
+                                        <i class="full_starts" style="width:94%"></i>
+                                    </i>
+                                </div>
+                                <div class="refrnceTxt">
+                                    Based on 116 Verified Reviews </div>
+                            </div>
+                            <div class="rvwProgress">
+                                <div class="starBar ">
+                                    <div class="starC rating-filter" rating="4"><a
+                                            href="#">&gt;4-5
+                                            star</a></div>
+                                    <div class="loadbar">
+                                        <div class="fillBar" style="width:92%"></div>
+                                    </div>
+                                    <div class="starPrgrs">92%</div>
+                                </div>
+                                <div class="starBar ">
+                                    <div class="starC rating-filter" rating="3"><a
+                                            href="#">&gt;3-4
+                                            star</a></div>
+                                    <div class="loadbar">
+                                        <div class="fillBar" style="width:8%"></div>
+                                    </div>
+                                    <div class="starPrgrs">8%</div>
+                                </div>
+                                <div class="starBar disablefilter">
+                                    <div class="starC rating-filter" rating=""><a
+                                            href="#">&gt;2-3
+                                            star</a></div>
+                                    <div class="loadbar">
+                                        <div class="fillBar" style="width:0%"></div>
+                                    </div>
+                                    <div class="starPrgrs">0%</div>
+                                </div>
+                                <div class="starBar disablefilter">
+                                    <div class="starC rating-filter" rating=""><a
+                                            href="#">&nbsp;&nbsp;1-2
+                                            star</a></div>
+                                    <div class="loadbar">
+                                        <div class="fillBar" style="width:0%"></div>
+                                    </div>
+                                    <div class="starPrgrs">0%</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rvwRight">
+                            <div class="align-cntr">
+                                <h2 class="ratingAll">Component Ratings <span>(Out of 5)</span></h2>
+                                <div class="starBar">
+                                    <div class="cRating">4.5</div>
+                                    <div class="componetText">Placements</div>
+                                </div>
+                                <div class="starBar">
+                                    <div class="cRating">4.9</div>
+                                    <div class="componetText">Infrastructure</div>
+                                </div>
+                                <div class="starBar">
+                                    <div class="cRating">4.5</div>
+                                    <div class="componetText">Faculty &amp; Course Curriculum</div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-12" *ngFor="let review of ReviewList| paginate: { itemsPerPage: 10, currentPage: p }">
+                <div class="pad-off rvw-crd frst-chld">
+                    <div class="rvwv1Heading">
+                        <div>
+                            <div class="new_rating">
+                                <span> 5.0 <i class="empty_stars starBg">
+                                        <i style="width: 100%" class="full_starts starBg"></i>
+                                    </i>
+                                </span>
+                                {{review.title}}
+                            </div>
+                            <p class="byUser">by <span>Anshuman</span>, 22 Sep 2019 | B.Tech. in Aerospace
+                                Engineering - Batch of 2022</p>
+                        </div>
+                    </div>
+                    <div class="rvwv1-h">
+                        <div class="tabv1" id="sliding-tabs">
+                            <div class="Placements">
+                                Placements <strong class="ratingVal">5</strong><span class="maxRating">/{{review.placements}}</span>
+                            </div>
+                            <div class="Infrastructure">
+                                Infrastructure <strong class="ratingVal">5</strong><span
+                                    class="maxRating">/{{review.infrastructure}}</span>
+                            </div>
+                            <div class="Faculty &amp; Course Curriculum">
+                                Faculty &amp; Course Curriculum <strong class="ratingVal">5</strong><span
+                                    class="maxRating">/{{review.faculty}}</span>
+                            </div>
+                            <div class="Crowd &amp; Campus Life">
+                                Crowd &amp; Campus Life <strong class="ratingVal">5</strong><span
+                                    class="maxRating">/{{review.crowdLife}}</span>
+                            </div>
+                            <div class="Value for Money">
+                                Value for Money <strong class="ratingVal">5</strong><span
+                                    class="maxRating">/{{review.valueForMoney}}</span>
+                            </div>
+                        </div>
+                        <div class="tabcontentv1">
+                            <div class="tabv_1">
+                                <p>{{review.detailText}}</p>
+                                <p>
+                                    <strong>Infrastructure :</strong>
+                                    The facilities a... <br>
+                                    <a href="#" class="readMoreLnk" target="_blank">Read More</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="ReviewList.length>=1">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+        </div>
+    </div>
+    <div #collegeDepartment>
+        <div id="dfpWidget">
+            <div class="maincard">
+                <h2 class="heading">College List</h2>
+                <div class="col-md-12" *ngFor="let college of CollegeList| paginate: { itemsPerPage: 10, currentPage: p }">
+                    <h5>{{college.title}}</h5>   
+                </div>
+                <div *ngIf="CollegeList.length>=1">
+                    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div #courseOffered>
+        <div class="new-row">
+            <div class="group-card gap no__pad clear listingTuple " id="articles">
+                <h2 class="head-1 gap heading">CutOffs showing of {{CutOffList.length}}</h2>
+                <div class="new-row1 equalblockheight">
+                    <div class="col-md-12 block card-clickable" ga-attr="ARTICLE_TUPLE" *ngFor="let cutoff of CutOffList | paginate: { itemsPerPage: 10, currentPage: p }">
+                        <div class="group-card  card-fixed">
+                            <div class="group-head">
+                                <h3 class="head-1 h-fix">{{cutoff.cutoff_head}}</h3>
+                            </div>
+                            <p class="para-2">{{cutoff.overview}}
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="CutOffList.length>=1">
+                    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div #facilities>
+        <div class="new-row">
+            <div class="group-card no__pad gap listingTuple" id="amenities">
+                <h2 class="head-1 gap heading">Infrastructure / Facilities</h2>
+                <div class="gap">
+                    <ul class="infra flex-ul">
+                        <li class="" *ngFor="let college of Facilities">
+                            <a class="library"></a>
+                            <p>{{college[0]}}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div #examsCutoff>
+        <div class="new-row">
+            <div class="group-card gap no__pad clear listingTuple" id="articles">
+                <h2 class="head-1 gap heading">Articles showing of {{ArticleList.length}}</h2>
+                <div class="new-row1 equalblockheight">
+                    <div class="col-md-12 block card-clickable" ga-attr="ARTICLE_TUPLE" *ngFor="let article of ArticleList | paginate: { itemsPerPage: 10, currentPage: p }">
+                        <div class="group-card  card-fixed">
+                            <div class="group-head">
+                                <h3 class="head-1 h-fix">{{article.title}}</h3>
+                            </div>
+                            <p class="para-2">{{article.detailText}}
+                                <br>
+                                <a style="cursor: pointer" class="redirectLink" (click)="ArticleDetails(article)"> Read More</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="ArticleList.length>=1">
+                    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div #placements>
+        <div class="new-row">
+            <div class="group-card no__pad gap listingTuple" id="contact">
+                <h2 class="head-1 gap">Contact Details</h2>
+                <div class="tbl">
+                    <div class="cell contact" id="contact-widget">
+                        <div class="contact">
+                            <ul class="contact-ul">
+                                <li>
+                                    <div class="admision-query">
+                                        <p class="query-head">Address</p>
+                                        <p class="c-num">Indian Institute of Technology, Kalyanpur </p>
+                                        <p class="c-num loc">Kanpur ( Uttar Pradesh)</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="general-query admision-query">
+                                        <p class="query-head">Website</p>
+                                        <p class="c-num">
+                                            <a href="http://www.iitk.ac.in" target="_blank" class="link" rel="nofollow">http://www.iitk.ac.in
+                                            </a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li id="brochureClick-li">
+                                    <a href="javascript:void(0);" id="showContactDetails"
+                                        class="button button--orange" cta-type="contact_details"
+                                        customcallback="contactDetailCallback"
+                                        customactiontype="listingContactDetail" ga-attr="SHOW_PHONE_EMAIL">Show
+                                        Phone &amp; Email</a>
+                                </li>
+                                <li class="showContact" style="display:none">
+                                    <div class="admision-query">
+                                        <p class="query-head">Phone Number</p>
+                                        <p class="c-num ad-gap">05122597200 <span class="gn-enq">(For general enquiry)</span>
+                                        </p>
+                                        <p class="c-num">05122590151<span class="gn-enq">(For admission related enquiry)</span></p>
+                                    </div>
+                                </li>
+                                <li class="showContact" style="display:none">
+                                    <div class="admision-query">
+                                        <p class="query-head">Email</p>
+                                        <p class="c-num ad-gap">aracad@iitk.ac.in <span class="gn-enq">(For general enquiry)</span>
+                                        </p>
+                                        <p class="c-num">kga@iitk.ac.in<span class="gn-enq">(For admission related enquiry)</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cell right-text google-staticmap">
+                        <a href="" target="_blank" ga-attr="VIEW_MAP">
+                            <img class="lazy">
+                            <p class="mp-vw"><span>View on Map</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table border="0" cellpadding="0" cellspacing="0" align="center" style="border:0px"><tbody><tr><td width="1"><a href="http://www.ieplads.com/bmsjs/bms_hits.php?banner=146384" target="_blank"><img src="https://static.ieplads.com/bmsjs/banners/2019/shiksha/BSE8aug19/300x250.gif" border="0&quot;" hspace="12"></a></td><td>&nbsp;</td><td width="1"><a href="http://www.ieplads.com/bmsjs/bms_hits.php?banner=150248" target="_blank">
+
+
+        <meta charset="utf-8">
+        <meta name="ad.size" content="width=300,height=250">
+        <title></title>
+        
+        
+        
+        <ins class="dcmads" style="display: inline-block; width: 300px; height: 250px; text-decoration: none;" data-dcm-placement="N4864.155263.SHIKSHA/B23220232.255843595" data-dcm-rendering-mode="script" data-dcm-https-only="" data-dcm-resettable-device-id="" data-dcm-app-id="" data-dcm-processed="y">
+          <script src="https://www.googletagservices.com/dcm/dcmads.js"></script><script src="https://www.googletagservices.com/dcm/impl_v55.js"></script><script src="https://ad.doubleclick.net/ddm/adj/N4864.155263.SHIKSHA/B23220232.255843595;dc_ver=55.153;dc_eid=40004001;sz=300x250;u_sd=1;dc_adk=2269750831;ord=eey6xh;dc_rfl=1,https%3A%2F%2Fstudyabroad.shiksha.com%2Fmba-in-finance-from-abroad-ds11508246-3$0;xdt=1;crlt=*FO.7gafo*;sttr=2;prcl=s?"></script><script>(function() {(function(){var g=this||self,k=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},l=function(a,b){var c=Array.prototype.slice.call(arguments,1);return function(){var e=c.slice();e.push.apply(e,arguments);return a.apply(this,e)}};var m=function(a,b){for(var c in a)b.call(void 0,a[c],c,a)};var n=function(a){a=a?a.toLowerCase():"";switch(a){case "normal":return"normal";case "lightbox":return"lightbox";case "push_down":return"push_down"}return null};var p={i:"ad_container_id",A:"hideObjects",X:"mtfTop",W:"mtfLeft",ca:"zindex",m:"mtfDuration",aa:"wmode",Z:"preferFlash",s:"as_kw",u:"as_lat",v:"as_lng",B:"mtfIFPath",o:"expansionMode",U:"top_container",T:"mtfTopFloat",S:"mtfTopDuration",V:"mtfTopWmode",P:"right_container",O:"mtfRightFloat",N:"mtfRightDuration",R:"mtfRightWmode",H:"bottom_container",G:"mtfBottomFloat",F:"mtfBottomDuration",I:"mtfBottomWmode",L:"left_container",K:"mtfLeftFloat",J:"mtfLeftDuration",M:"mtfLeftWmode",$:"mtfRenderFloatInplace",ba:"tryToWriteHtmlInline",j:"debugjs",C:"dcapp",g:"breakoutiframe",D:"inMobileAdSdk"},r=function(a){m(a,function(b,c){if(c.toLowerCase()in q){var e=q[c.toLowerCase()];c in a&&delete a[c];a[e]=b}})},q=function(){var a={};m(p,function(b){a[b.toLowerCase()]=b});return a}();var v=function(a){this.a=a;a:{for(c in a.displayConfigParameters){b:if(a=u,"string"===typeof a)a="string"!==typeof c||1!=c.length?-1:a.indexOf(c,0);else{for(var b=0;b<a.length;b++)if(b in a&&a[b]===c){a=b;break b}a=-1}if(!(0<=a)){var c=!0;break a}}c=!1}this.f=c},u=["ad_container_id"],w=function(a){return a.f?a.a.displayConfigParameters:a.a.creativeParameters},x=function(a,b){for(var c=0;c<a.a.primaryFiles.length;++c)if(a.a.primaryFiles[c].type==b)return!0;return!1};var y={pattern:/rendering_lib_((?:[0-9_]+)|(?:latest))\.js$/,c:"rendering_lib_db_$1.js"},z={pattern:/\/[a-z_0-9]+_rendering_lib/,c:"/iframe_buster"},A={pattern:/(.*\/)(.*_)rendering_lib_((?:[0-9_]+)|(?:latest))\.js$/,c:"$1inapp_html_inpage_rendering_lib_$3.js"},B={pattern:/\/[0-9]+\/[a-z_0-9]+rendering_lib.+$/,c:"/ads/studio/cached_libs/modernizr_2.8.3_ec185bb44fe5e6bf7455d6e8ef37ed0e_no-classes.js"},F=function(a){var b=w(a),c=a.a.renderingLibraryData,e=c.renderingLibrary,d=c.version;if(!/express|image_gallery|dfa7banner|inapp/.test(e)&&("latest"==d||0<=C(d,"200_74"))){if(d=!x(a,"FLASH")){a:{for(d=0;d<a.a.primaryFiles.length;++d){var f=a.a.primaryFiles[d].expandingDisplayProperties;if(f&&"lightbox"==n(f.expansionMode)){d=!0;break a}}d=!1}d=!d}d=d&&null!=window.mraid}else d=!1;d&&(e=e.replace(A.pattern,A.c));"true"==b.debugjs&&(e=e.replace(y.pattern,y.c));(b=g.self==g.top)||(b=window.Y&&window.Y.SandBox&&window.Y.SandBox.vendor,d=window.$sf&&window.$sf.ext,f=window.$WLXRmAd,b=!!(window.IN_ADSENSE_IFRAME||b||d||f));if(!b){a:if(b=w(a).breakoutiframe)b=!!b&&"true"==b.toLowerCase();else{b=a.a.primaryFiles;for(d=0;d<b.length;d++){f=b[d].renderAs;var h=0==(parseInt(b[d].width,10)||0)&&0==(parseInt(b[d].height,10)||0);if("EXPANDABLE"==f||"FLOATING"==f&&!h){b=!0;break a}}b=!1}b=!b}if(b||a.a.previewMode){a:{a=e;b=D();for(d=0;d<b.renderingLibraries.length;d++)if(f=b.renderingLibraries[d],f.url==a&&f.bootstrapFunction){a=f;break a}a=null}a?a.bootstrapFunction():(a=D(),E(e,!1,void 0,void 0,void 0,!0),a.renderingLibraries.push({version:c.version,url:e,loading:!0,bootstrapFunction:null}))}else c=e.replace(z.pattern,z.c),E(c,!0)},C=function(a,b){a=G(a);b=G(b);for(var c=Math.min(a.length,b.length),e=0;e<c;e++)if(a[e]!=b[e])return a[e]-b[e];return a.length-b.length},G=function(a){a=a.split("_");for(var b=[],c=0;c<a.length;c++)b.push(parseInt(a[c],10));return b},E=function(a,b,c,e,d,f){var h=document.createElement("script");h.src=a;h.type=c?c:"text/javascript";h.async=!!b;f&&(h.crossOrigin="anonymous");e&&(h.onload=e);d&&(h.onerror=d);var t;(a=document.getElementsByTagName("head"))&&0!=a.length?t=a[0]:t=document.documentElement;t.appendChild(h)},D=function(){return window.dclkStudioV3=window.dclkStudioV3||{creatives:[],renderingLibraries:[],creativeCount:1,startTimes:{}}},H=function(a){try{if(null!=(a["cps-top-iframe-beacon"]?a["cps-top-iframe-beacon"]:null))return!0}catch(b){}return a==a.parent?!1:H(a.parent)},I=function(a){if(null!=a){r(a.creativeParameters);if(null!=a.html5Features)for(var b=0;b<a.html5Features.length;++b)"CSS_ANIMATIONS"==a.html5Features[b]&&(a.html5Features[b]="Modernizr.cssanimations");!a.previewMode&&H(g)&&(a.previewMode=!0);a=new v(a);b=D();b.creatives.push(a.a);var c=a.a.creativeParameters;c.creative_unique_id=c.cid+"_"+b.creativeCount++;b.startTimes[c.creative_unique_id]=+new Date;b=w(a).ad_container_id;a:if((c=w(a).mtfRenderFloatInplace)&&"true"==c.toLowerCase())c=!0;else{c=a.a.primaryFiles;for(var e=0;e<c.length;e++){var d=c[e].renderAs;if("EXPANDABLE"==d||"BANNER"==d){c=!0;break a}}c=!1}!c||b&&""!=b||(b="dclk-studio-creative_"+(new Date).getTime(),c=a.a,document.write(['<div id="',b,'"></div>'].join("")),c.creativeParameters.ad_container_id=b,c.creativeParameters.generate_ad_slot="true",null==c.displayConfigParameters&&(c.displayConfigParameters={}),c.displayConfigParameters.ad_container_id=b);c=a.a;b=c.renderingLibraryData;e=b.version;if(x(a,"HTML5")&&!("latest"==e||0<=C(e,"200_108"))&&(c=c.html5Features,!("Modernizr"in g)&&"array"==k(c)&&0<c.length)){e=!1;for(d=0;d<c.length;d++)if("svgFilters"!=c[d]&&"svgFeImage"!=c[d]){e=!0;break}e&&E(b.renderingLibrary.replace(B.pattern,B.c),!1)}b=w(a);c=b.inMobileAdSdk;"1"==b.dcapp||"1"==c||/Android ([2-3]|4\.[0-3])/.test(navigator.userAgent)?(b=l(F,a),window.mraid?(E("mraid.js",!1,"text/x-do-not-download",null,null),F(a)):E("mraid.js",!1,"text/javascript",b,b)):F(a)}},J=["studio","rendering","BowResponse","processCreativeData"],K=g;J[0]in K||"undefined"==typeof K.execScript||K.execScript("var "+J[0]);for(var L;J.length&&(L=J.shift());)J.length||void 0===I?K[L]&&K[L]!==Object.prototype[L]?K=K[L]:K=K[L]={}:K[L]=I;}).call(this);var creativeData = {width: '300',height: '250',slotWidth: '300',slotHeight: '250',renderingLibraryData: {version: '200_264',renderingLibrary: 'https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_264.js'},impressionUrl: 'https://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjsumicRjQhh0PoY8e7il0uyJiRasMoUgk-DzL_C3pdaPqLKu1o9uVvmZ6jjgk7ol0XLaZfF1A1nYsuAlXlrIJoooID48OBu4c_YOf7CNc57fxh-75A98EtR673ihjKrafS5mIcTPPdHCFLCSJKctTMI9\x26sig\x3dCg0ArKJSzB7sGN3LXp-YEAE\x26urlfix\x3d1\x26adurl\x3d',eventTrackingBaseUrl: 'https://ade.googlesyndication.com/ddm/activity/dc_oe\x3dChMImNz0yoCo5gIVREgrCh2KIQQeEAAYACCa7fs2',customEventTrackingBaseUrl: 'https://ad.doubleclick.net/activity;src\x3d8842663;pid\x3d255843595;aid\x3d452123948;ko\x3d0;cid\x3d115275418;rid\x3d115087819;rv\x3d2;',clickUrl: 'https://adclick.g.doubleclick.net/pcs/click?xai\x3dAKAOjsumicRjQhh0PoY8e7il0uyJiRasMoUgk-DzL_C3pdaPqLKu1o9uVvmZ6jjgk7ol0XLaZfF1A1nYsuAlXlrIJoooID48OBu4c_YOf7CNc57fxh-75A98EtR673ihjKrafS5mIcTPPdHCFLCSJKctTMI9\x26sig\x3dCg0ArKJSzG7EMiUbRn_3EAE\x26urlfix\x3d1\x26rm_eid\x3d[rm_exit_id]\x26adurl\x3d',thirdPartyUrls: [{type: 'IMPRESSION_JS',url: 'https://cdn.doubleverify.com/dvtp_src.js?ctx\x3d11189058\x26cmp\x3d23220232\x26sid\x3d1198632\x26plc\x3d255843595\x26num\x3d\x26adid\x3d\x26advid\x3d8842663\x26adsrv\x3d1\x26btreg\x3d452123948\x26btadsrv\x3ddoubleclick\x26crt\x3d115275418\x26crtname\x3d\x26chnl\x3d\x26unit\x3d\x26pid\x3d\x26uid\x3d\x26tagtype\x3d\x26dvtagver\x3d6.1.src',scrub: 'false'}],clickString: 'BRJLTffLtXdipJcSQrQGKw5DwAQAAAAAQATgB4AQCiAWIoIkLoAZH',activeViewUrlPrefix: 'https://pagead2.googlesyndication.com/pcs/activeview?xai\x3dAKAOjst7R4y5fJXcX4Da5nGBUOmoVi5mJoqQBdkJa_IdYBS7hpuHeciQYdewwgdjL23YsQ-Y3kJyEdGU46JzHdqyMYxD\x26sig\x3dCg0ArKJSzPaNt8-ALOPxEAE',activeViewMetadata: 'la\x3d0\x26alp\x3dxai\x26alh\x3d2272817923\x26',lidarScriptUrl: '//www.googletagservices.com/activeview/js/current/lidar.js?cache=r20110914',dynamicData: '',creativeParameters: {'CREATIVE_PARAMETER_ASSETS_DATA': '{\\\x221555969192203/index.html\\\x22:\\\x228842663/1555969192203/index.html\\\x22,\\\x22TOEFL_Destination_US_300x250_static2.jpg\\\x22:\\\x228842663/TOEFL_Destination_US_300x250_static2.jpg\\\x22}', 'CREATIVE_PARAMETER_VIDEO_ASSETS_DATA': '[]', 'CREATIVE_PARAMETER_VIDEO_DATA': '[]', 'CREATIVE_PARAMETER_LAYOUT_CONFIG': '', 'sn': 'N4864.155263.SHIKSHA', 'sid': '1198632', 'aid': '452123948', 'buy': '23220232', 'cid': '115275418', 'pid': '255843595', 'rv': '2', 'adv': '8842663', 'exit_suffix': '', 'geo': 'ct\x3dIN\x26st\x3d\x26city\x3d0\x26dma\x3d0\x26zp\x3d452011\x26bw\x3d4', 'prcl': 's', 'sttr': '2', 'crlt': '*FO.7gafo*', 'xdt': '1', 'dc_ver': '55.153', 'av_ad_key': '2269750831', 'displayHTML5': 'true', 'CREATIVE_PARAMETER_EXPERIMENTS': '{ \\\x22append_spam_signals_to_click_url\\\x22 : true, \\\x22disable_h5_mraid_imp_ping\\\x22 : true }', 'CREATIVE_PARAMETER_IS_B2R_ELIGIBLE': 'true'},previewMode: false,html5Features: ['Modernizr.rgba', 'Modernizr.canvas'],translated_layout: false,primaryFiles: [{type: 'HTML5',renderAs: 'BANNER',width: '300',height: '250',url: 'https://s0.2mdn.net/8842663/1555969192203/index.html',hideFlashObjects: false,zIndex: '',customCss: ''}, {type: 'IMAGE',renderAs: 'BACKUP_IMAGE',width: '300',height: '250',url: 'https://s0.2mdn.net/8842663/TOEFL_Destination_US_300x250_static2.jpg',hideFlashObjects: false,zIndex: '',customCss: ''}],standardEvents: [{name: 'DISPLAY_TIMER',reportingId: '2'}, {name: 'INTERACTION_TIMER',reportingId: '3'}, {name: 'INTERACTIVE_IMPRESSION',reportingId: '4'}, {name: 'FULL_SCREEN_VIDEO_PLAYS',reportingId: '5'}, {name: 'FULL_SCREEN_VIDEO_COMPLETES',reportingId: '6'}, {name: 'FULL_SCREEN_AVERAGE_VIEW_TIME',reportingId: '7'}, {name: 'MANUAL_CLOSE',reportingId: '8'}, {name: 'BACKUP_IMAGE_IMPRESSION',reportingId: '9'}, {name: 'EXPAND_TIMER',reportingId: '10'}, {name: 'VIDEO_PLAY',reportingId: '11'}, {name: 'VIDEO_VIEW_TIMER',reportingId: '12'}, {name: 'VIDEO_COMPLETE',reportingId: '13'}, {name: 'VIDEO_INTERACTION',reportingId: '14'}, {name: 'VIDEO_PAUSE',reportingId: '15'}, {name: 'VIDEO_MUTE',reportingId: '16'}, {name: 'VIDEO_REPLAY',reportingId: '17'}, {name: 'VIDEO_MIDPOINT',reportingId: '18'}, {name: 'FULL_SCREEN_VIDEO',reportingId: '19'}, {name: 'VIDEO_STOP',reportingId: '20'}, {name: 'VIDEO_ABANDON',reportingId: '22'}, {name: 'VIDEO_UNMUTE',reportingId: '149645'}, {name: 'FULL_SCREEN',reportingId: '286263'}, {name: 'DYNAMIC_CREATIVE_IMPRESSION',reportingId: '536393'}, {name: 'HTML5_CREATIVE_IMPRESSION',reportingId: '871060'}, {name: 'VIDEO_FIRST_QUARTILE',reportingId: '960584'}, {name: 'VIDEO_THIRD_QUARTILE',reportingId: '960585'}, {name: 'LARGE_SCROLL',reportingId: '200035'}, {name: 'SMALL_SCROLL',reportingId: '200036'}, {name: 'SCROLL',reportingId: '200037'}, {name: 'ENGAGEMENT',reportingId: '200038'}],exitEvents: [{name: 'clickTag',reportingId: '5864338',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: false}, {name: 'clickTag1',reportingId: '6260211',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: false}, {name: 'backup image click through url',reportingId: '5864335',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: true}],timerEvents: [],counterEvents: []};try {studio.rendering.BowResponse.processCreativeData(creativeData);} catch (e) {/* ignore errors but don't kill js execution. */}})();</script><div id="dclk-studio-creative_1575875197678" style="display: inline-block; vertical-align: top;"><div id="DfaVisibilityIdentifier_1575875197741" class="GoogleActiveViewClass" style="position: relative; width: 300px; height: 250px; box-sizing: content-box;"><iframe data-creative-load-listener="" id="200_264_express_html_inpage_0.if" src="https://s0.2mdn.net/8842663/1555969192203/index.html" width="300" height="250" frameborder="0" scrolling="no" allowfullscreen="true" style="width: 300px; height: 250px;"></iframe></div></div><iframe id="iframe_368608683458" name="iframe_368608683458" data-dv-frm="368608683458" width="0" height="0" src="about:blank" style="display: none;"></iframe><script src="https://cdn.doubleverify.com/dvtp_src.js?ctx=11189058&amp;cmp=23220232&amp;sid=1198632&amp;plc=255843595&amp;num=&amp;adid=&amp;advid=8842663&amp;adsrv=1&amp;btreg=452123948&amp;btadsrv=doubleclick&amp;crt=115275418&amp;crtname=&amp;chnl=&amp;unit=&amp;pid=&amp;uid=&amp;tagtype=&amp;dvtagver=6.1.src" type="text/javascript"></script><script>window.dicnf = {umi: true,ebrp: true,apfa: true,atsb: true,bvst: 'r20191203',};(function(){function aa(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}function h(a){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return b?b.call(a):{next:aa(a)}}function m(a){for(var b,c=[];!(b=a.next()).done;)c.push(b.value);return c}var ba="function"==typeof Object.create?Object.create:function(a){function b(){}b.prototype=a;return new b},n; if("function"==typeof Object.setPrototypeOf)n=Object.setPrototypeOf;else{var p;a:{var ca={C:!0},t={};try{t.__proto__=ca;p=t.C;break a}catch(a){}p=!1}n=p?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}var u=n; function v(a,b){a.prototype=ba(b.prototype);a.prototype.constructor=a;if(u)u(a,b);else for(var c in b)if("prototype"!=c)if(Object.defineProperties){var d=Object.getOwnPropertyDescriptor(b,c);d&&Object.defineProperty(a,c,d)}else a[c]=b[c]}var w=this||self;function da(a,b){return"&adurl="==a.substring(a.length-7)?a.substring(0,a.length-7)+b+"&adurl=":a+b};function ea(a,b,c){a.addEventListener&&a.addEventListener(b,c,!1)};function x(a){this.a=a}function fa(a,b){a.a?(ha(b),a.a(b)):b()}function ha(a){w.addEventListener("beforeunload",a);w.addEventListener("unload",a);w.addEventListener("pagehide",a);w.document.addEventListener("visibilitychange",function(){"hidden"===w.document.visibilityState&&a()})}var ia=new x(function(a){w.setTimeout(a,0)}),y={};y.n=new x;y.t=ia;var z=w.dicnf||{};function C(a){var b=this;this.b=!1;this.a=[];a(function(c){D(b,c)})}function D(a,b){if(!a.b)if(b instanceof C)b.then(function(c){D(a,c)});else{a.b=!0;a.c=b;for(b=0;b<a.a.length;++b)E(a,a.a[b]);a.a=[]}}function E(a,b){a.b?b(a.c):a.a.push(b)}C.prototype.then=function(a){var b=this;return new C(function(c){E(b,function(d){c(a(d))})})}; function ja(a){var b=a.length,c=0;return new C(function(d){if(0==b)d([]);else for(var e=[],g={h:0};g.h<b;g={h:g.h},++g.h)a[g.h].then(function(f){return function(k){e[f.h]=k;++c==b&&d(e)}}(g))})}function ka(){var a,b=new C(function(c){a=c});return new la(b,a)}function ma(){return new C(function(a){return a(void 0)})}function la(a,b){this.b=a;this.a=b};function F(a){return{visible:1,hidden:2,prerender:3,preview:4,unloaded:5}[a.visibilityState||a.webkitVisibilityState||a.mozVisibilityState||""]||0}function na(a){var b;a.visibilityState?b="visibilitychange":a.mozVisibilityState?b="mozvisibilitychange":a.webkitVisibilityState&&(b="webkitvisibilitychange");return b};function oa(a){this.a=a||w.document||document};function G(a,b,c){a.google_image_requests||(a.google_image_requests=[]);var d=a.document.createElement("img");c&&(d.referrerPolicy="no-referrer");d.src=b;a.google_image_requests.push(d)}var pa=function(a){var b=!1,c;return function(){b||(c=a(),b=!0);return c}}(function(){return"referrerPolicy"in w.document.createElement("img")});function H(){this.a=w.document;this.b=null;qa(this)}function qa(a){var b=[];if(z.umi){var c=new C(function(d){a.b=d});b.push(c)}3==F(a.a)&&3==F(a.a)&&b.push(ra(a));a.c=ja(b)}function sa(a){if(z.atsb){var b;if(b=w.navigator)b=w.navigator.userAgent,b=/Chrome/.test(b)&&!/Edge/.test(b)?!0:!1;b&&w.navigator.sendBeacon?w.navigator.sendBeacon(a):G(w,a,!1)}else G(w,a,!1)} function ra(a){return new C(function(b){var c=na(a.a);if(c){var d=function(){if(3!=F(a.a)){var e=a.a;e.removeEventListener&&e.removeEventListener(c,d,!1);b()}};ea(a.a,c,d)}})}H.a=void 0;H.b=function(){return H.a?H.a:H.a=new H};function I(a){if(!a)throw Error("functionToExecute must not be truthy.");};function J(){return/\d+\.\d+\.\d+(-.*)?/.test("1.2.21-google_20191111")}function K(){for(var a=["1","2","21"],b=["1","0","3"],c=0;3>c;c++){var d=parseInt(a[c],10),e=parseInt(b[c],10);if(d>e)break;else if(d<e)return!1}return!0};function M(a,b,c,d){this.b=a;this.method=b;this.version=c;this.a=d}function N(a){return!!a&&void 0!==a.omid_message_guid&&void 0!==a.omid_message_method&&void 0!==a.omid_message_version&&"string"===typeof a.omid_message_guid&&"string"===typeof a.omid_message_method&&"string"===typeof a.omid_message_version&&(void 0===a.omid_message_args||void 0!==a.omid_message_args)}function O(a){return new M(a.omid_message_guid,a.omid_message_method,a.omid_message_version,a.omid_message_args)} function P(a){var b={};b=(b.omid_message_guid=a.b,b.omid_message_method=a.method,b.omid_message_version=a.version,b);void 0!==a.a&&(b.omid_message_args=a.a);return b};function ta(a){this.b=a};function ua(a,b){return a&&(a[b]||(a[b]={}))};function va(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(a){var b=16*Math.random()|0;return"y"===a?(b&3|8).toString(16):b.toString(16)})};function wa(a){for(var b=[],c=0;c<arguments.length;++c)b[c]=arguments[c];xa(function(){throw new (Function.prototype.bind.apply(Error,[null,"Could not complete the test successfully - "].concat(b instanceof Array?b:m(h(b)))));},function(){return console.error.apply(console,b instanceof Array?b:m(h(b)))})}function xa(a,b){"undefined"!==typeof jasmine&&jasmine?a():"undefined"!==typeof console&&console&&console.error&&b()};var Q=eval("this"),R=function(){if("undefined"!==typeof omidGlobal&&omidGlobal)return omidGlobal;if("undefined"!==typeof global&&global)return global;if("undefined"!==typeof window&&window)return window;if("undefined"!==typeof Q&&Q)return Q;throw Error("Could not determine global object context.");}();function ya(a){try{return a.frames?!!a.frames.omid_v1_present:!1}catch(b){return!1}};function S(a){this.b=a;this.handleExportedMessage=S.prototype.c.bind(this)}v(S,ta);S.prototype.sendMessage=function(a,b){b=void 0===b?this.b:b;if(!b)throw Error("Message destination must be defined at construction time or when sending the message.");b.handleExportedMessage(P(a),this)};S.prototype.c=function(a,b){N(a)&&this.a&&this.a(O(a),b)};function za(a){return null!=a&&"undefined"!==typeof a.top&&null!=a.top}function Aa(a){if(a===R)return!1;try{if("undefined"===typeof a.location.hostname)return!0}catch(b){return!0}return!1};function T(a,b){this.b=b=void 0===b?R:b;var c=this;a.addEventListener("message",function(d){if("object"===typeof d.data){var e=d.data;N(e)&&d.source&&c.a&&c.a(O(e),d.source)}})}v(T,ta);T.prototype.sendMessage=function(a,b){b=void 0===b?this.b:b;if(!b)throw Error("Message destination must be defined at construction time or when sending the message.");b.postMessage(P(a),"*")};var Ba=["omid","v1_VerificationServiceCommunication"],Ca=["omidVerificationProperties","serviceWindow"];function Da(a,b){return b.reduce(function(c,d){return c&&c[d]},a)};function U(a){if(!a){var b;"undefined"===typeof b&&"undefined"!==typeof window&&window&&(b=window);b=za(b)?b:R;var c=void 0===c?ya:c;a=[];var d=Da(b,Ca);d&&a.push(d);a.push(za(b)?b.top:R);a:{a=h(a);for(var e=a.next();!e.done;e=a.next()){b:{d=b;e=e.value;var g=c;if(!Aa(e))try{var f=Da(e,Ba);if(f){var k=new S(f);break b}}catch(q){}k=g(e)?new T(d,e):null}if(d=k){a=d;break a}}a=null}}if(this.a=a)this.a.a=this.i.bind(this);else if(c=(c=R.omid3p)&&"function"===typeof c.registerSessionObserver&&"function"=== typeof c.addEventListener?c:null)this.b=c;this.c={};this.f=(c=R.omidVerificationProperties)?c.injectionId:void 0}function Ea(a,b){I(b);a.b?a.b.registerSessionObserver(b,void 0,a.f):a.g("addSessionListener",b,void 0,a.f)} U.prototype.addEventListener=function(a,b){if(!a)throw Error("Value for eventType is undefined, null or blank.");if("string"!==typeof a&&!(a instanceof String))throw Error("Value for eventType is not a string.");if(""===a.trim())throw Error("Value for eventType is empty string.");I(b);this.b?this.b.addEventListener(a,b):this.g("addEventListener",b,a)}; U.prototype.i=function(a){var b=a.method,c=a.b;a=a.a;if("response"===b&&this.c[c]){var d=J()&&K()?a?a:[]:a&&"string"===typeof a?JSON.parse(a):[];this.c[c].apply(this,d)}"error"===b&&window.console&&wa(a)};U.prototype.g=function(a,b,c){for(var d=[],e=2;e<arguments.length;++e)d[e-2]=arguments[e];this.a&&(e=va(),b&&(this.c[e]=b),d=J()&&K()?d:JSON.stringify(d),this.a.sendMessage(new M(e,"VerificationService."+a,"1.2.21-google_20191111",d)))};var V=void 0; if(V=void 0===V?"undefined"===typeof omidExports?null:omidExports:V){var W=["OmidVerificationClient"];W.slice(0,W.length-1).reduce(ua,V)[W[W.length-1]]=U};function Fa(){var a=this.g=new U;this.c=!(!a.a&&!a.b);this.a=null;this.b=this.c?4:1;this.f=this.c} function Ga(a){a.f?(a.a=new C(function(b){var c=!!z.apfa,d=new C(function(g){Ea(a.g,function(f){"sessionStart"==f.type&&(f=f.data,"onePixel"==f.context.impressionType&&(c=!0),g("app"==f.context.environment))})}),e=new C(function(g){a.g.addEventListener("geometryChange",function(f){f=f.data;var k=f.adView.reasons;k&&-1!=k.indexOf("hidden")||(c?(f=f.adView,(f=f.onScreenContainerGeometry||f.onScreenGeometry)&&f.width&&f.height&&(a.b=3,g())):(a.b=2,g()))})});d.then(function(g){g?e.then(function(){b()}): (a.b=1,b())})}),a.a.then(function(){a.f=!1})):a.a=ma()}function Ha(a){a.a||Ga(a);return a.a};function Ia(a,b){if(a)for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&&b.call(void 0,a[c],c,a)};var X=["FRAME","IMG","IFRAME"],Ja=/^[01](px)?$/;function Ka(a,b,c){if(a)for(var d=0;null!=a&&500>d&&!c(a);++d)a=b(a)}function La(a,b){Ka(a,function(c){try{return c===c.parent?null:c.parent}catch(d){}return null},b)}function Ma(a,b){if("IFRAME"==a.tagName)b(a);else{a=a.querySelectorAll("IFRAME");for(var c=0;c<a.length&&!b(a[c]);++c);}}function Na(a){return(a=a.ownerDocument)&&(a.parentWindow||a.defaultView)||null} function Oa(a,b,c){try{var d=JSON.parse(c.data)}catch(f){}if("object"===typeof d&&d&&"creativeLoad"===d.type){var e=Na(a);if(c.source&&e){var g;La(c.source,function(f){try{if(f.parent===e)return g=f,!0}catch(k){}});g&&Ma(a,function(f){if(f.contentWindow===g)return b(d),!0})}}} function Pa(a,b){var c="string"===typeof a?document.getElementById(a):a;if(c)if(c.onCreativeLoad)c.onCreativeLoad(b);else{var d=b?[b]:[],e=function(g){for(var f=0;f<d.length;++f)try{d[f](1,g)}catch(k){}d={push:function(k){k(1,g)}}};c.onCreativeLoad=function(g){d.push(g)};c.setAttribute("data-creative-load-listener","");c.addEventListener("creativeLoad",function(g){e(g.detail)});w.addEventListener("message",function(g){Oa(c,e,g)})}} function Qa(a,b){var c;var d=void 0===d?!0:d;var e=void 0===e?!1:e;if(a="string"===typeof a?document.getElementById(a):a){c||(c=function(A,Va,Wa){A.addEventListener(Va,Wa)});for(var g=!1,f=function(A){g||(g=!0,b(A))},k,q,r=0;r<X.length;++r)if(X[r]==a.tagName){q=3;k=[a];break}k||(k=a.querySelectorAll(X.join(",")),q=2);var B=0;a=!1;for(r=0;r<k.length;r++){var l=k[r];if(!("IMG"!=l.tagName||!l.complete||l.naturalWidth&&l.naturalHeight?Ja.test(l.getAttribute("width"))&&Ja.test(l.getAttribute("height")): 1)){if("IMG"==l.tagName)var L=l.naturalWidth&&l.naturalHeight?!0:!1;else try{L="complete"===(l.readyState?l.readyState:l.contentWindow&&l.contentWindow.document&&l.contentWindow.document.readyState)?!0:!1}catch(A){L=void 0===e?!1:e}L?a=!0:(B++,c(l,"load",function(){B--;B||f(q)}))}}k=null;B||!a?c(w,"load",function(){f(4)}):d&&f(q)}};function Ra(a,b,c){this.B=a;this.i=c||new Fa;this.u=y[z.cvds]||y.n;this.A=this.f=this.b=this.l=!1;this.w=1;this.c=z.eavp?1:0;this.a=z.ebrp?1:0;this.m=this.g=null;this.o=ka();this.s=(new Date).getTime();this.j=this.v=null;Sa(this,b)}var Ta;function Ua(a,b){b&&0!==a.a&&(a.j=(new Date).getTime()-a.s,Xa(a,b).then(function(c){c&&(a.g=c);a.A=!0;Y(a)}))}function Sa(a,b){Ua(a,b);if(0!==a.a||0!==a.c)a.i.f?Ha(a.i).then(function(){Ya(a)}):Ya(a);H.b().c.then(function(){a.b=!0;Y(a)});Y(a)} function Xa(a,b){return new C(function(c){function d(e,g){a.m=e;c(g)}Pa(b,d);Qa(b,d)})}function Ya(a){a.f=!0;Y(a)}function Z(a){return a.b&&a.f&&a.A}function Y(a){a.b&&(a.b&&(0===a.c||a.b&&a.f)&&(0===a.a||Z(a))?Za(a):a.l||(a.l=!0,fa(a.u,function(){a.l=!1;a.u=y.n;Za(a)})))}function Za(a){var b=null,c=0;2!==a.w?b=0:1===a.c&&a.b&&a.f?b=12:1===a.a&&Z(a)&&(b=11);null!=b&&(0===b?1===a.a&&Z(a)?c=2:1===a.c&&a.b&&a.f&&(c=1):12===b&&1===a.a&&Z(a)&&(c=2),$a(a,b,c),0===b&&a.o.a())} function $a(a,b,c){var d=(new Date).getTime(),e={omid:a.i.c?1:0,rm:a.i.b,ctpt:d-a.s};0!==b&&(e.vt=b,e.dtpt=d-(a.v||0));0!==c&&(e.cbvp=c);a.m&&(e.dett=a.m);a.g&&(e.beid=a.g.eventId,e.vend=a.g.vendor);null!=a.j&&(e.cstd=a.j);var g=z.bvst;g&&(e.cisv=g);var f="";Ia(e,function(k,q){f+="&"+q+"="+encodeURIComponent(k)});e=da(a.B,f);0===b&&(a.w=2,a.v=d);if(12===b||c)a.c=2;if(11===b||2===c)a.a=2;sa(e)};window.btrp=function(a,b,c){var d=Ta=new Ra(a,b,c);return function(e){Ua(d,e)}};window.pdib3=function(a,b){Ta.o.b.then(function(){if(b)if(pa())G(window,a,!0);else{var c=w.document;if(c.body){var d=c.getElementById("goog-srcless-iframe");if(!d){d=(new oa(c)).a;var e="IFRAME";"application/xhtml+xml"===d.contentType&&(e=e.toLowerCase());d=d.createElement(e);d.style.display="none";d.id="goog-srcless-iframe";c.body.appendChild(d)}c=d}else c=null;c&&c.contentWindow&&G(c.contentWindow,a,!0)}else G(w,a,!1)})}; window.vv=function(){var a=H.b();if(!a.b)throw Error("aiv::err");a.b()};}).call(this);window.stcc = btrp("https://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjsumicRjQhh0PoY8e7il0uyJiRasMoUgk-DzL_C3pdaPqLKu1o9uVvmZ6jjgk7ol0XLaZfF1A1nYsuAlXlrIJoooID48OBu4c_YOf7CNc57fxh-75A98EtR673ihjKrafS5mIcTPPdHCFLCSJKctTMI9\x26sig\x3dCg0ArKJSzB7sGN3LXp-YEAE\x26urlfix\x3d1\x26adurl\x3d", document.getElementById("gcc_ffLtXdipJcSQrQGKw5DwAQ"));</script><noscript style="display: none;"><a target="_blank" href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsumicRjQhh0PoY8e7il0uyJiRasMoUgk-DzL_C3pdaPqLKu1o9uVvmZ6jjgk7ol0XLaZfF1A1nYsuAlXlrIJoooID48OBu4c_YOf7CNc57fxh-75A98EtR673ihjKrafS5mIcTPPdHCFLCSJKctTMI9&amp;sig=Cg0ArKJSzG7EMiUbRn_3EAE&amp;urlfix=1&amp;rm_eid=5864335&amp;adurl=https://www.toeflgoanywhere.org/destination/au/?utm_campaign=IND&amp;utm_medium=Banner&amp;utm_source=Shiksha&amp;utm_content=context"><img src="https://s0.2mdn.net/8842663/TOEFL_Destination_US_300x250_static2.jpg" width="300" height="250" border="0" /></a><img width="0px" height="0px" style="visibility:hidden" border="0" src="" alt="" /></noscript><script type="text/javascript">(function() {if (!window.GoogleTyFxhY || typeof window.GoogleTyFxhY.push !== 'function') {window.GoogleTyFxhY = [];}window.GoogleTyFxhY.push({'_scs_': 'BSQojffLtXdipJcSQrQGKw5DwAQAAAAA4AeAEAg','_bgu_': 'https://pagead2.googlesyndication.com/bg/R5ZafKr0PlZ7OmGMCk95d__fihE5gBkhkjuiGGCKDDU.js','_bgp_': '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\x3d','_ifr_': 'false'});var gsodar = document.createElement('script');gsodar.type = 'text/javascript';gsodar.async = true;gsodar.src = '//tpc.googlesyndication.com/sodar/UFYwWwmt.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gsodar, s);})();</script>
+        </ins>
+        
+        
+        </a></td><td>&nbsp;</td><td width="1"><a href="http://www.ieplads.com/bmsjs/bms_hits.php?banner=150250" target="_blank">
+        
+        
+        <meta charset="utf-8">
+        <meta name="ad.size" content="width=300,height=250">
+        <title></title>
+        
+        
+        
+        <ins class="dcmads" style="display: inline-block; width: 300px; height: 250px; text-decoration: none;" data-dcm-placement="N4864.155263.SHIKSHA/B23220232.255520097" data-dcm-rendering-mode="script" data-dcm-https-only="" data-dcm-resettable-device-id="" data-dcm-app-id="" data-dcm-processed="y">
+          <script src="https://www.googletagservices.com/dcm/dcmads.js"></script><script src="https://www.googletagservices.com/dcm/impl_v55.js"></script><script src="https://ad.doubleclick.net/ddm/adj/N4864.155263.SHIKSHA/B23220232.255520097;dc_ver=55.153;dc_eid=40004001;sz=300x250;u_sd=1;dc_adk=2241910000;ord=bwmryy;dc_rfl=1,https%3A%2F%2Fstudyabroad.shiksha.com%2Fmba-in-finance-from-abroad-ds11508246-3$0;xdt=1;crlt=*FO.7gafo*;sttr=3;prcl=s?"></script><script>(function() {(function(){var g=this||self,k=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},l=function(a,b){var c=Array.prototype.slice.call(arguments,1);return function(){var e=c.slice();e.push.apply(e,arguments);return a.apply(this,e)}};var m=function(a,b){for(var c in a)b.call(void 0,a[c],c,a)};var n=function(a){a=a?a.toLowerCase():"";switch(a){case "normal":return"normal";case "lightbox":return"lightbox";case "push_down":return"push_down"}return null};var p={i:"ad_container_id",A:"hideObjects",X:"mtfTop",W:"mtfLeft",ca:"zindex",m:"mtfDuration",aa:"wmode",Z:"preferFlash",s:"as_kw",u:"as_lat",v:"as_lng",B:"mtfIFPath",o:"expansionMode",U:"top_container",T:"mtfTopFloat",S:"mtfTopDuration",V:"mtfTopWmode",P:"right_container",O:"mtfRightFloat",N:"mtfRightDuration",R:"mtfRightWmode",H:"bottom_container",G:"mtfBottomFloat",F:"mtfBottomDuration",I:"mtfBottomWmode",L:"left_container",K:"mtfLeftFloat",J:"mtfLeftDuration",M:"mtfLeftWmode",$:"mtfRenderFloatInplace",ba:"tryToWriteHtmlInline",j:"debugjs",C:"dcapp",g:"breakoutiframe",D:"inMobileAdSdk"},r=function(a){m(a,function(b,c){if(c.toLowerCase()in q){var e=q[c.toLowerCase()];c in a&&delete a[c];a[e]=b}})},q=function(){var a={};m(p,function(b){a[b.toLowerCase()]=b});return a}();var v=function(a){this.a=a;a:{for(c in a.displayConfigParameters){b:if(a=u,"string"===typeof a)a="string"!==typeof c||1!=c.length?-1:a.indexOf(c,0);else{for(var b=0;b<a.length;b++)if(b in a&&a[b]===c){a=b;break b}a=-1}if(!(0<=a)){var c=!0;break a}}c=!1}this.f=c},u=["ad_container_id"],w=function(a){return a.f?a.a.displayConfigParameters:a.a.creativeParameters},x=function(a,b){for(var c=0;c<a.a.primaryFiles.length;++c)if(a.a.primaryFiles[c].type==b)return!0;return!1};var y={pattern:/rendering_lib_((?:[0-9_]+)|(?:latest))\.js$/,c:"rendering_lib_db_$1.js"},z={pattern:/\/[a-z_0-9]+_rendering_lib/,c:"/iframe_buster"},A={pattern:/(.*\/)(.*_)rendering_lib_((?:[0-9_]+)|(?:latest))\.js$/,c:"$1inapp_html_inpage_rendering_lib_$3.js"},B={pattern:/\/[0-9]+\/[a-z_0-9]+rendering_lib.+$/,c:"/ads/studio/cached_libs/modernizr_2.8.3_ec185bb44fe5e6bf7455d6e8ef37ed0e_no-classes.js"},F=function(a){var b=w(a),c=a.a.renderingLibraryData,e=c.renderingLibrary,d=c.version;if(!/express|image_gallery|dfa7banner|inapp/.test(e)&&("latest"==d||0<=C(d,"200_74"))){if(d=!x(a,"FLASH")){a:{for(d=0;d<a.a.primaryFiles.length;++d){var f=a.a.primaryFiles[d].expandingDisplayProperties;if(f&&"lightbox"==n(f.expansionMode)){d=!0;break a}}d=!1}d=!d}d=d&&null!=window.mraid}else d=!1;d&&(e=e.replace(A.pattern,A.c));"true"==b.debugjs&&(e=e.replace(y.pattern,y.c));(b=g.self==g.top)||(b=window.Y&&window.Y.SandBox&&window.Y.SandBox.vendor,d=window.$sf&&window.$sf.ext,f=window.$WLXRmAd,b=!!(window.IN_ADSENSE_IFRAME||b||d||f));if(!b){a:if(b=w(a).breakoutiframe)b=!!b&&"true"==b.toLowerCase();else{b=a.a.primaryFiles;for(d=0;d<b.length;d++){f=b[d].renderAs;var h=0==(parseInt(b[d].width,10)||0)&&0==(parseInt(b[d].height,10)||0);if("EXPANDABLE"==f||"FLOATING"==f&&!h){b=!0;break a}}b=!1}b=!b}if(b||a.a.previewMode){a:{a=e;b=D();for(d=0;d<b.renderingLibraries.length;d++)if(f=b.renderingLibraries[d],f.url==a&&f.bootstrapFunction){a=f;break a}a=null}a?a.bootstrapFunction():(a=D(),E(e,!1,void 0,void 0,void 0,!0),a.renderingLibraries.push({version:c.version,url:e,loading:!0,bootstrapFunction:null}))}else c=e.replace(z.pattern,z.c),E(c,!0)},C=function(a,b){a=G(a);b=G(b);for(var c=Math.min(a.length,b.length),e=0;e<c;e++)if(a[e]!=b[e])return a[e]-b[e];return a.length-b.length},G=function(a){a=a.split("_");for(var b=[],c=0;c<a.length;c++)b.push(parseInt(a[c],10));return b},E=function(a,b,c,e,d,f){var h=document.createElement("script");h.src=a;h.type=c?c:"text/javascript";h.async=!!b;f&&(h.crossOrigin="anonymous");e&&(h.onload=e);d&&(h.onerror=d);var t;(a=document.getElementsByTagName("head"))&&0!=a.length?t=a[0]:t=document.documentElement;t.appendChild(h)},D=function(){return window.dclkStudioV3=window.dclkStudioV3||{creatives:[],renderingLibraries:[],creativeCount:1,startTimes:{}}},H=function(a){try{if(null!=(a["cps-top-iframe-beacon"]?a["cps-top-iframe-beacon"]:null))return!0}catch(b){}return a==a.parent?!1:H(a.parent)},I=function(a){if(null!=a){r(a.creativeParameters);if(null!=a.html5Features)for(var b=0;b<a.html5Features.length;++b)"CSS_ANIMATIONS"==a.html5Features[b]&&(a.html5Features[b]="Modernizr.cssanimations");!a.previewMode&&H(g)&&(a.previewMode=!0);a=new v(a);b=D();b.creatives.push(a.a);var c=a.a.creativeParameters;c.creative_unique_id=c.cid+"_"+b.creativeCount++;b.startTimes[c.creative_unique_id]=+new Date;b=w(a).ad_container_id;a:if((c=w(a).mtfRenderFloatInplace)&&"true"==c.toLowerCase())c=!0;else{c=a.a.primaryFiles;for(var e=0;e<c.length;e++){var d=c[e].renderAs;if("EXPANDABLE"==d||"BANNER"==d){c=!0;break a}}c=!1}!c||b&&""!=b||(b="dclk-studio-creative_"+(new Date).getTime(),c=a.a,document.write(['<div id="',b,'"></div>'].join("")),c.creativeParameters.ad_container_id=b,c.creativeParameters.generate_ad_slot="true",null==c.displayConfigParameters&&(c.displayConfigParameters={}),c.displayConfigParameters.ad_container_id=b);c=a.a;b=c.renderingLibraryData;e=b.version;if(x(a,"HTML5")&&!("latest"==e||0<=C(e,"200_108"))&&(c=c.html5Features,!("Modernizr"in g)&&"array"==k(c)&&0<c.length)){e=!1;for(d=0;d<c.length;d++)if("svgFilters"!=c[d]&&"svgFeImage"!=c[d]){e=!0;break}e&&E(b.renderingLibrary.replace(B.pattern,B.c),!1)}b=w(a);c=b.inMobileAdSdk;"1"==b.dcapp||"1"==c||/Android ([2-3]|4\.[0-3])/.test(navigator.userAgent)?(b=l(F,a),window.mraid?(E("mraid.js",!1,"text/x-do-not-download",null,null),F(a)):E("mraid.js",!1,"text/javascript",b,b)):F(a)}},J=["studio","rendering","BowResponse","processCreativeData"],K=g;J[0]in K||"undefined"==typeof K.execScript||K.execScript("var "+J[0]);for(var L;J.length&&(L=J.shift());)J.length||void 0===I?K[L]&&K[L]!==Object.prototype[L]?K=K[L]:K=K[L]={}:K[L]=I;}).call(this);var creativeData = {width: '300',height: '250',slotWidth: '300',slotHeight: '250',renderingLibraryData: {version: '200_264',renderingLibrary: 'https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_264.js'},impressionUrl: 'https://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjstjRrV7UdkvDWoxYm3pOr4_LWSnAg4m2xL07zw6UiSO6FcvXudoeQTD1IYB1BH9t-LmhHk0eCNb7Lrf2aTAf62Te7VOax2xFzSbsqbhpvP_Nm_D-qM_VRha4WB7foAXAnX6n52hOjySGbcENVxFVyxz\x26sig\x3dCg0ArKJSzC7M_oGtzXlZEAE\x26urlfix\x3d1\x26adurl\x3d',eventTrackingBaseUrl: 'https://ade.googlesyndication.com/ddm/activity/dc_oe\x3dChMI_fH8yoCo5gIVLIJLBR0z5AVHEAAYACCa7fs2',customEventTrackingBaseUrl: 'https://ad.doubleclick.net/activity;src\x3d8842663;pid\x3d255520097;aid\x3d452123948;ko\x3d0;cid\x3d115275418;rid\x3d115087819;rv\x3d2;',clickUrl: 'https://adclick.g.doubleclick.net/pcs/click?xai\x3dAKAOjstjRrV7UdkvDWoxYm3pOr4_LWSnAg4m2xL07zw6UiSO6FcvXudoeQTD1IYB1BH9t-LmhHk0eCNb7Lrf2aTAf62Te7VOax2xFzSbsqbhpvP_Nm_D-qM_VRha4WB7foAXAnX6n52hOjySGbcENVxFVyxz\x26sig\x3dCg0ArKJSzKakcBQqHOpMEAE\x26urlfix\x3d1\x26rm_eid\x3d[rm_exit_id]\x26adurl\x3d',thirdPartyUrls: [{type: 'IMPRESSION_JS',url: 'https://cdn.doubleverify.com/dvtp_src.js?ctx\x3d11189058\x26cmp\x3d23220232\x26sid\x3d1198632\x26plc\x3d255520097\x26num\x3d\x26adid\x3d\x26advid\x3d8842663\x26adsrv\x3d1\x26btreg\x3d452123948\x26btadsrv\x3ddoubleclick\x26crt\x3d115275418\x26crtname\x3d\x26chnl\x3d\x26unit\x3d\x26pid\x3d\x26uid\x3d\x26tagtype\x3d\x26dvtagver\x3d6.1.src',scrub: 'false'}],clickString: 'BqDRHffLtXb2_LayErtoPs8iXuAQAAAAAEAE4AeAEAogFiKCJC6AGRw',activeViewUrlPrefix: 'https://pagead2.googlesyndication.com/pcs/activeview?xai\x3dAKAOjssJ9nBa-YnWrYuQY7Qy7RW8f1KCzWA8XxE42EGYB05EY2Zqb934EXyC4nEYOWtT1kXMMythF7m_hG5VbnXG4lzk\x26sig\x3dCg0ArKJSzItGlHVTzE4cEAE',activeViewMetadata: 'la\x3d0\x26alp\x3dxai\x26alh\x3d4079997627\x26',lidarScriptUrl: '//www.googletagservices.com/activeview/js/current/lidar.js?cache=r20110914',dynamicData: '',creativeParameters: {'CREATIVE_PARAMETER_ASSETS_DATA': '{\\\x221555969192203/index.html\\\x22:\\\x228842663/1555969192203/index.html\\\x22,\\\x22TOEFL_Destination_US_300x250_static2.jpg\\\x22:\\\x228842663/TOEFL_Destination_US_300x250_static2.jpg\\\x22}', 'CREATIVE_PARAMETER_VIDEO_ASSETS_DATA': '[]', 'CREATIVE_PARAMETER_VIDEO_DATA': '[]', 'CREATIVE_PARAMETER_LAYOUT_CONFIG': '', 'sn': 'N4864.155263.SHIKSHA', 'sid': '1198632', 'aid': '452123948', 'buy': '23220232', 'cid': '115275418', 'pid': '255520097', 'rv': '2', 'adv': '8842663', 'exit_suffix': '', 'geo': 'ct\x3dIN\x26st\x3d\x26city\x3d0\x26dma\x3d0\x26zp\x3d452011\x26bw\x3d4', 'prcl': 's', 'sttr': '3', 'crlt': '*FO.7gafo*', 'xdt': '1', 'dc_ver': '55.153', 'av_ad_key': '2241910000', 'displayHTML5': 'true', 'CREATIVE_PARAMETER_EXPERIMENTS': '{ \\\x22append_spam_signals_to_click_url\\\x22 : true, \\\x22disable_h5_mraid_imp_ping\\\x22 : true }', 'CREATIVE_PARAMETER_IS_B2R_ELIGIBLE': 'true'},previewMode: false,html5Features: ['Modernizr.rgba', 'Modernizr.canvas'],translated_layout: false,primaryFiles: [{type: 'HTML5',renderAs: 'BANNER',width: '300',height: '250',url: 'https://s0.2mdn.net/8842663/1555969192203/index.html',hideFlashObjects: false,zIndex: '',customCss: ''}, {type: 'IMAGE',renderAs: 'BACKUP_IMAGE',width: '300',height: '250',url: 'https://s0.2mdn.net/8842663/TOEFL_Destination_US_300x250_static2.jpg',hideFlashObjects: false,zIndex: '',customCss: ''}],standardEvents: [{name: 'DISPLAY_TIMER',reportingId: '2'}, {name: 'INTERACTION_TIMER',reportingId: '3'}, {name: 'INTERACTIVE_IMPRESSION',reportingId: '4'}, {name: 'FULL_SCREEN_VIDEO_PLAYS',reportingId: '5'}, {name: 'FULL_SCREEN_VIDEO_COMPLETES',reportingId: '6'}, {name: 'FULL_SCREEN_AVERAGE_VIEW_TIME',reportingId: '7'}, {name: 'MANUAL_CLOSE',reportingId: '8'}, {name: 'BACKUP_IMAGE_IMPRESSION',reportingId: '9'}, {name: 'EXPAND_TIMER',reportingId: '10'}, {name: 'VIDEO_PLAY',reportingId: '11'}, {name: 'VIDEO_VIEW_TIMER',reportingId: '12'}, {name: 'VIDEO_COMPLETE',reportingId: '13'}, {name: 'VIDEO_INTERACTION',reportingId: '14'}, {name: 'VIDEO_PAUSE',reportingId: '15'}, {name: 'VIDEO_MUTE',reportingId: '16'}, {name: 'VIDEO_REPLAY',reportingId: '17'}, {name: 'VIDEO_MIDPOINT',reportingId: '18'}, {name: 'FULL_SCREEN_VIDEO',reportingId: '19'}, {name: 'VIDEO_STOP',reportingId: '20'}, {name: 'VIDEO_ABANDON',reportingId: '22'}, {name: 'VIDEO_UNMUTE',reportingId: '149645'}, {name: 'FULL_SCREEN',reportingId: '286263'}, {name: 'DYNAMIC_CREATIVE_IMPRESSION',reportingId: '536393'}, {name: 'HTML5_CREATIVE_IMPRESSION',reportingId: '871060'}, {name: 'VIDEO_FIRST_QUARTILE',reportingId: '960584'}, {name: 'VIDEO_THIRD_QUARTILE',reportingId: '960585'}, {name: 'LARGE_SCROLL',reportingId: '200035'}, {name: 'SMALL_SCROLL',reportingId: '200036'}, {name: 'SCROLL',reportingId: '200037'}, {name: 'ENGAGEMENT',reportingId: '200038'}],exitEvents: [{name: 'clickTag',reportingId: '5864338',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: false}, {name: 'clickTag1',reportingId: '6260211',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: false}, {name: 'backup image click through url',reportingId: '5864335',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: true}],timerEvents: [],counterEvents: []};try {studio.rendering.BowResponse.processCreativeData(creativeData);} catch (e) {/* ignore errors but don't kill js execution. */}})();</script><div id="dclk-studio-creative_1575875197864" style="display: inline-block; vertical-align: top;"><div id="DfaVisibilityIdentifier_1575875197872" class="GoogleActiveViewClass" style="position: relative; width: 300px; height: 250px; box-sizing: content-box;"><iframe data-creative-load-listener="" id="200_264_express_html_inpage_1.if" src="https://s0.2mdn.net/8842663/1555969192203/index.html" width="300" height="250" frameborder="0" scrolling="no" allowfullscreen="true" style="width: 300px; height: 250px;"></iframe></div></div><iframe id="iframe_967026899731" name="iframe_967026899731" data-dv-frm="967026899731" width="0" height="0" src="about:blank" style="display: none;"></iframe><script src="https://cdn.doubleverify.com/dvtp_src.js?ctx=11189058&amp;cmp=23220232&amp;sid=1198632&amp;plc=255520097&amp;num=&amp;adid=&amp;advid=8842663&amp;adsrv=1&amp;btreg=452123948&amp;btadsrv=doubleclick&amp;crt=115275418&amp;crtname=&amp;chnl=&amp;unit=&amp;pid=&amp;uid=&amp;tagtype=&amp;dvtagver=6.1.src" type="text/javascript"></script><script>window.dicnf = {umi: true,ebrp: true,apfa: true,atsb: true,bvst: 'r20191203',};(function(){function aa(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}function h(a){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return b?b.call(a):{next:aa(a)}}function m(a){for(var b,c=[];!(b=a.next()).done;)c.push(b.value);return c}var ba="function"==typeof Object.create?Object.create:function(a){function b(){}b.prototype=a;return new b},n; if("function"==typeof Object.setPrototypeOf)n=Object.setPrototypeOf;else{var p;a:{var ca={C:!0},t={};try{t.__proto__=ca;p=t.C;break a}catch(a){}p=!1}n=p?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}var u=n; function v(a,b){a.prototype=ba(b.prototype);a.prototype.constructor=a;if(u)u(a,b);else for(var c in b)if("prototype"!=c)if(Object.defineProperties){var d=Object.getOwnPropertyDescriptor(b,c);d&&Object.defineProperty(a,c,d)}else a[c]=b[c]}var w=this||self;function da(a,b){return"&adurl="==a.substring(a.length-7)?a.substring(0,a.length-7)+b+"&adurl=":a+b};function ea(a,b,c){a.addEventListener&&a.addEventListener(b,c,!1)};function x(a){this.a=a}function fa(a,b){a.a?(ha(b),a.a(b)):b()}function ha(a){w.addEventListener("beforeunload",a);w.addEventListener("unload",a);w.addEventListener("pagehide",a);w.document.addEventListener("visibilitychange",function(){"hidden"===w.document.visibilityState&&a()})}var ia=new x(function(a){w.setTimeout(a,0)}),y={};y.n=new x;y.t=ia;var z=w.dicnf||{};function C(a){var b=this;this.b=!1;this.a=[];a(function(c){D(b,c)})}function D(a,b){if(!a.b)if(b instanceof C)b.then(function(c){D(a,c)});else{a.b=!0;a.c=b;for(b=0;b<a.a.length;++b)E(a,a.a[b]);a.a=[]}}function E(a,b){a.b?b(a.c):a.a.push(b)}C.prototype.then=function(a){var b=this;return new C(function(c){E(b,function(d){c(a(d))})})}; function ja(a){var b=a.length,c=0;return new C(function(d){if(0==b)d([]);else for(var e=[],g={h:0};g.h<b;g={h:g.h},++g.h)a[g.h].then(function(f){return function(k){e[f.h]=k;++c==b&&d(e)}}(g))})}function ka(){var a,b=new C(function(c){a=c});return new la(b,a)}function ma(){return new C(function(a){return a(void 0)})}function la(a,b){this.b=a;this.a=b};function F(a){return{visible:1,hidden:2,prerender:3,preview:4,unloaded:5}[a.visibilityState||a.webkitVisibilityState||a.mozVisibilityState||""]||0}function na(a){var b;a.visibilityState?b="visibilitychange":a.mozVisibilityState?b="mozvisibilitychange":a.webkitVisibilityState&&(b="webkitvisibilitychange");return b};function oa(a){this.a=a||w.document||document};function G(a,b,c){a.google_image_requests||(a.google_image_requests=[]);var d=a.document.createElement("img");c&&(d.referrerPolicy="no-referrer");d.src=b;a.google_image_requests.push(d)}var pa=function(a){var b=!1,c;return function(){b||(c=a(),b=!0);return c}}(function(){return"referrerPolicy"in w.document.createElement("img")});function H(){this.a=w.document;this.b=null;qa(this)}function qa(a){var b=[];if(z.umi){var c=new C(function(d){a.b=d});b.push(c)}3==F(a.a)&&3==F(a.a)&&b.push(ra(a));a.c=ja(b)}function sa(a){if(z.atsb){var b;if(b=w.navigator)b=w.navigator.userAgent,b=/Chrome/.test(b)&&!/Edge/.test(b)?!0:!1;b&&w.navigator.sendBeacon?w.navigator.sendBeacon(a):G(w,a,!1)}else G(w,a,!1)} function ra(a){return new C(function(b){var c=na(a.a);if(c){var d=function(){if(3!=F(a.a)){var e=a.a;e.removeEventListener&&e.removeEventListener(c,d,!1);b()}};ea(a.a,c,d)}})}H.a=void 0;H.b=function(){return H.a?H.a:H.a=new H};function I(a){if(!a)throw Error("functionToExecute must not be truthy.");};function J(){return/\d+\.\d+\.\d+(-.*)?/.test("1.2.21-google_20191111")}function K(){for(var a=["1","2","21"],b=["1","0","3"],c=0;3>c;c++){var d=parseInt(a[c],10),e=parseInt(b[c],10);if(d>e)break;else if(d<e)return!1}return!0};function M(a,b,c,d){this.b=a;this.method=b;this.version=c;this.a=d}function N(a){return!!a&&void 0!==a.omid_message_guid&&void 0!==a.omid_message_method&&void 0!==a.omid_message_version&&"string"===typeof a.omid_message_guid&&"string"===typeof a.omid_message_method&&"string"===typeof a.omid_message_version&&(void 0===a.omid_message_args||void 0!==a.omid_message_args)}function O(a){return new M(a.omid_message_guid,a.omid_message_method,a.omid_message_version,a.omid_message_args)} function P(a){var b={};b=(b.omid_message_guid=a.b,b.omid_message_method=a.method,b.omid_message_version=a.version,b);void 0!==a.a&&(b.omid_message_args=a.a);return b};function ta(a){this.b=a};function ua(a,b){return a&&(a[b]||(a[b]={}))};function va(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(a){var b=16*Math.random()|0;return"y"===a?(b&3|8).toString(16):b.toString(16)})};function wa(a){for(var b=[],c=0;c<arguments.length;++c)b[c]=arguments[c];xa(function(){throw new (Function.prototype.bind.apply(Error,[null,"Could not complete the test successfully - "].concat(b instanceof Array?b:m(h(b)))));},function(){return console.error.apply(console,b instanceof Array?b:m(h(b)))})}function xa(a,b){"undefined"!==typeof jasmine&&jasmine?a():"undefined"!==typeof console&&console&&console.error&&b()};var Q=eval("this"),R=function(){if("undefined"!==typeof omidGlobal&&omidGlobal)return omidGlobal;if("undefined"!==typeof global&&global)return global;if("undefined"!==typeof window&&window)return window;if("undefined"!==typeof Q&&Q)return Q;throw Error("Could not determine global object context.");}();function ya(a){try{return a.frames?!!a.frames.omid_v1_present:!1}catch(b){return!1}};function S(a){this.b=a;this.handleExportedMessage=S.prototype.c.bind(this)}v(S,ta);S.prototype.sendMessage=function(a,b){b=void 0===b?this.b:b;if(!b)throw Error("Message destination must be defined at construction time or when sending the message.");b.handleExportedMessage(P(a),this)};S.prototype.c=function(a,b){N(a)&&this.a&&this.a(O(a),b)};function za(a){return null!=a&&"undefined"!==typeof a.top&&null!=a.top}function Aa(a){if(a===R)return!1;try{if("undefined"===typeof a.location.hostname)return!0}catch(b){return!0}return!1};function T(a,b){this.b=b=void 0===b?R:b;var c=this;a.addEventListener("message",function(d){if("object"===typeof d.data){var e=d.data;N(e)&&d.source&&c.a&&c.a(O(e),d.source)}})}v(T,ta);T.prototype.sendMessage=function(a,b){b=void 0===b?this.b:b;if(!b)throw Error("Message destination must be defined at construction time or when sending the message.");b.postMessage(P(a),"*")};var Ba=["omid","v1_VerificationServiceCommunication"],Ca=["omidVerificationProperties","serviceWindow"];function Da(a,b){return b.reduce(function(c,d){return c&&c[d]},a)};function U(a){if(!a){var b;"undefined"===typeof b&&"undefined"!==typeof window&&window&&(b=window);b=za(b)?b:R;var c=void 0===c?ya:c;a=[];var d=Da(b,Ca);d&&a.push(d);a.push(za(b)?b.top:R);a:{a=h(a);for(var e=a.next();!e.done;e=a.next()){b:{d=b;e=e.value;var g=c;if(!Aa(e))try{var f=Da(e,Ba);if(f){var k=new S(f);break b}}catch(q){}k=g(e)?new T(d,e):null}if(d=k){a=d;break a}}a=null}}if(this.a=a)this.a.a=this.i.bind(this);else if(c=(c=R.omid3p)&&"function"===typeof c.registerSessionObserver&&"function"=== typeof c.addEventListener?c:null)this.b=c;this.c={};this.f=(c=R.omidVerificationProperties)?c.injectionId:void 0}function Ea(a,b){I(b);a.b?a.b.registerSessionObserver(b,void 0,a.f):a.g("addSessionListener",b,void 0,a.f)} U.prototype.addEventListener=function(a,b){if(!a)throw Error("Value for eventType is undefined, null or blank.");if("string"!==typeof a&&!(a instanceof String))throw Error("Value for eventType is not a string.");if(""===a.trim())throw Error("Value for eventType is empty string.");I(b);this.b?this.b.addEventListener(a,b):this.g("addEventListener",b,a)}; U.prototype.i=function(a){var b=a.method,c=a.b;a=a.a;if("response"===b&&this.c[c]){var d=J()&&K()?a?a:[]:a&&"string"===typeof a?JSON.parse(a):[];this.c[c].apply(this,d)}"error"===b&&window.console&&wa(a)};U.prototype.g=function(a,b,c){for(var d=[],e=2;e<arguments.length;++e)d[e-2]=arguments[e];this.a&&(e=va(),b&&(this.c[e]=b),d=J()&&K()?d:JSON.stringify(d),this.a.sendMessage(new M(e,"VerificationService."+a,"1.2.21-google_20191111",d)))};var V=void 0; if(V=void 0===V?"undefined"===typeof omidExports?null:omidExports:V){var W=["OmidVerificationClient"];W.slice(0,W.length-1).reduce(ua,V)[W[W.length-1]]=U};function Fa(){var a=this.g=new U;this.c=!(!a.a&&!a.b);this.a=null;this.b=this.c?4:1;this.f=this.c} function Ga(a){a.f?(a.a=new C(function(b){var c=!!z.apfa,d=new C(function(g){Ea(a.g,function(f){"sessionStart"==f.type&&(f=f.data,"onePixel"==f.context.impressionType&&(c=!0),g("app"==f.context.environment))})}),e=new C(function(g){a.g.addEventListener("geometryChange",function(f){f=f.data;var k=f.adView.reasons;k&&-1!=k.indexOf("hidden")||(c?(f=f.adView,(f=f.onScreenContainerGeometry||f.onScreenGeometry)&&f.width&&f.height&&(a.b=3,g())):(a.b=2,g()))})});d.then(function(g){g?e.then(function(){b()}): (a.b=1,b())})}),a.a.then(function(){a.f=!1})):a.a=ma()}function Ha(a){a.a||Ga(a);return a.a};function Ia(a,b){if(a)for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&&b.call(void 0,a[c],c,a)};var X=["FRAME","IMG","IFRAME"],Ja=/^[01](px)?$/;function Ka(a,b,c){if(a)for(var d=0;null!=a&&500>d&&!c(a);++d)a=b(a)}function La(a,b){Ka(a,function(c){try{return c===c.parent?null:c.parent}catch(d){}return null},b)}function Ma(a,b){if("IFRAME"==a.tagName)b(a);else{a=a.querySelectorAll("IFRAME");for(var c=0;c<a.length&&!b(a[c]);++c);}}function Na(a){return(a=a.ownerDocument)&&(a.parentWindow||a.defaultView)||null} function Oa(a,b,c){try{var d=JSON.parse(c.data)}catch(f){}if("object"===typeof d&&d&&"creativeLoad"===d.type){var e=Na(a);if(c.source&&e){var g;La(c.source,function(f){try{if(f.parent===e)return g=f,!0}catch(k){}});g&&Ma(a,function(f){if(f.contentWindow===g)return b(d),!0})}}} function Pa(a,b){var c="string"===typeof a?document.getElementById(a):a;if(c)if(c.onCreativeLoad)c.onCreativeLoad(b);else{var d=b?[b]:[],e=function(g){for(var f=0;f<d.length;++f)try{d[f](1,g)}catch(k){}d={push:function(k){k(1,g)}}};c.onCreativeLoad=function(g){d.push(g)};c.setAttribute("data-creative-load-listener","");c.addEventListener("creativeLoad",function(g){e(g.detail)});w.addEventListener("message",function(g){Oa(c,e,g)})}} function Qa(a,b){var c;var d=void 0===d?!0:d;var e=void 0===e?!1:e;if(a="string"===typeof a?document.getElementById(a):a){c||(c=function(A,Va,Wa){A.addEventListener(Va,Wa)});for(var g=!1,f=function(A){g||(g=!0,b(A))},k,q,r=0;r<X.length;++r)if(X[r]==a.tagName){q=3;k=[a];break}k||(k=a.querySelectorAll(X.join(",")),q=2);var B=0;a=!1;for(r=0;r<k.length;r++){var l=k[r];if(!("IMG"!=l.tagName||!l.complete||l.naturalWidth&&l.naturalHeight?Ja.test(l.getAttribute("width"))&&Ja.test(l.getAttribute("height")): 1)){if("IMG"==l.tagName)var L=l.naturalWidth&&l.naturalHeight?!0:!1;else try{L="complete"===(l.readyState?l.readyState:l.contentWindow&&l.contentWindow.document&&l.contentWindow.document.readyState)?!0:!1}catch(A){L=void 0===e?!1:e}L?a=!0:(B++,c(l,"load",function(){B--;B||f(q)}))}}k=null;B||!a?c(w,"load",function(){f(4)}):d&&f(q)}};function Ra(a,b,c){this.B=a;this.i=c||new Fa;this.u=y[z.cvds]||y.n;this.A=this.f=this.b=this.l=!1;this.w=1;this.c=z.eavp?1:0;this.a=z.ebrp?1:0;this.m=this.g=null;this.o=ka();this.s=(new Date).getTime();this.j=this.v=null;Sa(this,b)}var Ta;function Ua(a,b){b&&0!==a.a&&(a.j=(new Date).getTime()-a.s,Xa(a,b).then(function(c){c&&(a.g=c);a.A=!0;Y(a)}))}function Sa(a,b){Ua(a,b);if(0!==a.a||0!==a.c)a.i.f?Ha(a.i).then(function(){Ya(a)}):Ya(a);H.b().c.then(function(){a.b=!0;Y(a)});Y(a)} function Xa(a,b){return new C(function(c){function d(e,g){a.m=e;c(g)}Pa(b,d);Qa(b,d)})}function Ya(a){a.f=!0;Y(a)}function Z(a){return a.b&&a.f&&a.A}function Y(a){a.b&&(a.b&&(0===a.c||a.b&&a.f)&&(0===a.a||Z(a))?Za(a):a.l||(a.l=!0,fa(a.u,function(){a.l=!1;a.u=y.n;Za(a)})))}function Za(a){var b=null,c=0;2!==a.w?b=0:1===a.c&&a.b&&a.f?b=12:1===a.a&&Z(a)&&(b=11);null!=b&&(0===b?1===a.a&&Z(a)?c=2:1===a.c&&a.b&&a.f&&(c=1):12===b&&1===a.a&&Z(a)&&(c=2),$a(a,b,c),0===b&&a.o.a())} function $a(a,b,c){var d=(new Date).getTime(),e={omid:a.i.c?1:0,rm:a.i.b,ctpt:d-a.s};0!==b&&(e.vt=b,e.dtpt=d-(a.v||0));0!==c&&(e.cbvp=c);a.m&&(e.dett=a.m);a.g&&(e.beid=a.g.eventId,e.vend=a.g.vendor);null!=a.j&&(e.cstd=a.j);var g=z.bvst;g&&(e.cisv=g);var f="";Ia(e,function(k,q){f+="&"+q+"="+encodeURIComponent(k)});e=da(a.B,f);0===b&&(a.w=2,a.v=d);if(12===b||c)a.c=2;if(11===b||2===c)a.a=2;sa(e)};window.btrp=function(a,b,c){var d=Ta=new Ra(a,b,c);return function(e){Ua(d,e)}};window.pdib3=function(a,b){Ta.o.b.then(function(){if(b)if(pa())G(window,a,!0);else{var c=w.document;if(c.body){var d=c.getElementById("goog-srcless-iframe");if(!d){d=(new oa(c)).a;var e="IFRAME";"application/xhtml+xml"===d.contentType&&(e=e.toLowerCase());d=d.createElement(e);d.style.display="none";d.id="goog-srcless-iframe";c.body.appendChild(d)}c=d}else c=null;c&&c.contentWindow&&G(c.contentWindow,a,!0)}else G(w,a,!1)})}; window.vv=function(){var a=H.b();if(!a.b)throw Error("aiv::err");a.b()};}).call(this);window.stcc = btrp("https://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjstjRrV7UdkvDWoxYm3pOr4_LWSnAg4m2xL07zw6UiSO6FcvXudoeQTD1IYB1BH9t-LmhHk0eCNb7Lrf2aTAf62Te7VOax2xFzSbsqbhpvP_Nm_D-qM_VRha4WB7foAXAnX6n52hOjySGbcENVxFVyxz\x26sig\x3dCg0ArKJSzC7M_oGtzXlZEAE\x26urlfix\x3d1\x26adurl\x3d", document.getElementById("gcc_ffLtXb2_LayErtoPs8iXuAQ"));</script><noscript><a target="_blank" href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjstjRrV7UdkvDWoxYm3pOr4_LWSnAg4m2xL07zw6UiSO6FcvXudoeQTD1IYB1BH9t-LmhHk0eCNb7Lrf2aTAf62Te7VOax2xFzSbsqbhpvP_Nm_D-qM_VRha4WB7foAXAnX6n52hOjySGbcENVxFVyxz&amp;sig=Cg0ArKJSzKakcBQqHOpMEAE&amp;urlfix=1&amp;rm_eid=5864335&amp;adurl=https://www.toeflgoanywhere.org/destination/au/?utm_campaign=IND&amp;utm_medium=Banner&amp;utm_source=Shiksha&amp;utm_content=context"><img src="https://s0.2mdn.net/8842663/TOEFL_Destination_US_300x250_static2.jpg" width="300" height="250" border="0" /></a><img width="0px" height="0px" style="visibility:hidden" border="0" src="" alt="" /></noscript><script type="text/javascript">(function() {if (!window.GoogleTyFxhY || typeof window.GoogleTyFxhY.push !== 'function') {window.GoogleTyFxhY = [];}window.GoogleTyFxhY.push({'_scs_': 'BJxqwffLtXb2_LayErtoPs8iXuAQAAAAAOAHgBAI','_bgu_': 'https://pagead2.googlesyndication.com/bg/R5ZafKr0PlZ7OmGMCk95d__fihE5gBkhkjuiGGCKDDU.js','_bgp_': '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','_ifr_': 'false'});var gsodar = document.createElement('script');gsodar.type = 'text/javascript';gsodar.async = true;gsodar.src = '//tpc.googlesyndication.com/sodar/UFYwWwmt.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gsodar, s);})();</script>
+        </ins>
+        
+        
+        </a></td><td>&nbsp;</td></tr></tbody></table>
+</div>
+<app-footer></app-footer>

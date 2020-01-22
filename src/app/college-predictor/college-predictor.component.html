@@ -1,0 +1,88 @@
+
+<style>
+        label.mat-checkbox-layout {
+            position: relative;
+        }
+        .mat-checkbox-inner-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .mat-checkbox.mat-checkbox.mat-accent .mat-checkbox-inner-container{
+            opacity: 0;
+        }
+        .mat-checkbox.mat-checkbox.mat-accent.mat-checkbox-checked .mat-checkbox-inner-container {
+            opacity: 1;
+        }
+        </style>
+        
+        
+        <div class="container">
+          
+          <div class="space">
+          <div class="row">
+            <div class="col-md-4">
+                <div class="form-area shadow-box clearFix">
+                <button mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+                  </button>
+                  <div class="back">
+                  <mat-vertical-stepper [linear]="isLinear" #stepper>
+                    <mat-step [stepControl]="firstFormGroup">
+                      <form [formGroup]="firstFormGroup">
+                        <ng-template matStepLabel>Fill out your name</ng-template>
+                        <mat-form-field>
+                          <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                        </mat-form-field>
+                        <div>
+                          <button mat-button matStepperNext>Next</button>
+                        </div>
+                      </form>
+                    </mat-step>
+                    <mat-step [stepControl]="secondFormGroup">
+                      <form [formGroup]="secondFormGroup">
+                        <ng-template matStepLabel>Fill out your address</ng-template>
+                        <mat-form-field>
+                          <input matInput placeholder="Address" formControlName="secondCtrl" required>
+                        </mat-form-field>
+                        <div>
+                          <button mat-button matStepperPrevious>Back</button>
+                          <button mat-button matStepperNext>Next</button>
+                        </div>
+                      </form>
+                    </mat-step>
+                    <mat-step>
+                      <ng-template matStepLabel>Done</ng-template>
+                      You are now done.
+                      <div>
+                        <button mat-button matStepperPrevious>Back</button>
+                        <button mat-button (click)="stepper.reset()">Reset</button>
+                      </div>
+                    </mat-step>
+                  </mat-vertical-stepper>
+         </div>
+          </div>
+          </div>
+        
+          <div class="col-md-8 select_exam_box">
+              <ul>
+                <li><mat-checkbox><img src="././assets/images/logo.png"></mat-checkbox></li>
+                <li><mat-checkbox><img src="././assets/images/AIIMS-logo.jpg"></mat-checkbox></li>
+                <li><mat-checkbox><img src="././assets/images/63313317.jpg"></mat-checkbox></li>
+                <li><mat-checkbox><img src="././assets/images/logo.png"></mat-checkbox></li>
+                <li><mat-checkbox><img src="././assets/images/AIIMS-logo.jpg"></mat-checkbox></li>
+                <li><mat-checkbox><img src="././assets/images/63313317.jpg"></mat-checkbox></li>
+                <li><mat-checkbox><img src="././assets/images/logo.png"></mat-checkbox></li>
+                <li><mat-checkbox><img src="././assets/images/AIIMS-logo.jpg"></mat-checkbox></li>
+                <li><mat-checkbox><img src="././assets/images/63313317.jpg"></mat-checkbox></li>
+                        <li><mat-checkbox><img src="././assets/images/63313317.jpg"></mat-checkbox></li>
+                        
+        
+                
+              </ul>
+              
+        
+          </div>
+        </div>
+        </div>
+          </div>
+        

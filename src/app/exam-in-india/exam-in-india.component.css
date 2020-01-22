@@ -1,0 +1,277 @@
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.leftSidebar .contentPart {
+    width: 885px;
+    float: right;
+    padding: 0 15px 0 10px;
+}
+p.showing-text {
+    margin-top: -2px;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 0;
+}
+p {
+    line-height: 21px;
+}
+.cart {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.cart .row {
+    margin: 0;
+}
+.cart .thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 2px;
+    line-height: 40px;
+    float: left;
+    position: relative;
+    margin-right: 18px;
+}
+.cart .examDetail {
+    float: left;
+    width: calc(100% - 70px);
+}
+.cart .thumb img {
+    width: 100%;
+    border-radius: 3px;
+    height: 100%;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+}
+.cart .examDetail {
+    float: left;
+    width: calc(100% - 70px);
+}
+.cart .examDetail .titleDate {
+    width: calc(100% - 200px);
+    float: left;
+}
+.cart .examDetail .titleDate h2 {
+    font-size: 16px;
+    line-height: 28px;
+    margin: 0;
+    margin-top: -7px;
+    margin-bottom: 6px;
+}
+a {
+    background-color: transparent;
+    color: #3a4d95;
+    text-decoration: none;
+    display: inline-block;
+    zoom: 1;
+}
+.cart .examDetail .titleDate p {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #333333;
+    margin: 6px 0 0px;
+}
+.cart .examDetail .titleDate p span {
+    color: #999999;
+}
+.cart .examDetail .titleDate p {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+}
+.cart .useFullLink {
+    padding: 15px 15px 0;
+    margin: 15px -15px -10px;
+    border-top: 1px solid #e5e5e5;
+}
+.cart .useFullLink span {
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 12px;
+    color: #999999;
+    line-height: 30px;
+}
+.cart .useFullLink .tagbox {
+    display: inline-block;
+    width: calc(100% - 80px);
+    vertical-align: top;
+}
+.tags a:not(:last-child), .tags .tag:not(:last-child) {
+    margin-right: 6px;
+}
+.cart .useFullLink a {
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 7px;
+    border-radius: 20px;
+}
+.tags a, .tags .tag {
+    border: solid 1px #e5e5e5;
+    min-height: 30px;
+    line-height: 28px;
+    padding: 0 10px;
+    display: inline-block;
+    color: #333;
+}
+.cart .examDetail .buttonBox {
+    width: 150px;
+    float: right;
+}
+.cart .examDetail .buttonBox .button:first-child {
+    margin-bottom: 10px;
+}
+.cart .examDetail .buttonBox .button {
+    padding: 0 7px;
+}
+.button.btn-lineGray {
+    background-color: #f2f2f2;
+    color: #666666;
+    border: 1px solid #e5e5e5;
+}
+.button {
+    position: relative;
+    overflow: hidden;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    height: 30px;
+    min-width: 150px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    line-height: 28px;
+}
+.cart .examDetail .buttonBox .button {
+    padding: 0 7px;
+}
+.button.btn-primary {
+    background-color: #e56c5b;
+    color: #fff;
+    border: 1px solid #e56c5b;
+}
+.sidebarPart {
+    padding: 0 10px 0 15px;
+}
+.sidebarPart {
+    width: 325px;
+    float: left;
+}
+.sidebarBox {
+    background-color: #ffffff;
+    padding: 15px;
+}
+.sidebarBox .sortFilter {
+    border-bottom: 1px solid #e5e5e5;
+    margin: -15px -15px 0;
+    padding: 10px 14px;
+    font-size: 16px;
+    color: #333333;
+    font-weight: 600;
+    width: 245px;
+
+}
+.sidebarBox .sortFilter .clearAll {
+    font-size: 14px;
+    font-weight: normal;
+    color: #3A4D95;
+    float: right;
+}
+.sidebarBox .filterBox:first-child {
+    margin-top: 0;
+}
+.sidebarBox .filterBox h3 {
+    font-size: 14px;
+    color: #333333;
+    margin: 12px 0 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.sidebarBox .filterBox .box {
+    margin-bottom: 11px;
+}
+input[type="radio"] {
+    display: none;
+}
+input[type='radio'] {
+    -webkit-appearance: none;
+}
+.sidebarBox .filterBox label {
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+input[type="radio"]:checked + label:before {
+    background-color: #fff;
+    padding: 0;
+    border: solid 5px #02a569;
+    width: 6px;
+    height: 6px;
+}
+input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    margin-right: 10px;
+    background-clip: content-box;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    border-radius: 50%;
+    box-sizing: initial;
+}
+.sidebarBox .filterBox {
+    margin-top: 30px;
+}
+.sidebarBox .filterBox label {
+    font-size: 14px !important;
+    font-weight: normal !important;
+}
+.control {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 25px;
+}
+.control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.controlIndicator {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.container.heading{
+  text-align: center;
+}
+h1 {
+    font-size: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #466053;
+    padding: 10px;
+}

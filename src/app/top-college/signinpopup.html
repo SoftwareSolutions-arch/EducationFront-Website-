@@ -1,0 +1,418 @@
+<style>
+        .new-singUpLeft {
+          width: 100%;
+          padding: 36px 40px;
+          background-repeat: no-repeat;
+          background-position: top right;
+          background-size: cover;
+          background-color: #fff;
+          height: 100%;
+        }
+      
+        .singupNew .new-singUpLeft,
+        .singupNew .new-singUpRight {
+          display: table-cell;
+          vertical-align: top;
+        }
+      
+        img {
+          max-width: 100%;
+        }
+      
+        img {
+          border: 0;
+        }
+      
+        .new-singUpLeft h2 {
+          color: #9fa9d0;
+          font-size: 18px;
+          padding: 24px 0 20px;
+          margin: 0;
+        }
+      
+        .new-singUpLeft .listed {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+      
+        .singupNew .new-singUpLeft .listed li {
+          color: #9fa9d0;
+          position: relative;
+          padding: 0 0 21px 26px;
+        }
+      
+        .new-singUpRight {
+          padding: 30px 40px;
+          position: relative;
+          /* width: 451px; */
+        }
+      
+        .new-singUpRight {
+          display: table-cell;
+          vertical-align: top;
+        }
+      
+        .reg-social-ico {
+          text-align: center;
+          min-height: 70px;
+          margin-bottom: 20px;
+        }
+      
+        .reg-social-ico .icon.google {
+          width: 24px;
+          margin: 0 auto;
+        }
+      
+        img {
+          max-width: 100%;
+        }
+      
+        img {
+          border: 0;
+        }
+      
+        .reg-social-ico .titleSocial {
+          font-size: 24px;
+          font-weight: 600;
+          color: #333333;
+          line-height: normal;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      
+        .topHeaderHeading {
+          padding: 0 0 20px;
+        }
+      
+        .topHeaderHeading .titleHeader {
+          font-size: 24px;
+          font-weight: 600;
+          color: #333333;
+          line-height: normal;
+          display: inline-block;
+          width: 29%;
+          vertical-align: middle;
+        }
+      
+        .topHeaderHeading P {
+          font-size: 13px;
+          color: #666666;
+          margin: 0;
+          display: inline-block;
+          text-align: right;
+          width: 70%;
+        }
+      
+        p {
+          line-height: 21px;
+        }
+      
+        .socialLogin {
+          width: 100%;
+        }
+      
+        .text-center {
+          text-align: center;
+        }
+      
+        .text-center {
+          text-align: center;
+        }
+      
+        .socialLogin .googleSignup {
+          background-color: #dc4e42;
+        }
+      
+        .socialLogin .socialSignup {
+          padding: 0 20px 0 10px;
+          color: #fff;
+          line-height: 36px;
+      
+          text-align: center;
+          height: 36px;
+          display: inline-block;
+          font-size: 16px;
+        }
+      
+        .signupDevidr {
+          margin: 10px 0 15px !important;
+          color: #aaa;
+          font-size: 12px;
+          text-align: center;
+          position: relative;
+        }
+      
+        .signupDevidr .signupDevidr-Inner {
+          width: 254px;
+          margin: 0 auto;
+          position: relative;
+        }
+      
+        .form .field-wrap {
+          position: relative;
+          margin-bottom: 30px;
+          min-height: 30px;
+        }
+      
+        .form .field-wrap label {
+          position: absolute;
+          transform: translateY(4px);
+          left: 0;
+          padding: 2px 0;
+          color: #666666;
+          min-width: 120px;
+          transition: all 0.25s ease;
+          pointer-events: none;
+          font-size: 15px;
+          background: #fff;
+        }
+      
+        form .field-wrap input,
+        .form .field-wrap textarea,
+        .form .field-wrap select {
+          font-size: 15px;
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 28px 0;
+          background: none;
+          background-image: none;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 1px solid #e5e5e5;
+          color: #666666;
+          border-radius: 0;
+          transition: border-color .25s ease, box-shadow .25s ease;
+        }
+      
+        input {
+          line-height: normal;
+        }
+        .text-center {
+          text-align: center;
+      }
+      .form .button {
+          font-size: 15px;
+          text-transform: uppercase;
+          width: 180px;
+          height: 40px;
+          line-height: 39px;
+      }
+      .button.btn-blue {
+          background-color: #3A4D95;
+          color: #fff;
+          border: 1px solid #3A4D95;
+      }
+      
+      div#cdk-overlay-1 button.button.btn-blue.btn-large.signupBtn {
+        /* height: auto !important; */
+        padding: 2px 20px;
+        background-color: #dc4e42;
+      }
+      button.popup.button {
+          height: auto !important;
+          padding: 2px 20px;
+          border: none;
+          background-color: black;
+      }
+      button.popup.cancel1 {
+        width: auto;
+          margin: 4px;
+          BACKGROUND-COLOR: rgb(170, 22, 22);
+          border: none;
+          float: top;
+          position: absolute;
+          top: -9%;
+          right: -204%;
+          padding: 9px 12px
+      
+      }
+      .form-validate-form input {
+          padding: 10px;
+          margin-bottom: 10px;
+      }
+      
+      button.popup_button_1 {
+          background-color: black;
+          width: auto;
+          border: honeydew;
+          border-radius: 6px;
+      }
+      
+      </style>
+      <div class="row">
+        <div class="col-md-4">
+          <mat-dialog-content class="mat-typography">
+      
+            <div class="new-singUpLeft">
+              <div class="logo-top">
+              
+                <img src='././assets/images/Teachers-day.gif'
+                  alt="" data-pagespeed-url-hash="2924172950" class="academics log">
+                         </div>
+              <h2>Get Access to:</h2>
+              <ul class="listed">
+                <li>Exams updates &amp; important dates</li>
+                <li>E-books &amp; Sample Papers</li>
+                <li>College &amp; Course Brochures</li>
+                <li>Ask &amp; get answers from experts</li>
+                <li>Exams updates &amp; important dates</li>
+             
+           
+              </ul>
+            </div>
+            <br>
+            
+      
+          </mat-dialog-content>
+          <mat-dialog-actions>
+            <button mat-button mat-dialog-close class="popup cancel1">X</button>
+          </mat-dialog-actions>
+        </div>
+        <div class="col-md-8 box3">
+          <div class="new-singUpRight">
+      
+            <div class="reg-social-ico" style="display:none;">
+              <div class="icon google">
+                <img src="https://static.careers360.mobi/images/frontend/desktop/googleIcoColor.svg" alt=""
+                  data-pagespeed-url-hash="3747153539" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+              </div>
+              <div class="titleSocial">Finish Signing Up with Google</div>
+            </div>
+      
+      
+            <div class="topHeaderHeading">
+              <div class="titleHeader">Sign Up</div>
+              <p class="signinLink">Already have an account? <a
+                  href="/user/login?click_location=free_download&amp;destination=ebook/ajax/download?ebook_id=2749&amp;popup=iframe&amp;widget=design_domain-home_related-samplepaper">Sign
+                  In</a></p>
+            </div>
+            <div class="socialLogin text-center">
+              <div class="col-full">
+                <a id="googleSignup" class="socialSignup googleSignup customGPlusSignIn googlesignUp"
+                  (click)="signInWithGoogle()">
+                  <i class="fa fa-google"><img src="" alt=""
+                      data-pagespeed-url-hash="1695046746"
+                      onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></i> Continue with Google
+                </a>
+              </div>
+            </div>
+      
+            <div class="signupDevidr">
+              <div class="signupDevidr-Inner">
+                <span>OR</span>
+              </div>
+            </div>
+            <form id="signup" class="form-validate-form"
+              action="/user/register?click_location=free_download&amp;destination=ebook/ajax/download?ebook_id=2749&amp;popup=iframe&amp;widget=design_domain-home_related-samplepaper"
+              method="post">
+              <span class="csrftoken"><input type="hidden" name="csrfmiddlewaretoken"
+                  value="3EuTsKB4o3KrqagzZb3RpMlt00VGGtwvao0R4tmykfENtjb99Idn78tOFZhvHcok"></span>
+              <input name="google_id" id="google_id" type="hidden">
+              <input name="uid" id="uid" type="hidden">
+              <input name="profile_picture" id="profile_picture" type="hidden">
+               
+                <input name="display_name" type="text" id="display_name" required="" autocomplete="off"
+                  class="ui-autocomplete-input" placeholder="Enter Name"><span role="status" aria-live="polite"
+                  class="ui-helper-hidden-accessible"></span>
+                
+                <input name="email" id="email" type="text" required="" autocomplete="off" placeholder="Enter Email">
+                <ul class="mailtip"
+                  style="display: none; float: none; position: absolute; margin: 0px; padding: 0px; z-index: 1000; top: 62px; left: 0px; width: 260px;">
+                </ul>
+              
+                <input name="mobile_number" id="mobile_number" class="text-full form-text required field-slide-up"
+                 placeholder="Enter Number"
+                  size="60" maxlength="10">
+              <div class="row selectFld">
+                <div class="col-sm-12">
+      
+                   
+                      <input name="qualification" id="qualification" class="text-full form-text required field-slide-up" placeholder="Qualification"
+                      onkeypress="return event.charCode >= 48 &amp&amp; event.charCode <= 57" autocomplete="off" type="text"
+                      size="60" maxlength="10">
+      
+                </div>
+                <div class="col-sm-7  pull-left" style="display:none;">
+                    <div class="SumoSelect sumo_education_stream" tabindex="0" role="button" aria-expanded="false" ><select
+                        name="education_stream" id="education_stream" required="" class="selectDropdown SumoUnder"
+                        tabindex="-1">
+                        <option style="display: none;" value="">Select</option>
+                        <option value="1">Engineering and Architecture (B.Tech, B.Arch, M.Tech etc)</option>
+                        <option value="2">Management (MBA, BBA etc)</option>
+                        <option value="3">Medical (MBBS, MD, MS etc)</option>
+                        <option value="4">Law (LLB, LLM etc)</option>
+                        <option value="5" selected="">Animation and Design (B. Des, M. Des etc)</option>
+                        <option value="6">Media, Mass Comm. and Journalism (BJMC, BMC etc)</option>
+                        <option value="7">Arts, Humanities and Social Sciences (BA/MA etc)</option>
+                        <option value="8">Sciences (B.Sc/M.Sc etc)</option>
+                        <option value="9">Commerce (B. Com/M.Com etc)</option>
+                        <option value="10">Computer Application and IT (BCA, MCA etc)</option>
+                        <option value="11">Pharmacy (B.Pharm, M.Pharm etc)</option>
+                        <option value="12">Education (B.Ed, M.Ed etc)</option>
+                        <option value="13">Hospitality and Tourism (BHM, MHM etc)</option>
+                        <option style="display: none;" value="-1">n/a</option>
+                      </select>
+                      <p class="CaptionCont SelectBox" title=" Animation and Design (B. Des, M. Des etc)"><span> Animation and
+                          Design (B. Des, M. Des etc)</span><label class="active highlight"><i></i></label></p>
+                      <div class="optWrapper">
+                        <ul class="options">
+                          <li class="opt" style="display: none;"><label class="active highlight">Select</label></li>
+                          <li class="opt"><label class="active highlight">Engineering and Architecture (B.Tech, B.Arch, M.Tech
+                              etc)</label></li>
+                          <li class="opt"><label class="active highlight">Management (MBA, BBA etc)</label></li>
+                          <li class="opt"><label class="active highlight">Medical (MBBS, MD, MS etc)</label></li>
+                          <li class="opt"><label class="active highlight">Law (LLB, LLM etc)</label></li>
+                          <li class="opt selected"><label class="active highlight">Animation and Design (B. Des, M. Des
+                              etc)</label></li>
+                          <li class="opt"><label class="active highlight">Media, Mass Comm. and Journalism (BJMC, BMC
+                              etc)</label></li>
+                          <li class="opt"><label class="active highlight">Arts, Humanities and Social Sciences (BA/MA
+                              etc)</label></li>
+                          <li class="opt"><label class="active highlight">Sciences (B.Sc/M.Sc etc)</label></li>
+                          <li class="opt"><label class="active highlight">Commerce (B. Com/M.Com etc)</label></li>
+                          <li class="opt"><label class="active highlight">Computer Application and IT (BCA, MCA etc)</label>
+                          </li>
+                          <li class="opt"><label class="active highlight">Pharmacy (B.Pharm, M.Pharm etc)</label></li>
+                          <li class="opt"><label class="active highlight">Education (B.Ed, M.Ed etc)</label></li>
+                          <li class="opt"><label class="active highlight">Hospitality and Tourism (BHM, MHM etc)</label></li>
+                          <li class="opt" style="display: none;"><label class="active highlight">n/a</label></li>
+                        </ul>
+                    </div>
+                    <label>
+                      Education Interest
+                    </label>
+                  </div>
+                </div>
+                <div class="error"></div>
+              </div>
+       
+                <input type="text" autocomplete="off" autocorrect="off" name="location" maxlength="255" required=""
+                  class="form-control ui-autocomplete-input" id="location" placeholder="location">
+                <input type="hidden" name="location_id" id="location_id">
+                <input type="hidden" name="places" id="id_places">
+                <input type="hidden" name="address" id="id_address">
+                <input type="hidden" name="latitude" id="id_latitude">
+                <input type="hidden" name="longitude" id="id_longitude">
+                <input type="hidden" name="pincode" id="id_pincode">
+                <input type="hidden" name="city" id="id_city">
+                <input type="hidden" name="state" id="id_state">
+                <input type="hidden" name="country" id="id_country">
+                <input type="hidden" name="address_check" id="id_address_check">
+                <input type="hidden" name="source_url" id="source_url" value="">
+             
+              <div class="text-center"> <button type="submit" class="popup_button_1">SIGN UP </button>
+              </div>
+              <input type="hidden" name="csrfmiddlewaretoken"
+                value="3EuTsKB4o3KrqagzZb3RpMlt00VGGtwvao0R4tmykfENtjb99Idn78tOFZhvHcok">
+            </form>
+      
+            <div class="termsNote">By Signing Up, you agree to our <a href="https://www.careers360.com/terms-of-use"
+                target="_blank">Terms &amp; Conditions</a></div>
+          </div>
+        </div>
+      
+      </div>
+      

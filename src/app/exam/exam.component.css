@@ -1,0 +1,372 @@
+.all-exam-grid {
+    width: 1170px;
+    min-height: 400px;
+    padding-top: 60px;
+    margin: 0px auto;
+}
+.pwa_breadcumbs {
+    margin-bottom: 5px;
+    line-height: 1.313rem;
+}
+.pwa_breadcumbs a {
+    color: rgb(0, 132, 137);
+}
+.bredcrumbs_span {
+    font-size: 0.75rem;
+    line-height: 1;
+}
+.pwa_breadcumbs .homeType1, .breadcrumb_v1 .homeType1 {
+    background-position: -397px -27px;
+}
+.pwa_breadcumbs .pwaIcon, .breadcrumb_v1 .pwaIcon {
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+}
+.pwaIcon {
+    background: url('/src/assets/images/pwa-header-mobile-v3.svg') no-repeat;
+}
+.exam_Sticky_head {
+    margin-bottom: 0px;
+}
+.exam_Sticky_head {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: auto;
+    margin-bottom: 10px;
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.3) 0.707px 0.707px 3px;
+    padding: 20px;
+}
+.exams__container {
+    width: 100%;
+    position: relative;
+    padding: 0px;
+}
+h1, .h1 {
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #000;
+    font-weight: 600;
+}
+.pwaexams_container {
+    width: 100%;
+}
+.pwaexams_container h2 {
+    padding: 10px;
+}
+.listof_exams {
+    margin: 0px 0px 25px;
+}
+.listof_exams {
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0px;
+    width:48%;
+    margin: 1% 1% 2%;
+}
+.pwaexams_container .listof_exams .uilp_exam_card:first-child {
+    margin-top: 16px;
+}
+.pwaexams_container {
+    margin-bottom: 40px;
+}
+.pwaexams_container .exam_topcol {
+    padding: 12px 12px 10px;
+}
+.pwaexams_container .exam_date.auto_clear {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pwaexams_container .exam_name_width {
+    width: calc(100% - 135px);
+    display: block;
+}
+.pwaexams_container .hide-examname {
+    width: 93%;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#root a {
+    text-decoration: none;
+}
+.pwaexams_container .exam_topcol .exam_title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 102%;
+}
+.exam_flnm {
+    color: rgb(0, 0, 0);
+    cursor: default;
+}
+button:not(:disabled) {
+    cursor: pointer;
+}
+.button--orange {
+    background-color: #fdc800;
+    border-color: #F37921;
+    color: #000;
+}
+.button {
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 0px 10px;
+    font-size: 0.875rem;
+    height: 34px;
+    line-height: 32px;
+    border-radius: 2px;
+    outline: none;
+    white-space: nowrap;
+    min-width: 90px;
+    text-transform: capitalize;
+}
+.uilp_exam_card {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0.707px 0.707px 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+.pwaexams_container .exam_topcol {
+    padding: 12px 12px 10px;
+}
+.pwaexams_container .exam_date.auto_clear {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pwaexams_container .exam_impdates {
+    height: 130px;
+    margin: 0px;
+}
+.pwaexams_container .exam_impdates {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.pwaexams_container .exam_impdates table {
+    table-layout: fixed;
+}
+.pwaexams_container .exam_impdates table {
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+}
+.table{
+    border-radius: 2px;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+
+}
+.pwaexams_container .exam_impdates table tr:nth-child(2n+1) {
+    background-color: rgb(243, 246, 248);
+}
+.pwaexams_container .exam_impdates table tr:first-child td {
+    font-weight: 600;
+}
+@media only screen and (min-width: 1024px){
+.pwaexams_container .exam_impdates table tr td {
+    padding: 5px 10px;
+}
+}
+.pwaexams_container .exam_impdates table tr td {
+    line-height: 1.32;
+    font-size: 0.875rem;
+    color: rgb(0, 0, 0);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(184, 200, 209);
+    border-image: initial;
+    padding: 5px 10px;
+}
+.pwaexams_container td.fix-tdwidth {
+    width: 180px;
+}
+.pwaexams_container .exam_impdates table tr td p {
+    font-size: 0.875rem;
+    color: rgb(0, 0, 0);
+    line-height: 1.32;
+    margin-bottom: 0px;
+}
+.blockcell {
+    display: inline-block;
+}
+@media only screen and (min-width: 1024px){
+.pwaexams_container .listof_exams .uilp_exam_card:first-child {
+    margin-top: 0px;
+}
+}
+@media only screen and (min-width: 1024px){
+.pwaexams_container .uilp_exam_card {
+    width: 100%;
+    min-height: 240px;
+}
+}
+.uilp_exam_card {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.3) 0.707px 0.707px 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 2px;
+}
+@media only screen and (min-width: 1024px){
+.pwaexams_container .exam_impdates {
+    height: 130px;
+    margin: 0px;
+}
+}
+.pwaexams_container .exam_impdates {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.pwaexams_container .exam_impdates table {
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+}
+.pwaexams_container .exam_impdates table {
+    border-collapse: collapse;
+    display: table;
+    width: 100%;
+}
+@media only screen and (min-width: 1024px)
+{
+.pwaexams_container .exams_a {
+    margin-top: 5px;
+}
+} 
+@media only screen and (min-width: 1024px)
+{.pwaexams_container .exams_a a.quick-links {
+    cursor: pointer;
+}
+}
+.pwaexams_container .exams_a a.quick-links {
+    cursor: pointer;
+    color: #002147;
+    display: inline-block;
+    font-size: 0.875rem;
+    line-height: 1.32;
+    margin-bottom: 4px;
+}
+.pwaexams_container h2 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.pwaexams_container h2 {
+    padding: 10px;
+    font-size: 15px;
+
+}
+h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: #000;
+    font-weight: 600; }
+    .pagnation-col {
+        display: block;
+        text-align: center;
+        margin-bottom: 5px;
+        width: 100%;
+        background: transparent;
+        padding: 12px 0px;
+    }
+    .pagniatn-ul {
+        display: inline-block;
+        list-style: none;
+    }
+    .pagniatn-ul li {
+        float: left;
+    }
+    .pagniatn-ul li a.disable-link {
+        background: rgb(249, 249, 249);
+        border-width: initial;
+        border-style: none;
+        border-color: initial;
+        border-image: initial;
+    }
+    .pagniatn-ul li a.disable-link {
+        color: rgb(208, 209, 209);
+    }
+    .LftDisbl-arrw {
+        background-position: -127px -39px;
+    }
+    .Lft-arrw, .LftDisbl-arrw, .Rgt-arrw, .RgtDisbl-arrw {
+        width: 12px;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+        top: 1px;
+        background: url('/src/assets/images/pwa-header-mobile-v3.svg') -114px -39px no-repeat;
+        background-position: -114px -39px;
+    }
+    .pagniatn-ul li {
+        float: left;
+    }
+    .pagniatn-ul li a.active {
+        color: rgb(255, 255, 255);
+    background: rgb(0, 33, 71);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 33, 71);
+    -o-border-image: initial;
+    border-image: initial;
+    }
+    .pagnation-col li {
+        margin: 0px 3px;
+    }
+    .pagnation-col li a {
+        padding: 7px;
+    }
+    .pagnation-col li a.active {
+        padding: 7px !important;
+    }
+
+@media only screen and (max-width:767px){
+    div#allExams {
+        width: 100%;
+    }
+    
+.exam_impdates {
+    display: block !important;
+}
+.listof_exams {
+    width: 100%;
+    margin: 0% 0% 2%;
+}
+.all-exam-grid {
+    padding-top: 0px;
+}
+
+}/* (max-width:767px) */
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    .all-exam-grid {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+} /* (min-width:768px) and (max-width:991px) */
+
+@media only screen and (min-width:992px) and (max-width:1149px){
+
+    .all-exam-grid {
+        padding-top: 0px;
+        width: 100%;
+    }
+
+}

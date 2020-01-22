@@ -1,0 +1,1039 @@
+<app-header></app-header>
+<p>&nbsp;</p>
+
+<div class="pwa_container marginChange" id="ctp_pwa">
+    <div class="dfp-wraper">
+        <div class="container">
+            <section class="_subcontainer position_rltv headingWrapper">
+                <h1>{{TopMedicalcollege.length}} Medical Colleges in India</h1>
+                <div class="BHST_parent">
+                    <div class="BHST_childf12_normal clr_0">
+                        <p>MBA is one of themost popularprogrammes in India for tworeasons: First;it can bepursued
+                            bystudents fromall streams irrespective of whatthey did intheirbachelor’s, second, it is a
+                            sureshotimprovement of employment
+                        </p>
+                        <p>Roughly<strong>4400 colleges</strong> in India offer as many MBA programmes of which 82
+                            percent of the colleges offer full-time offer as many MBA programmes of which 82 percent of
+                            the colleges offer full-time offer as many MBA programmes of which 82 percent of the
+                            colleges offer full-time offer as many MBA programmes of which 82 percent of the colleges
+                            offer full-time</p>
+                    </div>
+                </div>
+                <iframe marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" bordercolor="#000000" id="MIDDLE" height="94" width="730" src="https://www.ieplads.com/bmsjs/bms_display_final.php?zonestr=722&amp;showall=1&amp;data=&amp;shikshaCriteria=1508||1|BMS_CHINA_PG " style="display:block;margin:0 auto;"></iframe>
+            </section>
+
+            <form [formGroup]="AddUserForm" class="example-form medical_form">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h1>Ask Your Question With Our Expert</h1>
+                        </div>
+                        <div class="col-md-9"> 
+                            
+                            <div class="frm_step">
+                                <mat-form-field class="example-full-width">
+                                    <input matInput id="FirstName" formControlName="FirstName" name="FirstName"
+                                        placeholder="Enter Name" required>
+                                    <mat-error>
+                                        <span *ngIf="AddUserForm.get('FirstName').hasError('required')">Please enter
+                                            First Name.
+                                        </span>
+                                        <span *ngIf="AddUserForm.get('FirstName').hasError('minlength')">First Name
+                                            should be 3 character long.</span>
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="frm_step">
+                                <mat-form-field>
+                                    <mat-label>Course</mat-label>
+                                    <mat-select formControlName="CourseName">
+                                        <mat-option disabled>None</mat-option>
+                                        <mat-option *ngFor="let country of this.coursesDetails;let i = index"
+                                            [value]="country.title">
+                                            {{country.title}}
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+
+                            </div>
+                            <div class="frm_step">
+                                <mat-form-field class="example-full-width">
+                                    <input matInput type="Email" formControlName="Email" placeholder="Enter Email*"
+                                        id="Email" name="Email" required>
+                                    <mat-error>
+                                        <span *ngIf="AddUserForm.get('Email').hasError('required')">Please enter
+                                            valid email</span>
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="frm_step">
+                                <mat-form-field class="example-full-width">
+                                    <textarea matInput placeholder="Ask Your Question" formControlName="QuestionName"
+                                        name="CourseName"></textarea>
+                                </mat-form-field>
+                            </div>
+                            <div class="frm_step"><br>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput type="ContactNo" formControlName="ContactNo"
+                                        placeholder="Enter Contact No" id="ContactNo" name="ContactNo" required>
+                                    <mat-error>
+                                        <span *ngIf="AddUserForm.get('ContactNo').hasError('required')">Please enter
+                                            contact no.
+                                        </span>
+                                        <span *ngIf="AddUserForm.get('ContactNo').hasError('pattern')">Please enter
+                                            only numeric
+                                            value.</span><br />
+                                        <span *ngIf="AddUserForm.get('ContactNo').hasError('minlength')">Contact no
+                                            not
+                                            exceed more then 10 digit.</span>
+                                    </mat-error>
+                                </mat-form-field>
+                            </div>
+                            <div class="frm_step_btn">
+                                <button class="mb-2 mr-2 mb-1 btn btn-success" mat-raised-button color="primary"
+                                    (click)="CreateUser()">Success</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="ctp_container">
+                <div class="ctp_block">
+                    <div class="selectedFiltersWrapper">
+                        <div class="selectedFilterBlock">
+                            <div class="multiTags" id="topFilters">
+                                <div id="heightCheck">
+                                    <strong>Selected Filters </strong>
+                                    <a class="searchTags">Full Time
+                                        <span class="closeTag"><i class="srpSpriteics">×</i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearFix">
+                        <div class="fltlft filter-area">
+                            <div class="ctp_sidebar" style="top: 0px; bottom: auto;position:relative;">
+                                <label class="nav_main_head">Filters
+                                    <a class="clear-all-filter" href="#">Clear All</a>
+                                </label>
+                                <div class="filter-block">
+                                    <p class="filterHead">
+                                        <strong>Location<i class="icons ic_down"></i></strong>
+                                    </p>
+                                    <div class="filter-content">
+                                        <div class="siderbar-search">
+                                            <input type="text" placeholder="Search location" autocomplete="off"
+                                                name="search">
+                                        </div>
+                                        <div class="fix-scroll">
+                                            <ul class="sidebar-filter">
+                                                <li class="enable" *ngFor="let city of Citys">
+                                                    <mat-checkbox value="checked"
+                                                        (click)="LocationFilter(city.name,checked);"
+                                                        class="example-margin">{{city.name}} (441)
+                                                    </mat-checkbox>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block">
+                                    <p class="filterHead">
+                                        <strong>Total Fees<i class="icons ic_down"></i></strong>
+                                    </p>
+                                    <div class="filter-content">
+                                        <div class="fix-scroll">
+                                            <ul class="sidebar-filter">
+                                                <li class="enable" *ngFor="let fee of Fees">
+                                                    <mat-checkbox (click)="FeesFilter(fee.fees,checked);"
+                                                        value="checked" class="example-margin">{{fee.fees}}
+                                                    </mat-checkbox>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block">
+                                    <p class="filterHead">
+                                        <strong>Courses<i class="icons c_down"></i></strong>
+                                    </p>
+                                    <div class="filter-content">
+                                        <div class="fix-scroll">
+                                            <ul class="sidebar-filter">
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">Medical
+                                                    </mat-checkbox>
+                                                </li>
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">MBA
+                                                    </mat-checkbox>
+                                                </li>
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">Engineering
+                                                    </mat-checkbox>
+                                                </li>
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">Nursing
+                                                    </mat-checkbox>
+                                                </li>
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">Dental
+                                                    </mat-checkbox>
+                                                </li>
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">Mass
+                                                        communication</mat-checkbox>
+                                                </li>
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">Law
+                                                    </mat-checkbox>
+                                                </li>
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">Design
+                                                    </mat-checkbox>
+                                                </li>
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">Animation
+                                                    </mat-checkbox>
+                                                </li>
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">Accounts &
+                                                        Commerce</mat-checkbox>
+                                                </li>
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">social Science
+                                                    </mat-checkbox>
+                                                </li>
+                                                <li class="enable">
+                                                    <mat-checkbox value="checked" class="example-margin">Beauty and
+                                                        Fitness</mat-checkbox>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="filter-block">
+                                    <p class="filterHead">
+                                        <strong>Specialization<i class="icons ic_down"></i></strong>
+                                    </p>
+                                    <div class="filter-content">
+                                        <div class="fix-scroll">
+                                            <ul class="sidebar-filter">
+                                                <li class="enable" *ngFor="let spec of Specializations">
+                                                    <mat-checkbox
+                                                        (click)="SpecializationFilter(spec.specializationname,checked);"
+                                                        class="example-margin">{{spec.specializationname}}
+                                                    </mat-checkbox>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="filter-block">
+                                    <p class="filterHead">
+                                        <strong>Facilities<i class="icons ic_down"></i></strong>
+                                    </p>
+                                    <div class="filter-content">
+                                        <div class="fix-scroll">
+                                            <ul class="sidebar-filter">
+                                                <li class="enable" *ngFor="let facility of Facilities">
+                                                    <mat-checkbox (click)="FacilityFilter(facility.name,checked);"
+                                                        class="example-margin">{{facility.name}}
+                                                    </mat-checkbox>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block">
+                                    <p class="filterHead">
+                                        <strong>Rating<i class="icons ic_down"></i></strong>
+                                    </p>
+                                    <div class="filter-content">
+                                        <div class="fix-scroll">
+                                            <ul class="sidebar-filter">
+                                                <li>
+                                                    <mat-checkbox class="example-margin">1 2 star(4)</mat-checkbox>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="filter-block">
+                                    <p class="filterHead">
+                                        <strong>Exams Accepted<i class="icons ic_down"></i></strong>
+                                    </p>
+                                    <div class="filter-content">
+                                        <div class="fix-scroll">
+                                            <ul class="sidebar-filter">
+                                                <li class="enable">
+                                                    <mat-checkbox class="example-margin">1 CAT (1274)</mat-checkbox>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fltryt card-area ctp_rightsidebar">
+                            <div class="ctpSrp-contnr">
+                                <div class="ctpSrp-contnr">
+                                    <div class="ctp--top_filters">
+                                        <div class="sortby--options"><b>Sort by:</b>
+                                            <mat-tab-group>
+                                                <mat-tab label="Featured">
+                                                    <div class="clearFix">
+                                                        <div class="fltlft odd-data"
+                                                            *ngFor="let MbaCollege of TopMedicalcollege | paginate: { itemsPerPage: 10, currentPage: p }">
+                                                            <div class="ctpSrp-tuple">
+                                                                <div class="ctp-SrpLst">
+                                                                    <div class="ctp-SrpDiv">
+                                                                        <div class="ctpSrp-Lft">
+                                                                            <a (click)=RedirectArticl(MbaCollege);>
+                                                                                <img
+                                                                                    src="https://images.shiksha.com/mediadata/images/1553163016phpi4dtej_68x54.jpg">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="ctpSrp-Rgt"
+                                                                            style="margin-top: 15px;">
+                                                                            <span class="rating-block
+                                                                            rvw-lyr" on="" role="button"
+                                                                                tabindex="0">
+                                                                                <i class="empty_stars
+                                                                            starBg
+                                                                            rvw-lyr"><i class="full_starts
+                                                                            starBg
+                                                                            rvw-lyr" style="width:
+                                                                            90%;"></i></i><b class="icons
+                                                                            bold_arw
+                                                                            rvw-lyr"></b>
+
+                                                                                <div class="rat_col rating_popup">
+                                                                                    <div class="inline-rating">
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Placements
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:86%;"></span></span><b
+                                                                                                    class="bar_value">4.3</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Infrastructure
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:92%;"></span></span><b
+                                                                                                    class="bar_value">4.6</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Faculty
+                                                                                                    &amp;
+                                                                                                    Course
+                                                                                                    Curriculum
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:
+                                                                                                                                92%;"></span></span><b
+                                                                                                    class="bar_value">4.6</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Crowd
+                                                                                                    &amp;
+                                                                                                    Campus
+                                                                                                    Life
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:
+                                                                                                                                88%;"></span></span><b
+                                                                                                    class="bar_value">4.4</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Value
+                                                                                                    for
+                                                                                                    Money
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:90%;"></span></span><b
+                                                                                                    class="bar_value"></b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="fill_cell">
+                                                                                                <a class="view_rvws"
+                                                                                                    href="#">View
+                                                                                                    all
+                                                                                                    19
+                                                                                                    reviews<i
+                                                                                                        class="sprite-cmn
+                                                                                                                                arw_l"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </span>
+                                                                            <p class="ctpIns-tl"> <a
+                                                                                    (click)=RedirectArticl(MbaCollege);>{{MbaCollege.title}}</a>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="courseTuple">
+                                                                        <div id="1653" class="none">
+                                                                            <div class="ctp-SrpBtnDiv">
+                                                                                <!--Umang chopra-->
+                                                                                <button type="button" name="button"
+                                                                                    product="Category" track="on"
+                                                                                    courseid="1653"
+                                                                                    class="ctp-btn ctpComp-btn button button--secondary rippleefect tupleShortlistButton shrt1653"
+                                                                                    id="shrt1653">
+
+                                                                                    <div class="ctpIns-tl">
+                                                                                        <h3 style="color: white;"><span>Fees</span>23 
+                                                                                            Lakh</h3>
+                                                                                    </div>
+                                                                                    <!-- <span class="tup-view-details"
+                                                                                        mat-raised-button
+                                                                                        (click)="Fees()">
+                                                                                        Fees -->
+                                                                                        <!-- <p class="ctpIns-tl"><a>23 Lakhs</a></p> -->
+                                                                                        <!-- <p class="ctpIns-tl"> <a>{{MbaCollege.fees}}</a></p> -->
+                                                                                    <!-- </span> -->
+                                                                                </button>
+                                                                                <button type="button" name="button"
+                                                                                    product="Category" track="on"
+                                                                                    courseid="1653" class="ctp-btn
+                                                    ctpComp-btn button button--secondary rippleefect tupleShortlistButton
+                                                    shrt1653" id="shrt1655"> <span class="tup-view-details"
+                                                                                        mat-raised-button
+                                                                                        (click)="ShortListCollege(MbaCollege)">Shortlist</span>
+                                                                                </button>
+                                                                                <button mat-raised-button
+                                                                                    cta-type="download_brochure"
+                                                                                    class="ctp-btn ctpBro-btn button button--orange rippleefect tupleBrochureButton brchr_1653">
+                                                                                    <span id="ebTxt1653"
+                                                                                        product="Category" track="on"
+                                                                                        courseid="1653"
+                                                                                        mat-raised-button
+                                                                                        (click)="openApply()">Apply<br>
+                                                                                        Now</span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="ctp-shwMr"> <a>+1more course</a>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <pagination-controls (click)="handlepage()"
+                                                        (pageChange)="p = $event"></pagination-controls>
+                                                </mat-tab>
+                                                <mat-tab label="Popularity">
+                                                    <div class="clearFix">
+                                                        <div class="fltlft odd-data"
+                                                            *ngFor="let MbaCollege of TopMedicalcollege | paginate: { itemsPerPage: 10, currentPage: p }">
+                                                            <div class="ctpSrp-tuple">
+                                                                <div class="ctp-SrpLst">
+                                                                    <div class="ctp-SrpDiv">
+                                                                        <div class="ctpSrp-Lft">
+                                                                            <a (click)=RedirectArticl(MbaCollege);>
+                                                                                <img
+                                                                                    src="https://images.shiksha.com/mediadata/images/1553163016phpi4dtej_68x54.jpg">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="ctpSrp-Rgt"
+                                                                            style="margin-top: 15px;">
+                                                                            <span class="rating-block
+                                                                            rvw-lyr" on="" role="button"
+                                                                                tabindex="0">
+                                                                                <i class="empty_stars
+                                                                            starBg
+                                                                            rvw-lyr"><i class="full_starts
+                                                                            starBg
+                                                                            rvw-lyr" style="width:
+                                                                            90%;"></i></i><b class="icons
+                                                                            bold_arw
+                                                                            rvw-lyr"></b>
+
+                                                                                <div class="rat_col rating_popup">
+                                                                                    <div class="inline-rating">
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Placements
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:86%;"></span></span><b
+                                                                                                    class="bar_value">4.3</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Infrastructure
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:92%;"></span></span><b
+                                                                                                    class="bar_value">4.6</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Faculty
+                                                                                                    &amp;
+                                                                                                    Course
+                                                                                                    Curriculum
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:
+                                                                                                                                92%;"></span></span><b
+                                                                                                    class="bar_value">4.6</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Crowd
+                                                                                                    &amp;
+                                                                                                    Campus
+                                                                                                    Life
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:
+                                                                                                                                88%;"></span></span><b
+                                                                                                    class="bar_value">4.4</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Value
+                                                                                                    for
+                                                                                                    Money
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:90%;"></span></span><b
+                                                                                                    class="bar_value"></b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="fill_cell">
+                                                                                                <a class="view_rvws"
+                                                                                                    href="#">View
+                                                                                                    all
+                                                                                                    19
+                                                                                                    reviews<i
+                                                                                                        class="sprite-cmn
+                                                                                                                                arw_l"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </span>
+                                                                            <p class="ctpIns-tl"> <a
+                                                                                    (click)=RedirectArticl(MbaCollege);>{{MbaCollege.title}}</a>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="courseTuple">
+                                                                        <div id="1653" class="none">
+                                                                            <div class="ctp-SrpBtnDiv">
+                                                                                <!--Umang chopra-->
+                                                                                <button type="button" name="button"
+                                                                                    product="Category" track="on"
+                                                                                    courseid="1653"
+                                                                                    class="ctp-btn ctpComp-btn button button--secondary rippleefect tupleShortlistButton shrt1653"
+                                                                                    id="shrt1653">
+
+                                                                                    <div class="ctpIns-tl">
+                                                                                        <h3 style="color: white;"><span>Fees</span>23 
+                                                                                            Lakh</h3>
+                                                                                    </div>
+                                                                                    <!-- <span class="tup-view-details"
+                                                                                        mat-raised-button
+                                                                                        (click)="Fees()">
+                                                                                        Fees -->
+                                                                                        <!-- <p class="ctpIns-tl"><a>23 Lakhs</a></p> -->
+                                                                                        <!-- <p class="ctpIns-tl"> <a>{{MbaCollege.fees}}</a></p> -->
+                                                                                    <!-- </span> -->
+                                                                                </button>
+                                                                                <button type="button" name="button"
+                                                                                    product="Category" track="on"
+                                                                                    courseid="1653" class="ctp-btn
+                                                    ctpComp-btn button button--secondary rippleefect tupleShortlistButton
+                                                    shrt1653" id="shrt1655"> <span class="tup-view-details"
+                                                                                        mat-raised-button
+                                                                                        (click)="ShortListCollege(MbaCollege)">Shortlist</span>
+                                                                                </button>
+                                                                                <button mat-raised-button
+                                                                                    cta-type="download_brochure"
+                                                                                    class="ctp-btn ctpBro-btn button button--orange rippleefect tupleBrochureButton brchr_1653">
+                                                                                    <span id="ebTxt1653"
+                                                                                        product="Category" track="on"
+                                                                                        courseid="1653"
+                                                                                        mat-raised-button
+                                                                                        (click)="openApply()">Apply<br>
+                                                                                        Now</span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="ctp-shwMr"> <a>+1more course</a>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <pagination-controls (click)="handlepage()"
+                                                        (pageChange)="p = $event"></pagination-controls>
+                                                </mat-tab>
+                                                <mat-tab label="Fees">
+                                                    <div class="clearFix">
+                                                        <div class="fltlft odd-data"
+                                                            *ngFor="let MbaCollege of TopMedicalcollege | paginate: { itemsPerPage: 10, currentPage: p }">
+                                                            <div class="ctpSrp-tuple">
+                                                                <div class="ctp-SrpLst">
+                                                                    <div class="ctp-SrpDiv">
+                                                                        <div class="ctpSrp-Lft">
+                                                                            <a (click)=RedirectArticl(MbaCollege);>
+                                                                                <img
+                                                                                    src="https://images.shiksha.com/mediadata/images/1553163016phpi4dtej_68x54.jpg">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="ctpSrp-Rgt"
+                                                                            style="margin-top: 15px;">
+                                                                            <span class="rating-block
+                                                                            rvw-lyr" on="" role="button"
+                                                                                tabindex="0">
+                                                                                <i class="empty_stars
+                                                                            starBg
+                                                                            rvw-lyr"><i class="full_starts
+                                                                            starBg
+                                                                            rvw-lyr" style="width:
+                                                                            90%;"></i></i><b class="icons
+                                                                            bold_arw
+                                                                            rvw-lyr"></b>
+
+                                                                                <div class="rat_col rating_popup">
+                                                                                    <div class="inline-rating">
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Placements
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:86%;"></span></span><b
+                                                                                                    class="bar_value">4.3</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Infrastructure
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:92%;"></span></span><b
+                                                                                                    class="bar_value">4.6</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Faculty
+                                                                                                    &amp;
+                                                                                                    Course
+                                                                                                    Curriculum
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:
+                                                                                                                                92%;"></span></span><b
+                                                                                                    class="bar_value">4.6</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Crowd
+                                                                                                    &amp;
+                                                                                                    Campus
+                                                                                                    Life
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:
+                                                                                                                                88%;"></span></span><b
+                                                                                                    class="bar_value">4.4</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Value
+                                                                                                    for
+                                                                                                    Money
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:90%;"></span></span><b
+                                                                                                    class="bar_value"></b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="fill_cell">
+                                                                                                <a class="view_rvws"
+                                                                                                    href="#">View
+                                                                                                    all
+                                                                                                    19
+                                                                                                    reviews<i
+                                                                                                        class="sprite-cmn
+                                                                                                                                arw_l"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </span>
+                                                                            <p class="ctpIns-tl"> <a
+                                                                                    (click)=RedirectArticl(MbaCollege);>{{MbaCollege.title}}</a>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="courseTuple">
+                                                                        <div id="1653" class="none">
+                                                                            <div class="ctp-SrpBtnDiv">
+                                                                                <!--Umang chopra-->
+                                                                                <button type="button" name="button"
+                                                                                    product="Category" track="on"
+                                                                                    courseid="1653"
+                                                                                    class="ctp-btn ctpComp-btn button button--secondary rippleefect tupleShortlistButton shrt1653"
+                                                                                    id="shrt1653">
+
+                                                                                    <div class="ctpIns-tl">
+                                                                                        <h3 style="color: white;"><span>Fees</span>23 
+                                                                                            Lakh</h3>
+                                                                                    </div>
+                                                                                    <!-- <span class="tup-view-details"
+                                                                                        mat-raised-button
+                                                                                        (click)="Fees()">
+                                                                                        Fees -->
+                                                                                        <!-- <p class="ctpIns-tl"><a>23 Lakhs</a></p> -->
+                                                                                        <!-- <p class="ctpIns-tl"> <a>{{MbaCollege.fees}}</a></p> -->
+                                                                                    <!-- </span> -->
+                                                                                </button>
+                                                                                <button type="button" name="button"
+                                                                                    product="Category" track="on"
+                                                                                    courseid="1653" class="ctp-btn
+                                                    ctpComp-btn button button--secondary rippleefect tupleShortlistButton
+                                                    shrt1653" id="shrt1655"> <span class="tup-view-details"
+                                                                                        mat-raised-button
+                                                                                        (click)="ShortListCollege(MbaCollege)">Shortlist</span>
+                                                                                </button>
+                                                                                <button mat-raised-button
+                                                                                    cta-type="download_brochure"
+                                                                                    class="ctp-btn ctpBro-btn button button--orange rippleefect tupleBrochureButton brchr_1653">
+                                                                                    <span id="ebTxt1653"
+                                                                                        product="Category" track="on"
+                                                                                        courseid="1653"
+                                                                                        mat-raised-button
+                                                                                        (click)="openApply()">Apply<br>
+                                                                                        Now</span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="ctp-shwMr"> <a>+1more course</a>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <pagination-controls (click)="handlepage()"
+                                                        (pageChange)="p = $event"></pagination-controls>
+                                                </mat-tab>
+                                                <mat-tab label="Rating">
+                                                    <div class="clearFix">
+                                                        <div class="fltlft odd-data"
+                                                            *ngFor="let MbaCollege of TopMedicalcollege | paginate: { itemsPerPage: 10, currentPage: p }">
+                                                            <div class="ctpSrp-tuple">
+                                                                <div class="ctp-SrpLst">
+                                                                    <div class="ctp-SrpDiv">
+                                                                        <div class="ctpSrp-Lft">
+                                                                            <a (click)=RedirectArticl(MbaCollege);>
+                                                                                <img
+                                                                                    src="https://images.shiksha.com/mediadata/images/1553163016phpi4dtej_68x54.jpg">
+                                                                            </a>
+                                                                        </div>
+                                                                        <div class="ctpSrp-Rgt"
+                                                                            style="margin-top: 15px;">
+                                                                            <span class="rating-block
+                                                                            rvw-lyr" on="" role="button"
+                                                                                tabindex="0">
+                                                                                <i class="empty_stars
+                                                                            starBg
+                                                                            rvw-lyr"><i class="full_starts
+                                                                            starBg
+                                                                            rvw-lyr" style="width:
+                                                                            90%;"></i></i><b class="icons
+                                                                            bold_arw
+                                                                            rvw-lyr"></b>
+
+                                                                                <div class="rat_col rating_popup">
+                                                                                    <div class="inline-rating">
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Placements
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:86%;"></span></span><b
+                                                                                                    class="bar_value">4.3</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Infrastructure
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:92%;"></span></span><b
+                                                                                                    class="bar_value">4.6</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Faculty
+                                                                                                    &amp;
+                                                                                                    Course
+                                                                                                    Curriculum
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:
+                                                                                                                                92%;"></span></span><b
+                                                                                                    class="bar_value">4.6</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Crowd
+                                                                                                    &amp;
+                                                                                                    Campus
+                                                                                                    Life
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:
+                                                                                                                                88%;"></span></span><b
+                                                                                                    class="bar_value">4.4</b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="table_cell">
+                                                                                                <p class="rating_label">
+                                                                                                    Value
+                                                                                                    for
+                                                                                                    Money
+                                                                                                </p>
+                                                                                            </div>
+                                                                                            <div class="table_cell">
+                                                                                                <span
+                                                                                                    class="loadbar"><span
+                                                                                                        class="fillBar"
+                                                                                                        style="width:90%;"></span></span><b
+                                                                                                    class="bar_value"></b>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="table_row">
+                                                                                            <div class="fill_cell">
+                                                                                                <a class="view_rvws"
+                                                                                                    href="#">View
+                                                                                                    all
+                                                                                                    19
+                                                                                                    reviews<i
+                                                                                                        class="sprite-cmn
+                                                                                                                                arw_l"></i></a>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </span>
+                                                                            <p class="ctpIns-tl"> <a
+                                                                                    (click)=RedirectArticl(MbaCollege);>{{MbaCollege.title}}</a>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div id="courseTuple">
+                                                                        <div id="1653" class="none">
+                                                                            <div class="ctp-SrpBtnDiv">
+                                                                                <!--Umang chopra-->
+                                                                                <button type="button" name="button"
+                                                                                    product="Category" track="on"
+                                                                                    courseid="1653"
+                                                                                    class="ctp-btn ctpComp-btn button button--secondary rippleefect tupleShortlistButton shrt1653"
+                                                                                    id="shrt1653">
+
+                                                                                    <div class="ctpIns-tl">
+                                                                                        <h3 style="color: white;"><span>Fees</span>23 
+                                                                                            Lakh</h3>
+                                                                                    </div>
+                                                                                    <!-- <span class="tup-view-details"
+                                                                                        mat-raised-button
+                                                                                        (click)="Fees()">
+                                                                                        Fees -->
+                                                                                        <!-- <p class="ctpIns-tl"><a>23 Lakhs</a></p> -->
+                                                                                        <!-- <p class="ctpIns-tl"> <a>{{MbaCollege.fees}}</a></p> -->
+                                                                                    <!-- </span> -->
+                                                                                </button>
+                                                                                <button type="button" name="button"
+                                                                                    product="Category" track="on"
+                                                                                    courseid="1653" class="ctp-btn
+                                                    ctpComp-btn button button--secondary rippleefect tupleShortlistButton
+                                                    shrt1653" id="shrt1655"> <span class="tup-view-details"
+                                                                                        mat-raised-button
+                                                                                        (click)="ShortListCollege(MbaCollege)">Shortlist</span>
+                                                                                </button>
+                                                                                <button mat-raised-button
+                                                                                    cta-type="download_brochure"
+                                                                                    class="ctp-btn ctpBro-btn button button--orange rippleefect tupleBrochureButton brchr_1653">
+                                                                                    <span id="ebTxt1653"
+                                                                                        product="Category" track="on"
+                                                                                        courseid="1653"
+                                                                                        mat-raised-button
+                                                                                        (click)="openApply()">Apply<br>
+                                                                                        Now</span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="ctp-shwMr"> <a>+1more course</a>
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <pagination-controls (click)="handlepage()"
+                                                        (pageChange)="p = $event"></pagination-controls>
+                                                </mat-tab>
+                                            </mat-tab-group>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <table border="0" cellpadding="0" cellspacing="0" align="center" style="border:0px"><tbody><tr><td width="1"><a href="http://www.ieplads.com/bmsjs/bms_hits.php?banner=146384" target="_blank"><img src="https://static.ieplads.com/bmsjs/banners/2019/shiksha/BSE8aug19/300x250.gif" border="0&quot;" hspace="12"></a></td><td>&nbsp;</td><td width="1"><a href="http://www.ieplads.com/bmsjs/bms_hits.php?banner=150248" target="_blank">
+                <meta charset="utf-8">
+                <meta name="ad.size" content="width=300,height=250">
+                <title></title>
+                
+                
+                
+                <ins class="dcmads" style="display: inline-block; width: 300px; height: 250px; text-decoration: none;" data-dcm-placement="N4864.155263.SHIKSHA/B23220232.255843595" data-dcm-rendering-mode="script" data-dcm-https-only="" data-dcm-resettable-device-id="" data-dcm-app-id="" data-dcm-processed="y">
+                  <script src="https://www.googletagservices.com/dcm/dcmads.js"></script><script src="https://www.googletagservices.com/dcm/impl_v55.js"></script><script src="https://ad.doubleclick.net/ddm/adj/N4864.155263.SHIKSHA/B23220232.255843595;dc_ver=55.153;dc_eid=40004001;sz=300x250;u_sd=1;dc_adk=2269750831;ord=om59p4;dc_rfl=1,https%3A%2F%2Fstudyabroad.shiksha.com%2Fmba-in-abroad-dc11508$0;xdt=1;crlt=oAUWtn(a)t;sttr=3;prcl=s?"></script><script>(function() {(function(){var g=this||self,k=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},l=function(a,b){var c=Array.prototype.slice.call(arguments,1);return function(){var e=c.slice();e.push.apply(e,arguments);return a.apply(this,e)}};var m=function(a,b){for(var c in a)b.call(void 0,a[c],c,a)};var n=function(a){a=a?a.toLowerCase():"";switch(a){case "normal":return"normal";case "lightbox":return"lightbox";case "push_down":return"push_down"}return null};var p={i:"ad_container_id",A:"hideObjects",X:"mtfTop",W:"mtfLeft",ca:"zindex",m:"mtfDuration",aa:"wmode",Z:"preferFlash",s:"as_kw",u:"as_lat",v:"as_lng",B:"mtfIFPath",o:"expansionMode",U:"top_container",T:"mtfTopFloat",S:"mtfTopDuration",V:"mtfTopWmode",P:"right_container",O:"mtfRightFloat",N:"mtfRightDuration",R:"mtfRightWmode",H:"bottom_container",G:"mtfBottomFloat",F:"mtfBottomDuration",I:"mtfBottomWmode",L:"left_container",K:"mtfLeftFloat",J:"mtfLeftDuration",M:"mtfLeftWmode",$:"mtfRenderFloatInplace",ba:"tryToWriteHtmlInline",j:"debugjs",C:"dcapp",g:"breakoutiframe",D:"inMobileAdSdk"},r=function(a){m(a,function(b,c){if(c.toLowerCase()in q){var e=q[c.toLowerCase()];c in a&&delete a[c];a[e]=b}})},q=function(){var a={};m(p,function(b){a[b.toLowerCase()]=b});return a}();var v=function(a){this.a=a;a:{for(c in a.displayConfigParameters){b:if(a=u,"string"===typeof a)a="string"!==typeof c||1!=c.length?-1:a.indexOf(c,0);else{for(var b=0;b<a.length;b++)if(b in a&&a[b]===c){a=b;break b}a=-1}if(!(0<=a)){var c=!0;break a}}c=!1}this.f=c},u=["ad_container_id"],w=function(a){return a.f?a.a.displayConfigParameters:a.a.creativeParameters},x=function(a,b){for(var c=0;c<a.a.primaryFiles.length;++c)if(a.a.primaryFiles[c].type==b)return!0;return!1};var y={pattern:/rendering_lib_((?:[0-9_]+)|(?:latest))\.js$/,c:"rendering_lib_db_$1.js"},z={pattern:/\/[a-z_0-9]+_rendering_lib/,c:"/iframe_buster"},A={pattern:/(.*\/)(.*_)rendering_lib_((?:[0-9_]+)|(?:latest))\.js$/,c:"$1inapp_html_inpage_rendering_lib_$3.js"},B={pattern:/\/[0-9]+\/[a-z_0-9]+rendering_lib.+$/,c:"/ads/studio/cached_libs/modernizr_2.8.3_ec185bb44fe5e6bf7455d6e8ef37ed0e_no-classes.js"},F=function(a){var b=w(a),c=a.a.renderingLibraryData,e=c.renderingLibrary,d=c.version;if(!/express|image_gallery|dfa7banner|inapp/.test(e)&&("latest"==d||0<=C(d,"200_74"))){if(d=!x(a,"FLASH")){a:{for(d=0;d<a.a.primaryFiles.length;++d){var f=a.a.primaryFiles[d].expandingDisplayProperties;if(f&&"lightbox"==n(f.expansionMode)){d=!0;break a}}d=!1}d=!d}d=d&&null!=window.mraid}else d=!1;d&&(e=e.replace(A.pattern,A.c));"true"==b.debugjs&&(e=e.replace(y.pattern,y.c));(b=g.self==g.top)||(b=window.Y&&window.Y.SandBox&&window.Y.SandBox.vendor,d=window.$sf&&window.$sf.ext,f=window.$WLXRmAd,b=!!(window.IN_ADSENSE_IFRAME||b||d||f));if(!b){a:if(b=w(a).breakoutiframe)b=!!b&&"true"==b.toLowerCase();else{b=a.a.primaryFiles;for(d=0;d<b.length;d++){f=b[d].renderAs;var h=0==(parseInt(b[d].width,10)||0)&&0==(parseInt(b[d].height,10)||0);if("EXPANDABLE"==f||"FLOATING"==f&&!h){b=!0;break a}}b=!1}b=!b}if(b||a.a.previewMode){a:{a=e;b=D();for(d=0;d<b.renderingLibraries.length;d++)if(f=b.renderingLibraries[d],f.url==a&&f.bootstrapFunction){a=f;break a}a=null}a?a.bootstrapFunction():(a=D(),E(e,!1,void 0,void 0,void 0,!0),a.renderingLibraries.push({version:c.version,url:e,loading:!0,bootstrapFunction:null}))}else c=e.replace(z.pattern,z.c),E(c,!0)},C=function(a,b){a=G(a);b=G(b);for(var c=Math.min(a.length,b.length),e=0;e<c;e++)if(a[e]!=b[e])return a[e]-b[e];return a.length-b.length},G=function(a){a=a.split("_");for(var b=[],c=0;c<a.length;c++)b.push(parseInt(a[c],10));return b},E=function(a,b,c,e,d,f){var h=document.createElement("script");h.src=a;h.type=c?c:"text/javascript";h.async=!!b;f&&(h.crossOrigin="anonymous");e&&(h.onload=e);d&&(h.onerror=d);var t;(a=document.getElementsByTagName("head"))&&0!=a.length?t=a[0]:t=document.documentElement;t.appendChild(h)},D=function(){return window.dclkStudioV3=window.dclkStudioV3||{creatives:[],renderingLibraries:[],creativeCount:1,startTimes:{}}},H=function(a){try{if(null!=(a["cps-top-iframe-beacon"]?a["cps-top-iframe-beacon"]:null))return!0}catch(b){}return a==a.parent?!1:H(a.parent)},I=function(a){if(null!=a){r(a.creativeParameters);if(null!=a.html5Features)for(var b=0;b<a.html5Features.length;++b)"CSS_ANIMATIONS"==a.html5Features[b]&&(a.html5Features[b]="Modernizr.cssanimations");!a.previewMode&&H(g)&&(a.previewMode=!0);a=new v(a);b=D();b.creatives.push(a.a);var c=a.a.creativeParameters;c.creative_unique_id=c.cid+"_"+b.creativeCount++;b.startTimes[c.creative_unique_id]=+new Date;b=w(a).ad_container_id;a:if((c=w(a).mtfRenderFloatInplace)&&"true"==c.toLowerCase())c=!0;else{c=a.a.primaryFiles;for(var e=0;e<c.length;e++){var d=c[e].renderAs;if("EXPANDABLE"==d||"BANNER"==d){c=!0;break a}}c=!1}!c||b&&""!=b||(b="dclk-studio-creative_"+(new Date).getTime(),c=a.a,document.write(['<div id="',b,'"></div>'].join("")),c.creativeParameters.ad_container_id=b,c.creativeParameters.generate_ad_slot="true",null==c.displayConfigParameters&&(c.displayConfigParameters={}),c.displayConfigParameters.ad_container_id=b);c=a.a;b=c.renderingLibraryData;e=b.version;if(x(a,"HTML5")&&!("latest"==e||0<=C(e,"200_108"))&&(c=c.html5Features,!("Modernizr"in g)&&"array"==k(c)&&0<c.length)){e=!1;for(d=0;d<c.length;d++)if("svgFilters"!=c[d]&&"svgFeImage"!=c[d]){e=!0;break}e&&E(b.renderingLibrary.replace(B.pattern,B.c),!1)}b=w(a);c=b.inMobileAdSdk;"1"==b.dcapp||"1"==c||/Android ([2-3]|4\.[0-3])/.test(navigator.userAgent)?(b=l(F,a),window.mraid?(E("mraid.js",!1,"text/x-do-not-download",null,null),F(a)):E("mraid.js",!1,"text/javascript",b,b)):F(a)}},J=["studio","rendering","BowResponse","processCreativeData"],K=g;J[0]in K||"undefined"==typeof K.execScript||K.execScript("var "+J[0]);for(var L;J.length&&(L=J.shift());)J.length||void 0===I?K[L]&&K[L]!==Object.prototype[L]?K=K[L]:K=K[L]={}:K[L]=I;}).call(this);var creativeData = {width: '300',height: '250',slotWidth: '300',slotHeight: '250',renderingLibraryData: {version: '200_264',renderingLibrary: 'https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_264.js'},impressionUrl: 'https://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjsvsrgOd8iz9eJ4PmbRhsl5NBWnpYOID9fdtz86tpbJs37HKOi-usaurGwV5hYiZl32_yLq_KvEnjk-PkttgHgxigTp8ntKmwZHO4LAlpWrZcMVMDM6BkcOF6V7Z4I3KPPVIqs9GBQLe2O7smLT-bcY4\x26sig\x3dCg0ArKJSzGYBoLTV2v6XEAE\x26urlfix\x3d1\x26adurl\x3d',eventTrackingBaseUrl: 'https://ade.googlesyndication.com/ddm/activity/dc_oe\x3dChMI6troq-un5gIViVZ9Ch1fBAlmEAAYACCa7fs2',customEventTrackingBaseUrl: 'https://ad.doubleclick.net/activity;src\x3d8842663;pid\x3d255843595;aid\x3d452123948;ko\x3d0;cid\x3d115275418;rid\x3d115087819;rv\x3d2;',clickUrl: 'https://adclick.g.doubleclick.net/pcs/click?xai\x3dAKAOjsvsrgOd8iz9eJ4PmbRhsl5NBWnpYOID9fdtz86tpbJs37HKOi-usaurGwV5hYiZl32_yLq_KvEnjk-PkttgHgxigTp8ntKmwZHO4LAlpWrZcMVMDM6BkcOF6V7Z4I3KPPVIqs9GBQLe2O7smLT-bcY4\x26sig\x3dCg0ArKJSzOChiWDCYlbMEAE\x26urlfix\x3d1\x26rm_eid\x3d[rm_exit_id]\x26adurl\x3d',thirdPartyUrls: [{type: 'IMPRESSION_JS',url: 'https://cdn.doubleverify.com/dvtp_src.js?ctx\x3d11189058\x26cmp\x3d23220232\x26sid\x3d1198632\x26plc\x3d255843595\x26num\x3d\x26adid\x3d\x26advid\x3d8842663\x26adsrv\x3d1\x26btreg\x3d452123948\x26btadsrv\x3ddoubleclick\x26crt\x3d115275418\x26crtname\x3d\x26chnl\x3d\x26unit\x3d\x26pid\x3d\x26uid\x3d\x26tagtype\x3d\x26dvtagver\x3d6.1.src',scrub: 'false'}],clickString: 'Bu4ekN9ztXarjD4mt9QPfiKSwBgAAAAAQATgB4AQCiAWIoIkLoAZH',activeViewUrlPrefix: 'https://pagead2.googlesyndication.com/pcs/activeview?xai\x3dAKAOjssXJdoBXm4fICWU_ju33ambG_KQB0f9i9kdrEJXETC_WXLdW1ZwmttSNHqG6k_Jd1Blp_lotyZ-nP7lVHxtWDZ7\x26sig\x3dCg0ArKJSzCDV9-mYccRhEAE',activeViewMetadata: 'gcm\x3d1\x26lcs\x3d1\x26msp\x3d1\x26la\x3d0\x26alp\x3dxai\x26alh\x3d2343417157\x26',lidarScriptUrl: '//www.googletagservices.com/activeview/js/current/lidar.js?cache=r20110914',dynamicData: '',creativeParameters: {'CREATIVE_PARAMETER_ASSETS_DATA': '{\\\x221555969192203/index.html\\\x22:\\\x228842663/1555969192203/index.html\\\x22,\\\x22TOEFL_Destination_US_300x250_static2.jpg\\\x22:\\\x228842663/TOEFL_Destination_US_300x250_static2.jpg\\\x22}', 'CREATIVE_PARAMETER_VIDEO_ASSETS_DATA': '[]', 'CREATIVE_PARAMETER_VIDEO_DATA': '[]', 'CREATIVE_PARAMETER_LAYOUT_CONFIG': '', 'sn': 'N4864.155263.SHIKSHA', 'sid': '1198632', 'aid': '452123948', 'buy': '23220232', 'cid': '115275418', 'pid': '255843595', 'rv': '2', 'adv': '8842663', 'exit_suffix': '', 'geo': 'ct\x3dIN\x26st\x3d\x26city\x3d0\x26dma\x3d0\x26zp\x3d452011\x26bw\x3d4', 'prcl': 's', 'sttr': '3', 'crlt': 'oAUWtn(a)t', 'xdt': '1', 'dc_ver': '55.153', 'av_ad_key': '2269750831', 'displayHTML5': 'true', 'CREATIVE_PARAMETER_EXPERIMENTS': '{ \\\x22append_spam_signals_to_click_url\\\x22 : true, \\\x22disable_h5_mraid_imp_ping\\\x22 : true }', 'CREATIVE_PARAMETER_IS_B2R_ELIGIBLE': 'true'},previewMode: false,html5Features: ['Modernizr.rgba', 'Modernizr.canvas'],translated_layout: false,primaryFiles: [{type: 'HTML5',renderAs: 'BANNER',width: '300',height: '250',url: 'https://s0.2mdn.net/8842663/1555969192203/index.html',hideFlashObjects: false,zIndex: '',customCss: ''}, {type: 'IMAGE',renderAs: 'BACKUP_IMAGE',width: '300',height: '250',url: 'https://s0.2mdn.net/8842663/TOEFL_Destination_US_300x250_static2.jpg',hideFlashObjects: false,zIndex: '',customCss: ''}],standardEvents: [{name: 'DISPLAY_TIMER',reportingId: '2'}, {name: 'INTERACTION_TIMER',reportingId: '3'}, {name: 'INTERACTIVE_IMPRESSION',reportingId: '4'}, {name: 'FULL_SCREEN_VIDEO_PLAYS',reportingId: '5'}, {name: 'FULL_SCREEN_VIDEO_COMPLETES',reportingId: '6'}, {name: 'FULL_SCREEN_AVERAGE_VIEW_TIME',reportingId: '7'}, {name: 'MANUAL_CLOSE',reportingId: '8'}, {name: 'BACKUP_IMAGE_IMPRESSION',reportingId: '9'}, {name: 'EXPAND_TIMER',reportingId: '10'}, {name: 'VIDEO_PLAY',reportingId: '11'}, {name: 'VIDEO_VIEW_TIMER',reportingId: '12'}, {name: 'VIDEO_COMPLETE',reportingId: '13'}, {name: 'VIDEO_INTERACTION',reportingId: '14'}, {name: 'VIDEO_PAUSE',reportingId: '15'}, {name: 'VIDEO_MUTE',reportingId: '16'}, {name: 'VIDEO_REPLAY',reportingId: '17'}, {name: 'VIDEO_MIDPOINT',reportingId: '18'}, {name: 'FULL_SCREEN_VIDEO',reportingId: '19'}, {name: 'VIDEO_STOP',reportingId: '20'}, {name: 'VIDEO_ABANDON',reportingId: '22'}, {name: 'VIDEO_UNMUTE',reportingId: '149645'}, {name: 'FULL_SCREEN',reportingId: '286263'}, {name: 'DYNAMIC_CREATIVE_IMPRESSION',reportingId: '536393'}, {name: 'HTML5_CREATIVE_IMPRESSION',reportingId: '871060'}, {name: 'VIDEO_FIRST_QUARTILE',reportingId: '960584'}, {name: 'VIDEO_THIRD_QUARTILE',reportingId: '960585'}, {name: 'LARGE_SCROLL',reportingId: '200035'}, {name: 'SMALL_SCROLL',reportingId: '200036'}, {name: 'SCROLL',reportingId: '200037'}, {name: 'ENGAGEMENT',reportingId: '200038'}],exitEvents: [{name: 'clickTag',reportingId: '5864338',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: false}, {name: 'clickTag1',reportingId: '6260211',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: false}, {name: 'backup image click through url',reportingId: '5864335',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: true}],timerEvents: [],counterEvents: []};try {studio.rendering.BowResponse.processCreativeData(creativeData);} catch (e) {/* ignore errors but don't kill js execution. */}})();</script><div id="dclk-studio-creative_1575869495334" style="display: inline-block; vertical-align: top;"><div id="DfaVisibilityIdentifier_1575869495449" class="GoogleActiveViewClass" style="position: relative; width: 300px; height: 250px; box-sizing: content-box;"><iframe data-creative-load-listener="" id="200_264_express_html_inpage_0.if" src="https://s0.2mdn.net/8842663/1555969192203/index.html" width="300" height="250" frameborder="0" scrolling="no" allowfullscreen="true" style="width: 300px; height: 250px;"></iframe></div></div><iframe id="iframe_627916632241" name="iframe_627916632241" data-dv-frm="627916632241" width="0" height="0" src="about:blank" style="display: none;"></iframe><script src="https://cdn.doubleverify.com/dvtp_src.js?ctx=11189058&amp;cmp=23220232&amp;sid=1198632&amp;plc=255843595&amp;num=&amp;adid=&amp;advid=8842663&amp;adsrv=1&amp;btreg=452123948&amp;btadsrv=doubleclick&amp;crt=115275418&amp;crtname=&amp;chnl=&amp;unit=&amp;pid=&amp;uid=&amp;tagtype=&amp;dvtagver=6.1.src" type="text/javascript"></script><script>window.dicnf = {umi: true,ebrp: true,apfa: true,atsb: true,bvst: 'r20191203',};(function(){function aa(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}function h(a){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return b?b.call(a):{next:aa(a)}}function m(a){for(var b,c=[];!(b=a.next()).done;)c.push(b.value);return c}var ba="function"==typeof Object.create?Object.create:function(a){function b(){}b.prototype=a;return new b},n; if("function"==typeof Object.setPrototypeOf)n=Object.setPrototypeOf;else{var p;a:{var ca={C:!0},t={};try{t.__proto__=ca;p=t.C;break a}catch(a){}p=!1}n=p?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}var u=n; function v(a,b){a.prototype=ba(b.prototype);a.prototype.constructor=a;if(u)u(a,b);else for(var c in b)if("prototype"!=c)if(Object.defineProperties){var d=Object.getOwnPropertyDescriptor(b,c);d&&Object.defineProperty(a,c,d)}else a[c]=b[c]}var w=this||self;function da(a,b){return"&adurl="==a.substring(a.length-7)?a.substring(0,a.length-7)+b+"&adurl=":a+b};function ea(a,b,c){a.addEventListener&&a.addEventListener(b,c,!1)};function x(a){this.a=a}function fa(a,b){a.a?(ha(b),a.a(b)):b()}function ha(a){w.addEventListener("beforeunload",a);w.addEventListener("unload",a);w.addEventListener("pagehide",a);w.document.addEventListener("visibilitychange",function(){"hidden"===w.document.visibilityState&&a()})}var ia=new x(function(a){w.setTimeout(a,0)}),y={};y.n=new x;y.t=ia;var z=w.dicnf||{};function C(a){var b=this;this.b=!1;this.a=[];a(function(c){D(b,c)})}function D(a,b){if(!a.b)if(b instanceof C)b.then(function(c){D(a,c)});else{a.b=!0;a.c=b;for(b=0;b<a.a.length;++b)E(a,a.a[b]);a.a=[]}}function E(a,b){a.b?b(a.c):a.a.push(b)}C.prototype.then=function(a){var b=this;return new C(function(c){E(b,function(d){c(a(d))})})}; function ja(a){var b=a.length,c=0;return new C(function(d){if(0==b)d([]);else for(var e=[],g={h:0};g.h<b;g={h:g.h},++g.h)a[g.h].then(function(f){return function(k){e[f.h]=k;++c==b&&d(e)}}(g))})}function ka(){var a,b=new C(function(c){a=c});return new la(b,a)}function ma(){return new C(function(a){return a(void 0)})}function la(a,b){this.b=a;this.a=b};function F(a){return{visible:1,hidden:2,prerender:3,preview:4,unloaded:5}[a.visibilityState||a.webkitVisibilityState||a.mozVisibilityState||""]||0}function na(a){var b;a.visibilityState?b="visibilitychange":a.mozVisibilityState?b="mozvisibilitychange":a.webkitVisibilityState&&(b="webkitvisibilitychange");return b};function oa(a){this.a=a||w.document||document};function G(a,b,c){a.google_image_requests||(a.google_image_requests=[]);var d=a.document.createElement("img");c&&(d.referrerPolicy="no-referrer");d.src=b;a.google_image_requests.push(d)}var pa=function(a){var b=!1,c;return function(){b||(c=a(),b=!0);return c}}(function(){return"referrerPolicy"in w.document.createElement("img")});function H(){this.a=w.document;this.b=null;qa(this)}function qa(a){var b=[];if(z.umi){var c=new C(function(d){a.b=d});b.push(c)}3==F(a.a)&&3==F(a.a)&&b.push(ra(a));a.c=ja(b)}function sa(a){if(z.atsb){var b;if(b=w.navigator)b=w.navigator.userAgent,b=/Chrome/.test(b)&&!/Edge/.test(b)?!0:!1;b&&w.navigator.sendBeacon?w.navigator.sendBeacon(a):G(w,a,!1)}else G(w,a,!1)} function ra(a){return new C(function(b){var c=na(a.a);if(c){var d=function(){if(3!=F(a.a)){var e=a.a;e.removeEventListener&&e.removeEventListener(c,d,!1);b()}};ea(a.a,c,d)}})}H.a=void 0;H.b=function(){return H.a?H.a:H.a=new H};function I(a){if(!a)throw Error("functionToExecute must not be truthy.");};function J(){return/\d+\.\d+\.\d+(-.*)?/.test("1.2.21-google_20191111")}function K(){for(var a=["1","2","21"],b=["1","0","3"],c=0;3>c;c++){var d=parseInt(a[c],10),e=parseInt(b[c],10);if(d>e)break;else if(d<e)return!1}return!0};function M(a,b,c,d){this.b=a;this.method=b;this.version=c;this.a=d}function N(a){return!!a&&void 0!==a.omid_message_guid&&void 0!==a.omid_message_method&&void 0!==a.omid_message_version&&"string"===typeof a.omid_message_guid&&"string"===typeof a.omid_message_method&&"string"===typeof a.omid_message_version&&(void 0===a.omid_message_args||void 0!==a.omid_message_args)}function O(a){return new M(a.omid_message_guid,a.omid_message_method,a.omid_message_version,a.omid_message_args)} function P(a){var b={};b=(b.omid_message_guid=a.b,b.omid_message_method=a.method,b.omid_message_version=a.version,b);void 0!==a.a&&(b.omid_message_args=a.a);return b};function ta(a){this.b=a};function ua(a,b){return a&&(a[b]||(a[b]={}))};function va(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(a){var b=16*Math.random()|0;return"y"===a?(b&3|8).toString(16):b.toString(16)})};function wa(a){for(var b=[],c=0;c<arguments.length;++c)b[c]=arguments[c];xa(function(){throw new (Function.prototype.bind.apply(Error,[null,"Could not complete the test successfully - "].concat(b instanceof Array?b:m(h(b)))));},function(){return console.error.apply(console,b instanceof Array?b:m(h(b)))})}function xa(a,b){"undefined"!==typeof jasmine&&jasmine?a():"undefined"!==typeof console&&console&&console.error&&b()};var Q=eval("this"),R=function(){if("undefined"!==typeof omidGlobal&&omidGlobal)return omidGlobal;if("undefined"!==typeof global&&global)return global;if("undefined"!==typeof window&&window)return window;if("undefined"!==typeof Q&&Q)return Q;throw Error("Could not determine global object context.");}();function ya(a){try{return a.frames?!!a.frames.omid_v1_present:!1}catch(b){return!1}};function S(a){this.b=a;this.handleExportedMessage=S.prototype.c.bind(this)}v(S,ta);S.prototype.sendMessage=function(a,b){b=void 0===b?this.b:b;if(!b)throw Error("Message destination must be defined at construction time or when sending the message.");b.handleExportedMessage(P(a),this)};S.prototype.c=function(a,b){N(a)&&this.a&&this.a(O(a),b)};function za(a){return null!=a&&"undefined"!==typeof a.top&&null!=a.top}function Aa(a){if(a===R)return!1;try{if("undefined"===typeof a.location.hostname)return!0}catch(b){return!0}return!1};function T(a,b){this.b=b=void 0===b?R:b;var c=this;a.addEventListener("message",function(d){if("object"===typeof d.data){var e=d.data;N(e)&&d.source&&c.a&&c.a(O(e),d.source)}})}v(T,ta);T.prototype.sendMessage=function(a,b){b=void 0===b?this.b:b;if(!b)throw Error("Message destination must be defined at construction time or when sending the message.");b.postMessage(P(a),"*")};var Ba=["omid","v1_VerificationServiceCommunication"],Ca=["omidVerificationProperties","serviceWindow"];function Da(a,b){return b.reduce(function(c,d){return c&&c[d]},a)};function U(a){if(!a){var b;"undefined"===typeof b&&"undefined"!==typeof window&&window&&(b=window);b=za(b)?b:R;var c=void 0===c?ya:c;a=[];var d=Da(b,Ca);d&&a.push(d);a.push(za(b)?b.top:R);a:{a=h(a);for(var e=a.next();!e.done;e=a.next()){b:{d=b;e=e.value;var g=c;if(!Aa(e))try{var f=Da(e,Ba);if(f){var k=new S(f);break b}}catch(q){}k=g(e)?new T(d,e):null}if(d=k){a=d;break a}}a=null}}if(this.a=a)this.a.a=this.i.bind(this);else if(c=(c=R.omid3p)&&"function"===typeof c.registerSessionObserver&&"function"=== typeof c.addEventListener?c:null)this.b=c;this.c={};this.f=(c=R.omidVerificationProperties)?c.injectionId:void 0}function Ea(a,b){I(b);a.b?a.b.registerSessionObserver(b,void 0,a.f):a.g("addSessionListener",b,void 0,a.f)} U.prototype.addEventListener=function(a,b){if(!a)throw Error("Value for eventType is undefined, null or blank.");if("string"!==typeof a&&!(a instanceof String))throw Error("Value for eventType is not a string.");if(""===a.trim())throw Error("Value for eventType is empty string.");I(b);this.b?this.b.addEventListener(a,b):this.g("addEventListener",b,a)}; U.prototype.i=function(a){var b=a.method,c=a.b;a=a.a;if("response"===b&&this.c[c]){var d=J()&&K()?a?a:[]:a&&"string"===typeof a?JSON.parse(a):[];this.c[c].apply(this,d)}"error"===b&&window.console&&wa(a)};U.prototype.g=function(a,b,c){for(var d=[],e=2;e<arguments.length;++e)d[e-2]=arguments[e];this.a&&(e=va(),b&&(this.c[e]=b),d=J()&&K()?d:JSON.stringify(d),this.a.sendMessage(new M(e,"VerificationService."+a,"1.2.21-google_20191111",d)))};var V=void 0; if(V=void 0===V?"undefined"===typeof omidExports?null:omidExports:V){var W=["OmidVerificationClient"];W.slice(0,W.length-1).reduce(ua,V)[W[W.length-1]]=U};function Fa(){var a=this.g=new U;this.c=!(!a.a&&!a.b);this.a=null;this.b=this.c?4:1;this.f=this.c} function Ga(a){a.f?(a.a=new C(function(b){var c=!!z.apfa,d=new C(function(g){Ea(a.g,function(f){"sessionStart"==f.type&&(f=f.data,"onePixel"==f.context.impressionType&&(c=!0),g("app"==f.context.environment))})}),e=new C(function(g){a.g.addEventListener("geometryChange",function(f){f=f.data;var k=f.adView.reasons;k&&-1!=k.indexOf("hidden")||(c?(f=f.adView,(f=f.onScreenContainerGeometry||f.onScreenGeometry)&&f.width&&f.height&&(a.b=3,g())):(a.b=2,g()))})});d.then(function(g){g?e.then(function(){b()}): (a.b=1,b())})}),a.a.then(function(){a.f=!1})):a.a=ma()}function Ha(a){a.a||Ga(a);return a.a};function Ia(a,b){if(a)for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&&b.call(void 0,a[c],c,a)};var X=["FRAME","IMG","IFRAME"],Ja=/^[01](px)?$/;function Ka(a,b,c){if(a)for(var d=0;null!=a&&500>d&&!c(a);++d)a=b(a)}function La(a,b){Ka(a,function(c){try{return c===c.parent?null:c.parent}catch(d){}return null},b)}function Ma(a,b){if("IFRAME"==a.tagName)b(a);else{a=a.querySelectorAll("IFRAME");for(var c=0;c<a.length&&!b(a[c]);++c);}}function Na(a){return(a=a.ownerDocument)&&(a.parentWindow||a.defaultView)||null} function Oa(a,b,c){try{var d=JSON.parse(c.data)}catch(f){}if("object"===typeof d&&d&&"creativeLoad"===d.type){var e=Na(a);if(c.source&&e){var g;La(c.source,function(f){try{if(f.parent===e)return g=f,!0}catch(k){}});g&&Ma(a,function(f){if(f.contentWindow===g)return b(d),!0})}}} function Pa(a,b){var c="string"===typeof a?document.getElementById(a):a;if(c)if(c.onCreativeLoad)c.onCreativeLoad(b);else{var d=b?[b]:[],e=function(g){for(var f=0;f<d.length;++f)try{d[f](1,g)}catch(k){}d={push:function(k){k(1,g)}}};c.onCreativeLoad=function(g){d.push(g)};c.setAttribute("data-creative-load-listener","");c.addEventListener("creativeLoad",function(g){e(g.detail)});w.addEventListener("message",function(g){Oa(c,e,g)})}} function Qa(a,b){var c;var d=void 0===d?!0:d;var e=void 0===e?!1:e;if(a="string"===typeof a?document.getElementById(a):a){c||(c=function(A,Va,Wa){A.addEventListener(Va,Wa)});for(var g=!1,f=function(A){g||(g=!0,b(A))},k,q,r=0;r<X.length;++r)if(X[r]==a.tagName){q=3;k=[a];break}k||(k=a.querySelectorAll(X.join(",")),q=2);var B=0;a=!1;for(r=0;r<k.length;r++){var l=k[r];if(!("IMG"!=l.tagName||!l.complete||l.naturalWidth&&l.naturalHeight?Ja.test(l.getAttribute("width"))&&Ja.test(l.getAttribute("height")): 1)){if("IMG"==l.tagName)var L=l.naturalWidth&&l.naturalHeight?!0:!1;else try{L="complete"===(l.readyState?l.readyState:l.contentWindow&&l.contentWindow.document&&l.contentWindow.document.readyState)?!0:!1}catch(A){L=void 0===e?!1:e}L?a=!0:(B++,c(l,"load",function(){B--;B||f(q)}))}}k=null;B||!a?c(w,"load",function(){f(4)}):d&&f(q)}};function Ra(a,b,c){this.B=a;this.i=c||new Fa;this.u=y[z.cvds]||y.n;this.A=this.f=this.b=this.l=!1;this.w=1;this.c=z.eavp?1:0;this.a=z.ebrp?1:0;this.m=this.g=null;this.o=ka();this.s=(new Date).getTime();this.j=this.v=null;Sa(this,b)}var Ta;function Ua(a,b){b&&0!==a.a&&(a.j=(new Date).getTime()-a.s,Xa(a,b).then(function(c){c&&(a.g=c);a.A=!0;Y(a)}))}function Sa(a,b){Ua(a,b);if(0!==a.a||0!==a.c)a.i.f?Ha(a.i).then(function(){Ya(a)}):Ya(a);H.b().c.then(function(){a.b=!0;Y(a)});Y(a)} function Xa(a,b){return new C(function(c){function d(e,g){a.m=e;c(g)}Pa(b,d);Qa(b,d)})}function Ya(a){a.f=!0;Y(a)}function Z(a){return a.b&&a.f&&a.A}function Y(a){a.b&&(a.b&&(0===a.c||a.b&&a.f)&&(0===a.a||Z(a))?Za(a):a.l||(a.l=!0,fa(a.u,function(){a.l=!1;a.u=y.n;Za(a)})))}function Za(a){var b=null,c=0;2!==a.w?b=0:1===a.c&&a.b&&a.f?b=12:1===a.a&&Z(a)&&(b=11);null!=b&&(0===b?1===a.a&&Z(a)?c=2:1===a.c&&a.b&&a.f&&(c=1):12===b&&1===a.a&&Z(a)&&(c=2),$a(a,b,c),0===b&&a.o.a())} function $a(a,b,c){var d=(new Date).getTime(),e={omid:a.i.c?1:0,rm:a.i.b,ctpt:d-a.s};0!==b&&(e.vt=b,e.dtpt=d-(a.v||0));0!==c&&(e.cbvp=c);a.m&&(e.dett=a.m);a.g&&(e.beid=a.g.eventId,e.vend=a.g.vendor);null!=a.j&&(e.cstd=a.j);var g=z.bvst;g&&(e.cisv=g);var f="";Ia(e,function(k,q){f+="&"+q+"="+encodeURIComponent(k)});e=da(a.B,f);0===b&&(a.w=2,a.v=d);if(12===b||c)a.c=2;if(11===b||2===c)a.a=2;sa(e)};window.btrp=function(a,b,c){var d=Ta=new Ra(a,b,c);return function(e){Ua(d,e)}};window.pdib3=function(a,b){Ta.o.b.then(function(){if(b)if(pa())G(window,a,!0);else{var c=w.document;if(c.body){var d=c.getElementById("goog-srcless-iframe");if(!d){d=(new oa(c)).a;var e="IFRAME";"application/xhtml+xml"===d.contentType&&(e=e.toLowerCase());d=d.createElement(e);d.style.display="none";d.id="goog-srcless-iframe";c.body.appendChild(d)}c=d}else c=null;c&&c.contentWindow&&G(c.contentWindow,a,!0)}else G(w,a,!1)})}; window.vv=function(){var a=H.b();if(!a.b)throw Error("aiv::err");a.b()};}).call(this);window.stcc = btrp("https://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjsvsrgOd8iz9eJ4PmbRhsl5NBWnpYOID9fdtz86tpbJs37HKOi-usaurGwV5hYiZl32_yLq_KvEnjk-PkttgHgxigTp8ntKmwZHO4LAlpWrZcMVMDM6BkcOF6V7Z4I3KPPVIqs9GBQLe2O7smLT-bcY4\x26sig\x3dCg0ArKJSzGYBoLTV2v6XEAE\x26urlfix\x3d1\x26adurl\x3d", document.getElementById("gcc_N9ztXarjD4mt9QPfiKSwBg"));</script><noscript style="display: none;"><a target="_blank" href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsvsrgOd8iz9eJ4PmbRhsl5NBWnpYOID9fdtz86tpbJs37HKOi-usaurGwV5hYiZl32_yLq_KvEnjk-PkttgHgxigTp8ntKmwZHO4LAlpWrZcMVMDM6BkcOF6V7Z4I3KPPVIqs9GBQLe2O7smLT-bcY4&amp;sig=Cg0ArKJSzOChiWDCYlbMEAE&amp;urlfix=1&amp;rm_eid=5864335&amp;adurl=https://www.toeflgoanywhere.org/destination/au/?utm_campaign=IND&amp;utm_medium=Banner&amp;utm_source=Shiksha&amp;utm_content=context"><img src="https://s0.2mdn.net/8842663/TOEFL_Destination_US_300x250_static2.jpg" width="300" height="250" border="0" /></a><img width="0px" height="0px" style="visibility:hidden" border="0" src="" alt="" /></noscript><script type="text/javascript">(function() {if (!window.GoogleTyFxhY || typeof window.GoogleTyFxhY.push !== 'function') {window.GoogleTyFxhY = [];}window.GoogleTyFxhY.push({'_scs_': 'BYCS9N9ztXarjD4mt9QPfiKSwBgAAAAA4AeAEAg','_bgu_': 'https://pagead2.googlesyndication.com/bg/R5ZafKr0PlZ7OmGMCk95d__fihE5gBkhkjuiGGCKDDU.js','_bgp_': 'eLCeffrEsqlrJFbp7BOV5CJpb0JKjitT+7S8asBJHiv/u6GOE8TR8ScDb9AYKZyKOk4jf53HJjRD4Q5w+o2ZpR8KLE+CUV0GhCskfX0f//6l6lCTM7anxVnyoOHheTGQUDEu54AKPpyGPiHpnnM6YfTMTbtyXe2Budbw2nSRm0Cz24MbFgbkiXH0wUbPm/pAo073+g0Csq/XwAbnvre2AyqRYJgz15ZYd+8EO84cPmZxmeuDbFy75fDLgmaO+UTHx07nMU+OnSrmnR3hSX1E6xNHOxGF/LpGsGmCzhVVLWA3XqunqR4+VpkXiaF6nX9pK5dJEvtjRw0DEGBaPYw3ACKMQDAFM+Dy6rt7p9/2vWcPo3uBaRwzBe2B6KZRBPWGvQz762drZIWxQ/Krw5qyOXSLDHExTFZ8s8WevyYduUHJfkzhGbm3e+waom3fq4s00l6pREfHDS3xalOkpK/UPE3yVGkfMIQToe4bgC1JZ1U+fGWbAXOHr+++eN2xKHUcBlZ7CoA39M4/CZpAoyDL6WgMTr1zxMEk5XRH6x0NnTblg7DYL4pUpfsWNGIUWM/9Bw/qMIc7oAthh3hgpF88B5nakmEDQdRL+zvFK1DYHcN93QTBMtE09lyFn/Pbn4iBcjTihQOD1V/vDLyDkROela7HK4euvcNKuSLZChDODNpfZKe1+l1kkLU5i7U8DxH6Xv19tRhT3p1Hku05jz2wQVXL5OUGz84GBc/11BPq+Vr8jxAQ9d2vol9pNaLRPFKHwhmHs04I3CIYk1DPgPzZUSVP3EJ22OA/zDNtfsIChv4p39GwtlJ7oUB8Nd8aw3l0FfFarSlgWoU8ceA5uNoSNerUK46bi+unnDyFfu6qhuNrvTr/O5W5KCOxWvysCmW3SSoDLj3sOBGdL8cbLplV+/j+ntpZsCr4efTFZGLqMSopkJiakNRGZo3ncIkmg4HPKh3rkClAAa+iibppFUk9LQy9h3ogmpOe/Vm29p3xdhrngs4AYHDVXLc6h2t/YqKO7DI0uTVOesWUrxOudUmECdfeT4WYzNmb4cSLQbfY3HOYfTVJyGSu87+7PjKeG7w0RV1DKdGVP1gRU/UiDjaw7/GUCJvak21JKVCfCLZ1G5S7ar4LviYHt0tYRmA+4DFf9CGxjlSWdWJO4g+yRW5hqwH5ByZtuB+qyz8EaxvgDfjPXJYAF/fMHWdk1v4d8wOq5wJK0ba5VgGXznN6eBqkCG8Z+HI/7KkXNtjaIy3cuMHAhq0TjY4T4YopIP4t6wVLK0KdXE+6O3QynPe/afiXuGY0+d7H8xTkN8QLvb5FpLZClaAyuR5NA0fanjl7SLa1nd6CmQEShxLVmvOf+HNREoh3/WYMZM/hcrzRA+iu6OEeIxZ+8ydghgo70dFX2Iyq4lGh3c1gxQgsbVySWsfl4KWHm5rwFnxB3wT4rg8wPPfQzOYJF30yrQCoHpCf59iiCBZx0oV/058N2tM7eCsQT1C0V+qpQQyREwcTE4bEKuCy02mLed9FX0QldrGUf6UDRyhjazt6Gy3C2j+otPbdkYiLBz8LvR+AxAybGRNK+ogBF0dAhqYdA1nZac+jZXpKpbXktxZln1BIRwhgqKsUAT4wloJ8JSaN7eHMkC7Lo77FibhU4O/xi0LGTgGbKh7gD0SvEmGovKpVHzchwooNteb2d4cHVKgAK5yFBiQ7/EO02818VoH8O8xmlcx8D//+RnuGs7KZW3lYU9SBgxI98aNNOcAvvaCsSa/QEGVCgYAa5rbkU4dtC0f6Psf9qTui4Gtsn49Ji7UbZZtEJD0mSWTHtsHR6pJR/Uk+dmBBOJ8LEUO79Z1VhEjjUIz5hzEWULOrPinjuVv3ZC4YOXPfQCb4OIYmlY/sDq1iggcfVBeMCt6nphrKIwrb5iZTLIgM5QjLvAzTlYMAA+fpgKQ0JNSz1eMyCk6hak2EJFbZ6G2JajIuUw/sM7qm/7oy3p2d0R43M6/GDpwV7ulmz3kKsIQetutPw3P7pJngO0hJ9/bvaxbud//Jf37gDWJad7wOZio9hHqIEBJA27g9BEgdZRqQg+Zir66FD6hm26/8MSL1Mbg3UgIz7KeRSNkB032WFSq16ncntX2/t+dk76y5Uv9OkG1nYenDghnJjK06vPATCMAhTsxnY4mMrUxqm+kYiWd1O6XR3UmtKM4zSSMlTZZafnBNbukAcEF+rWmNA4YQLLvvMkSZiRrFCF0BiG6tunZIxJmxdCDIcIX6YlLrRBBe9y66+1zWHs7SZEKIZF8yNWbKMsX7CI4q2hG7xc3YrU5Let+RxQfye/jRqZ/AkGsQw+mCvfs9CLZQZE3Hvplilsm87Wcpq5xTT4A9LGndJkZeu/ask4YvfjiUPqW93Jot7mpSDdX+1TuugoGl4mhD2UOFRpCOdPox8JEJad3zQzL3U/jERXmh8ewamez/Iv+BzNVejtEx1kzDh32m1wBZkMx3h+EZCNoofY0fAGjYFlm76y00H14f8XQxksYNanV4Pg/EUR2w2xeBKCDYGTfeGGdMkx5Fhr4ma+LnEXAG8GDEU9rvEZ/+bndIu+WBBd5yRvCtjbdIxWOat4sKTBYQ18MTydtYux87J4Hs+s/b3ONvmIKStZgu4mu4mZOg1f+8Up9x9ujZOS9/6s2b11Nr+X7IlNl/nF+TxQ+BBlMjBw+WBNJvCWfw0SlBmBP+uGcYZ8FM0+I07yZ6Ahq5ac1L0ZOFhpM1KgegtQjLkHtRS9CbO9Z82cYK4h2O5G/71Ho8btLnlsSQrjUhCu13kXrkxOefn2OIxJ9lbXIBR9i1u12KJIOyp1Ybji1YQRYwIZYxtpmVKItSX0HcUf91+wfVA+Rg8rnQkdfSfygce9T1kVHFVv4OEEHqOQeeaxiulJMwVpvYJ/ZPZaAcDtCG7lm6Hxskt37Uh/tH3Ti+3W+OkEWvdY8+lPFET6NovTUI/kf+IF5q1DM7iex67mcEbZYCf42rgxRqg1mgiPqJlhcN6jIDAZcVPSBjfNHKMd08HQQ9rJTBytgnhiDCdrvTgx3OtGFeig2/DpC56n+KX2HDMBsqXKtTe6tQWxa5vxoIVyvjN8/v3gI6BE4wra/WxzCt2PA6FtMrjVcbCX9ZibyVQDScecmFxtO0HAS5uPvqWTYaFEAc2pu/6nEBdzLD6HUiE2W9j9TDlBiKFJxSauqk8DBznNfQiG05NghuHm4m2/fifhmHT9VWhypvJlCjf3uyCvQOTAePk8g5N+2nxUPYqnS88f4gJd+DtzfCagqoc+yUYFMX8arYtKvkWO/esL/wIr+fUmP8FjYp7FdhglbX50mTmrikI/uUtTLuAAhtT0Y83ozvSlGp2h498WZw/vv8jS3v59YG5UfeAibYxOUVPmXjBRj31aiHrDgssi0sooDzPhdDxml1IwXDhIMimGojUe9IBEtuU3xSegxHQLNMuBRiic2uGxRSbsHNgPmzVjiGgimk8DSIp3YBpS323oNH15z+7m36V83mEnkWPB0rAoezOQf9BJZ68h3Bi4m5JN2niPdkHNuFn3aT3AIzw8DmwdbWTZmnWBloU9e6nVXC6geeA5BXhkq/5+SJA7bLLqrVpAxEnuA8w71YL0NFq1LHDKSgjESC5LZm3Mb1t4YFK1Jw2mmf9zmZAh8ZkWi8JozFJ0TBYgvTn843+59NESn9ZE1I2lQqy5Pd5n+tGNjmYMs83AALRfK9a6O16ZiSwfdhXmVFJ2YstqYL29im/Jv+knz/EzG5zPBLkIDXqB0Wi3OhIgiaOcUPrLr0eQyCeDRdrUcX4I2L8Lif09F2UPpOGpGqeadh8dpJFdLbMz+l0uEi0qTiZJHlj2vrBg870Cm++a3cKKYo1mU6j1hdRBB4Q9RNb7wTXg/2CDKzcsUXukMZPOkc4iGR5wQscBCeXN9qDUppuToikxUqySRYJvvPwgZZ+61N9+AtBMYHls6/ZPah4S3wUoWTkL/VHqViAYtUyiKj7g+xeHoXhCdfrDH6icsqKzL07gPIXLqGDgXHTdqusyMRxryGxCb9rhdq/gs53LPVE0u+6sWDIVT/q8eNGS7Q3dxnDmsBv05UXx4Qg8YIBtOa9JJaxb5Xc2pauB6GdG68kiSX9J5OJ3tTVmtjksTcCgNo1jgYfDF/9iredPYojYy7CGB6sFhs8uYS4LOD7kdI63eoiafeE0aUNV17110qYHNgPTDXufKYsiCjhWhR7SYICB9NliiSQRnXloPJ3h0xCJYamEitcafV1MOE2TOoWmwApspXec/kkrohim5yedRALp4iwO2jf0VKq3pyiItDh0IBCQtuD5Fi/MlYrzVBUEmCc8XY/69bZKzwxs9/G+YBTK1+OuAAPVq/yVL/fAYqrw4ymyU/14AVbAojp62gkixpQXIqpMjWWlmPsWjOvwPbG0hwXEiE7tV0da/gKwmOSRSEhLOC8CREAA7hYsUWTvSHz91lr4W48OGzmXcDqucCfeLHVBM0gZx+wO5DChamSaUx/51Pn0QOIgEMEb0q3NXq1yab7jL9BKy1GKIbUiFTXD7LL/6uPq5NKp5heJn3PPiPSmIYG11hAI+Q4AkkDcg78JpdRmmj3fBnxWMahuIXsKHJ8K3znumY7pNEELFKvrB25pk6QJENc9c1/bIXXiYulPr01Xytdn4s6ls1SoKb9N65U5HoruQWWtVlrV/bRb9YHoWg4eORgQz5YJKOBTRjz3R5/jS1OvvzgZPz5lwI/Qphwim+Uq8ZFoCDom338GhhmlQ/ho3PbCYS6NwbiHJzaStGTgkAFiQYs7s3rJ+AZuv3kB33rLyO4iRB6UwJBl5N7nLVrw2FMExFxrqalzdU0lJJdL0T/C9rqMwXc3BOmCGStYcHfOiGQ8LUkXydzaEaBpKSnPuB1YXWXM437RdsZZqMoE68zD1TIZy7QBnq7cUexGCBxSPsbtQbeg0eu6CJvkgyADl714dqHtAxvjggY3xGYugAFFOjCBQq/DgfheuBfETh79btm4TrV2EsMqI2YKGWhYwPaaSWdorN3baBEN2mz3kdwywFMhP3jwc1resH94TRgKF2RZbAvfSOsN8MLhXsnSoJMSE/m+G56e3EYrSEnGBsNPaQG5E2ehx2kR+86zuPYCxltZM8QspJeSyedfg0lTc2MichXV4F1myLlLBwRCkatA6mf6dsJIo8tR1EWv1KTY7SmgAVV/Ck6n7C7O+SAuCiQslRlyiePxEtQlbihPCX8fUDb1t0C2Z4c8TsYokDvi1USbuEFF7LRBjSJ4nyGFqgqxn7YW/E7HmSUDA+a/27whO1nuHt78hTuMvVrvRtHIIGJR+O4gfXJuI23ldLqYun8nMrsByhHmZTlBZAt0mwmKbXHInjvEEUyvJC+Udxmye4/veVlmN26dOi0NMZJhbo5EJLvMpmXl1L6/Vi+xj0jOZmTpDFvkFk6jrq1msXc2EJyi7csLUpfqP3k1ITWYrrtu8ySRjYO8K/XY01XJ7P+r+WcJyS/bC+xaUItryQe4+KNUkW8zypwt6NRz7Aqy3oMRAozabRHVJ6Z1fVXmiCsjANdGXokEkAYyu0BIjMjOYlv02xolRUBUy0ZNw1LZfUsMhahdvrJIx25VQsHRzZCTEd7/zkPpuOgIrgMIu1v7X0o06ZgrSR6akBGHvZVGV9Tfl71c9OO0/t1mBq+SbaH3aQtayF7xOjrKnH68UlbKmdustc9YbqiSbqU/hnfEm+Be7ybe4S5OwQfxhd5UJFazBIvNjUkzqPwRwiGrbUPmyemKjjJjncE6dkAnLii2/h/MnuWO9XvulA0Xoa0P2pCI2y69jrWy6LWY+rHjOGMLOIBTp+r8nYA7QyCXb61lCvMevAFNGM2Eho4o4wFYxqRFqHDaE3QQ4IwmIC/2KemorMsI3im2scItLxYn5ArSmwmAl190J37DikioJNsy7Hpld7wE1qdbhkvMhCJsGgu+b//YC6HUNjv9KhgT5FstV/ymTdrRZininZIUhqvq4STeIVTM2y3acv+iEAaznT0mdRUGsNSKnPdIN9GuLYDUOLW4/Q64U51CZ/W4LJcnzV7+mZc9FPm76DSgVr0Uckj4+bx6svcXOi+fJfA3wtC1K9NTEULclZkASnkXYH/cnqVTvd3MN4Rk3TnZJJILCY+U7nGvsG5o38lSYfnoTuY4gjoEpGD5xGR7uvex6Re2yigttrX+qE1Kkybv1kyBK3huWPV05zRUZ2K443S0M0vxkqvJn+cLYbmJUFee10cD4cxEF0AqzHd3YIQ35Bo8zG5zbLdMJnlrsbJdwk65UqE/fW5M1iw9GIxwcZji5RvpX8y1+hgi8REmtg+mhGvxFrjgUsGNrzEAGzIdZhTCcIk/9CEG3HxC8pIu+8ny1fE6D/HBDadyV6OEy4aQsDO0B5r2zyejnUO/y16BRe6iKsquqSi0C1w+a5/XEuL+8hI9lB8aIWufulwiYNCUkY8Bfr8UaLx5ZBdoEODey9FA0fzSmYLio1/+HpZbqapu/hbWaXjeF+ECudu9lp0er7mot388uYPoqIQuI8PtM3fpyFEey248gIO4AEfYSrHkS5vPWlgoR3t7O590eNQI\x3d','_ifr_': 'false'});var gsodar = document.createElement('script');gsodar.type = 'text/javascript';gsodar.async = true;gsodar.src = '//tpc.googlesyndication.com/sodar/UFYwWwmt.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gsodar, s);})();</script>
+                </ins>
+                
+                
+                </a></td><td>&nbsp;</td><td width="1"><a href="http://www.ieplads.com/bmsjs/bms_hits.php?banner=150250" target="_blank">
+                <meta charset="utf-8">
+                <meta name="ad.size" content="width=300,height=250">
+                <title></title>
+                <ins class="dcmads" style="display: inline-block; width: 300px; height: 250px; text-decoration: none;" data-dcm-placement="N4864.155263.SHIKSHA/B23220232.255520097" data-dcm-rendering-mode="script" data-dcm-https-only="" data-dcm-resettable-device-id="" data-dcm-app-id="" data-dcm-processed="y"><img src="https://tps.doubleverify.com/visit.jpg?cmp=DV020594&amp;ctx=818052&amp;plc=impdv&amp;dvp_cmp=23220232&amp;dvp_ctx=11189058&amp;jsver=299&amp;dvp_imp=6761102cb7214ceb9f3d69e2e370c83b&amp;cbust=1575869498138598" style="display: none;"><img src="https://tps.doubleverify.com/visit.jpg?cmp=DV020594&amp;ctx=818052&amp;plc=impdm&amp;dvp_cmp=23220232&amp;dvp_ctx=11189058&amp;jsver=299&amp;dvp_imp=6761102cb7214ceb9f3d69e2e370c83b&amp;cbust=1575869498134137" style="display: none;">
+                  <script src="https://www.googletagservices.com/dcm/dcmads.js"></script><script src="https://www.googletagservices.com/dcm/impl_v55.js"></script><script src="https://ad.doubleclick.net/ddm/adj/N4864.155263.SHIKSHA/B23220232.255520097;dc_ver=55.153;sz=300x250;u_sd=1;dc_adk=2241910000;ord=fsx6hy;dc_rfl=1,https%3A%2F%2Fstudyabroad.shiksha.com%2Fmba-in-abroad-dc11508$0;xdt=1;crlt=oAUWtn(a)t;sttr=7;prcl=s?"></script><script>(function() {(function(){var g=this||self,k=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},l=function(a,b){var c=Array.prototype.slice.call(arguments,1);return function(){var e=c.slice();e.push.apply(e,arguments);return a.apply(this,e)}};var m=function(a,b){for(var c in a)b.call(void 0,a[c],c,a)};var n=function(a){a=a?a.toLowerCase():"";switch(a){case "normal":return"normal";case "lightbox":return"lightbox";case "push_down":return"push_down"}return null};var p={i:"ad_container_id",A:"hideObjects",X:"mtfTop",W:"mtfLeft",ca:"zindex",m:"mtfDuration",aa:"wmode",Z:"preferFlash",s:"as_kw",u:"as_lat",v:"as_lng",B:"mtfIFPath",o:"expansionMode",U:"top_container",T:"mtfTopFloat",S:"mtfTopDuration",V:"mtfTopWmode",P:"right_container",O:"mtfRightFloat",N:"mtfRightDuration",R:"mtfRightWmode",H:"bottom_container",G:"mtfBottomFloat",F:"mtfBottomDuration",I:"mtfBottomWmode",L:"left_container",K:"mtfLeftFloat",J:"mtfLeftDuration",M:"mtfLeftWmode",$:"mtfRenderFloatInplace",ba:"tryToWriteHtmlInline",j:"debugjs",C:"dcapp",g:"breakoutiframe",D:"inMobileAdSdk"},r=function(a){m(a,function(b,c){if(c.toLowerCase()in q){var e=q[c.toLowerCase()];c in a&&delete a[c];a[e]=b}})},q=function(){var a={};m(p,function(b){a[b.toLowerCase()]=b});return a}();var v=function(a){this.a=a;a:{for(c in a.displayConfigParameters){b:if(a=u,"string"===typeof a)a="string"!==typeof c||1!=c.length?-1:a.indexOf(c,0);else{for(var b=0;b<a.length;b++)if(b in a&&a[b]===c){a=b;break b}a=-1}if(!(0<=a)){var c=!0;break a}}c=!1}this.f=c},u=["ad_container_id"],w=function(a){return a.f?a.a.displayConfigParameters:a.a.creativeParameters},x=function(a,b){for(var c=0;c<a.a.primaryFiles.length;++c)if(a.a.primaryFiles[c].type==b)return!0;return!1};var y={pattern:/rendering_lib_((?:[0-9_]+)|(?:latest))\.js$/,c:"rendering_lib_db_$1.js"},z={pattern:/\/[a-z_0-9]+_rendering_lib/,c:"/iframe_buster"},A={pattern:/(.*\/)(.*_)rendering_lib_((?:[0-9_]+)|(?:latest))\.js$/,c:"$1inapp_html_inpage_rendering_lib_$3.js"},B={pattern:/\/[0-9]+\/[a-z_0-9]+rendering_lib.+$/,c:"/ads/studio/cached_libs/modernizr_2.8.3_ec185bb44fe5e6bf7455d6e8ef37ed0e_no-classes.js"},F=function(a){var b=w(a),c=a.a.renderingLibraryData,e=c.renderingLibrary,d=c.version;if(!/express|image_gallery|dfa7banner|inapp/.test(e)&&("latest"==d||0<=C(d,"200_74"))){if(d=!x(a,"FLASH")){a:{for(d=0;d<a.a.primaryFiles.length;++d){var f=a.a.primaryFiles[d].expandingDisplayProperties;if(f&&"lightbox"==n(f.expansionMode)){d=!0;break a}}d=!1}d=!d}d=d&&null!=window.mraid}else d=!1;d&&(e=e.replace(A.pattern,A.c));"true"==b.debugjs&&(e=e.replace(y.pattern,y.c));(b=g.self==g.top)||(b=window.Y&&window.Y.SandBox&&window.Y.SandBox.vendor,d=window.$sf&&window.$sf.ext,f=window.$WLXRmAd,b=!!(window.IN_ADSENSE_IFRAME||b||d||f));if(!b){a:if(b=w(a).breakoutiframe)b=!!b&&"true"==b.toLowerCase();else{b=a.a.primaryFiles;for(d=0;d<b.length;d++){f=b[d].renderAs;var h=0==(parseInt(b[d].width,10)||0)&&0==(parseInt(b[d].height,10)||0);if("EXPANDABLE"==f||"FLOATING"==f&&!h){b=!0;break a}}b=!1}b=!b}if(b||a.a.previewMode){a:{a=e;b=D();for(d=0;d<b.renderingLibraries.length;d++)if(f=b.renderingLibraries[d],f.url==a&&f.bootstrapFunction){a=f;break a}a=null}a?a.bootstrapFunction():(a=D(),E(e,!1,void 0,void 0,void 0,!0),a.renderingLibraries.push({version:c.version,url:e,loading:!0,bootstrapFunction:null}))}else c=e.replace(z.pattern,z.c),E(c,!0)},C=function(a,b){a=G(a);b=G(b);for(var c=Math.min(a.length,b.length),e=0;e<c;e++)if(a[e]!=b[e])return a[e]-b[e];return a.length-b.length},G=function(a){a=a.split("_");for(var b=[],c=0;c<a.length;c++)b.push(parseInt(a[c],10));return b},E=function(a,b,c,e,d,f){var h=document.createElement("script");h.src=a;h.type=c?c:"text/javascript";h.async=!!b;f&&(h.crossOrigin="anonymous");e&&(h.onload=e);d&&(h.onerror=d);var t;(a=document.getElementsByTagName("head"))&&0!=a.length?t=a[0]:t=document.documentElement;t.appendChild(h)},D=function(){return window.dclkStudioV3=window.dclkStudioV3||{creatives:[],renderingLibraries:[],creativeCount:1,startTimes:{}}},H=function(a){try{if(null!=(a["cps-top-iframe-beacon"]?a["cps-top-iframe-beacon"]:null))return!0}catch(b){}return a==a.parent?!1:H(a.parent)},I=function(a){if(null!=a){r(a.creativeParameters);if(null!=a.html5Features)for(var b=0;b<a.html5Features.length;++b)"CSS_ANIMATIONS"==a.html5Features[b]&&(a.html5Features[b]="Modernizr.cssanimations");!a.previewMode&&H(g)&&(a.previewMode=!0);a=new v(a);b=D();b.creatives.push(a.a);var c=a.a.creativeParameters;c.creative_unique_id=c.cid+"_"+b.creativeCount++;b.startTimes[c.creative_unique_id]=+new Date;b=w(a).ad_container_id;a:if((c=w(a).mtfRenderFloatInplace)&&"true"==c.toLowerCase())c=!0;else{c=a.a.primaryFiles;for(var e=0;e<c.length;e++){var d=c[e].renderAs;if("EXPANDABLE"==d||"BANNER"==d){c=!0;break a}}c=!1}!c||b&&""!=b||(b="dclk-studio-creative_"+(new Date).getTime(),c=a.a,document.write(['<div id="',b,'"></div>'].join("")),c.creativeParameters.ad_container_id=b,c.creativeParameters.generate_ad_slot="true",null==c.displayConfigParameters&&(c.displayConfigParameters={}),c.displayConfigParameters.ad_container_id=b);c=a.a;b=c.renderingLibraryData;e=b.version;if(x(a,"HTML5")&&!("latest"==e||0<=C(e,"200_108"))&&(c=c.html5Features,!("Modernizr"in g)&&"array"==k(c)&&0<c.length)){e=!1;for(d=0;d<c.length;d++)if("svgFilters"!=c[d]&&"svgFeImage"!=c[d]){e=!0;break}e&&E(b.renderingLibrary.replace(B.pattern,B.c),!1)}b=w(a);c=b.inMobileAdSdk;"1"==b.dcapp||"1"==c||/Android ([2-3]|4\.[0-3])/.test(navigator.userAgent)?(b=l(F,a),window.mraid?(E("mraid.js",!1,"text/x-do-not-download",null,null),F(a)):E("mraid.js",!1,"text/javascript",b,b)):F(a)}},J=["studio","rendering","BowResponse","processCreativeData"],K=g;J[0]in K||"undefined"==typeof K.execScript||K.execScript("var "+J[0]);for(var L;J.length&&(L=J.shift());)J.length||void 0===I?K[L]&&K[L]!==Object.prototype[L]?K=K[L]:K=K[L]={}:K[L]=I;}).call(this);var creativeData = {width: '300',height: '250',slotWidth: '300',slotHeight: '250',renderingLibraryData: {version: '200_264',renderingLibrary: 'https://s0.2mdn.net/879366/express_html_inpage_rendering_lib_200_264.js'},impressionUrl: 'https://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjsspg7HEshbZU3rI2SMyOOP3ypyUiwuZtVgYekgw3Dt4Q1qIkJqfbi85vrLOT0p9kL-4jw_4WtueZjzesKMbGBcjmfSA8Xqh9yeOAYXleoDtwj6AW3uqb0k7s-f11gYsY_0vTc10OCDkyT658rV9cV4-\x26sig\x3dCg0ArKJSzLr2LzTWXGnFEAE\x26urlfix\x3d1\x26adurl\x3d',eventTrackingBaseUrl: 'https://ade.googlesyndication.com/ddm/activity/dc_oe\x3dChMI35Xyq-un5gIVvEt9Ch06tQNzEAAYACCa7fs2',customEventTrackingBaseUrl: 'https://ad.doubleclick.net/activity;src\x3d8842663;pid\x3d255520097;aid\x3d452123948;ko\x3d0;cid\x3d115275418;rid\x3d115087819;rv\x3d2;',clickUrl: 'https://adclick.g.doubleclick.net/pcs/click?xai\x3dAKAOjsspg7HEshbZU3rI2SMyOOP3ypyUiwuZtVgYekgw3Dt4Q1qIkJqfbi85vrLOT0p9kL-4jw_4WtueZjzesKMbGBcjmfSA8Xqh9yeOAYXleoDtwj6AW3uqb0k7s-f11gYsY_0vTc10OCDkyT658rV9cV4-\x26sig\x3dCg0ArKJSzMmb_vZKh_xtEAE\x26urlfix\x3d1\x26rm_eid\x3d[rm_exit_id]\x26adurl\x3d',thirdPartyUrls: [{type: 'IMPRESSION_JS',url: 'https://cdn.doubleverify.com/dvtp_src.js?ctx\x3d11189058\x26cmp\x3d23220232\x26sid\x3d1198632\x26plc\x3d255520097\x26num\x3d\x26adid\x3d\x26advid\x3d8842663\x26adsrv\x3d1\x26btreg\x3d452123948\x26btadsrv\x3ddoubleclick\x26crt\x3d115275418\x26crtname\x3d\x26chnl\x3d\x26unit\x3d\x26pid\x3d\x26uid\x3d\x26tagtype\x3d\x26dvtagver\x3d6.1.src',scrub: 'false'}],clickString: 'BAP5hN9ztXZ-eGbyX9QO66o6YBwAAAAAQATgB4AQCiAWIoIkLoAZH',activeViewUrlPrefix: 'https://pagead2.googlesyndication.com/pcs/activeview?xai\x3dAKAOjssey7hqbHB2Eh8NXjsB9NxNHd5nWBF7ac-pFtYLPJzUtW_QKBrnmmNAGKbZruJuMJiZI4m59nH51sSxbxmk4cz0\x26sig\x3dCg0ArKJSzAJ-lxLxwNeiEAE',activeViewMetadata: 'la\x3d0\x26alp\x3dxai\x26alh\x3d1344135459\x26',lidarScriptUrl: '//www.googletagservices.com/activeview/js/current/lidar.js?cache=r20110914',dynamicData: '',creativeParameters: {'CREATIVE_PARAMETER_ASSETS_DATA': '{\\\x221555969192203/index.html\\\x22:\\\x228842663/1555969192203/index.html\\\x22,\\\x22TOEFL_Destination_US_300x250_static2.jpg\\\x22:\\\x228842663/TOEFL_Destination_US_300x250_static2.jpg\\\x22}', 'CREATIVE_PARAMETER_VIDEO_ASSETS_DATA': '[]', 'CREATIVE_PARAMETER_VIDEO_DATA': '[]', 'CREATIVE_PARAMETER_LAYOUT_CONFIG': '', 'sn': 'N4864.155263.SHIKSHA', 'sid': '1198632', 'aid': '452123948', 'buy': '23220232', 'cid': '115275418', 'pid': '255520097', 'rv': '2', 'adv': '8842663', 'exit_suffix': '', 'geo': 'ct\x3dIN\x26st\x3d\x26city\x3d0\x26dma\x3d0\x26zp\x3d452011\x26bw\x3d4', 'prcl': 's', 'sttr': '7', 'crlt': 'oAUWtn(a)t', 'xdt': '1', 'dc_ver': '55.153', 'av_ad_key': '2241910000', 'displayHTML5': 'true', 'CREATIVE_PARAMETER_EXPERIMENTS': '{ \\\x22append_spam_signals_to_click_url\\\x22 : true, \\\x22disable_h5_mraid_imp_ping\\\x22 : true }', 'CREATIVE_PARAMETER_IS_B2R_ELIGIBLE': 'true'},previewMode: false,html5Features: ['Modernizr.rgba', 'Modernizr.canvas'],translated_layout: false,primaryFiles: [{type: 'HTML5',renderAs: 'BANNER',width: '300',height: '250',url: 'https://s0.2mdn.net/8842663/1555969192203/index.html',hideFlashObjects: false,zIndex: '',customCss: ''}, {type: 'IMAGE',renderAs: 'BACKUP_IMAGE',width: '300',height: '250',url: 'https://s0.2mdn.net/8842663/TOEFL_Destination_US_300x250_static2.jpg',hideFlashObjects: false,zIndex: '',customCss: ''}],standardEvents: [{name: 'DISPLAY_TIMER',reportingId: '2'}, {name: 'INTERACTION_TIMER',reportingId: '3'}, {name: 'INTERACTIVE_IMPRESSION',reportingId: '4'}, {name: 'FULL_SCREEN_VIDEO_PLAYS',reportingId: '5'}, {name: 'FULL_SCREEN_VIDEO_COMPLETES',reportingId: '6'}, {name: 'FULL_SCREEN_AVERAGE_VIEW_TIME',reportingId: '7'}, {name: 'MANUAL_CLOSE',reportingId: '8'}, {name: 'BACKUP_IMAGE_IMPRESSION',reportingId: '9'}, {name: 'EXPAND_TIMER',reportingId: '10'}, {name: 'VIDEO_PLAY',reportingId: '11'}, {name: 'VIDEO_VIEW_TIMER',reportingId: '12'}, {name: 'VIDEO_COMPLETE',reportingId: '13'}, {name: 'VIDEO_INTERACTION',reportingId: '14'}, {name: 'VIDEO_PAUSE',reportingId: '15'}, {name: 'VIDEO_MUTE',reportingId: '16'}, {name: 'VIDEO_REPLAY',reportingId: '17'}, {name: 'VIDEO_MIDPOINT',reportingId: '18'}, {name: 'FULL_SCREEN_VIDEO',reportingId: '19'}, {name: 'VIDEO_STOP',reportingId: '20'}, {name: 'VIDEO_ABANDON',reportingId: '22'}, {name: 'VIDEO_UNMUTE',reportingId: '149645'}, {name: 'FULL_SCREEN',reportingId: '286263'}, {name: 'DYNAMIC_CREATIVE_IMPRESSION',reportingId: '536393'}, {name: 'HTML5_CREATIVE_IMPRESSION',reportingId: '871060'}, {name: 'VIDEO_FIRST_QUARTILE',reportingId: '960584'}, {name: 'VIDEO_THIRD_QUARTILE',reportingId: '960585'}, {name: 'LARGE_SCROLL',reportingId: '200035'}, {name: 'SMALL_SCROLL',reportingId: '200036'}, {name: 'SCROLL',reportingId: '200037'}, {name: 'ENGAGEMENT',reportingId: '200038'}],exitEvents: [{name: 'clickTag',reportingId: '5864338',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: false}, {name: 'clickTag1',reportingId: '6260211',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: false}, {name: 'backup image click through url',reportingId: '5864335',destinationUrl: 'https://www.toeflgoanywhere.org/destination/au/?utm_campaign\x3dIND\x26utm_medium\x3dBanner\x26utm_source\x3dShiksha\x26utm_content\x3dcontext',targetWindow: '_blank',windowProperties: '',backUpExit: true}],timerEvents: [],counterEvents: []};try {studio.rendering.BowResponse.processCreativeData(creativeData);} catch (e) {/* ignore errors but don't kill js execution. */}})();</script><div id="dclk-studio-creative_1575869495516" style="display: inline-block; vertical-align: top;"><div id="DfaVisibilityIdentifier_1575869495526" class="GoogleActiveViewClass" style="position: relative; width: 300px; height: 250px; box-sizing: content-box;"><iframe data-creative-load-listener="" id="200_264_express_html_inpage_1.if" src="https://s0.2mdn.net/8842663/1555969192203/index.html" width="300" height="250" frameborder="0" scrolling="no" allowfullscreen="true" style="width: 300px; height: 250px;"></iframe></div></div><iframe id="iframe_699911201071" name="iframe_699911201071" data-dv-frm="699911201071" width="0" height="0" src="about:blank" style="display: none;"></iframe><script src="https://cdn.doubleverify.com/dvtp_src.js?ctx=11189058&amp;cmp=23220232&amp;sid=1198632&amp;plc=255520097&amp;num=&amp;adid=&amp;advid=8842663&amp;adsrv=1&amp;btreg=452123948&amp;btadsrv=doubleclick&amp;crt=115275418&amp;crtname=&amp;chnl=&amp;unit=&amp;pid=&amp;uid=&amp;tagtype=&amp;dvtagver=6.1.src" type="text/javascript"></script><script>window.dicnf = {umi: true,ebrp: true,apfa: true,atsb: true,bvst: 'r20191203',};(function(){function aa(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}}function h(a){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return b?b.call(a):{next:aa(a)}}function m(a){for(var b,c=[];!(b=a.next()).done;)c.push(b.value);return c}var ba="function"==typeof Object.create?Object.create:function(a){function b(){}b.prototype=a;return new b},n; if("function"==typeof Object.setPrototypeOf)n=Object.setPrototypeOf;else{var p;a:{var ca={C:!0},t={};try{t.__proto__=ca;p=t.C;break a}catch(a){}p=!1}n=p?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}var u=n; function v(a,b){a.prototype=ba(b.prototype);a.prototype.constructor=a;if(u)u(a,b);else for(var c in b)if("prototype"!=c)if(Object.defineProperties){var d=Object.getOwnPropertyDescriptor(b,c);d&&Object.defineProperty(a,c,d)}else a[c]=b[c]}var w=this||self;function da(a,b){return"&adurl="==a.substring(a.length-7)?a.substring(0,a.length-7)+b+"&adurl=":a+b};function ea(a,b,c){a.addEventListener&&a.addEventListener(b,c,!1)};function x(a){this.a=a}function fa(a,b){a.a?(ha(b),a.a(b)):b()}function ha(a){w.addEventListener("beforeunload",a);w.addEventListener("unload",a);w.addEventListener("pagehide",a);w.document.addEventListener("visibilitychange",function(){"hidden"===w.document.visibilityState&&a()})}var ia=new x(function(a){w.setTimeout(a,0)}),y={};y.n=new x;y.t=ia;var z=w.dicnf||{};function C(a){var b=this;this.b=!1;this.a=[];a(function(c){D(b,c)})}function D(a,b){if(!a.b)if(b instanceof C)b.then(function(c){D(a,c)});else{a.b=!0;a.c=b;for(b=0;b<a.a.length;++b)E(a,a.a[b]);a.a=[]}}function E(a,b){a.b?b(a.c):a.a.push(b)}C.prototype.then=function(a){var b=this;return new C(function(c){E(b,function(d){c(a(d))})})}; function ja(a){var b=a.length,c=0;return new C(function(d){if(0==b)d([]);else for(var e=[],g={h:0};g.h<b;g={h:g.h},++g.h)a[g.h].then(function(f){return function(k){e[f.h]=k;++c==b&&d(e)}}(g))})}function ka(){var a,b=new C(function(c){a=c});return new la(b,a)}function ma(){return new C(function(a){return a(void 0)})}function la(a,b){this.b=a;this.a=b};function F(a){return{visible:1,hidden:2,prerender:3,preview:4,unloaded:5}[a.visibilityState||a.webkitVisibilityState||a.mozVisibilityState||""]||0}function na(a){var b;a.visibilityState?b="visibilitychange":a.mozVisibilityState?b="mozvisibilitychange":a.webkitVisibilityState&&(b="webkitvisibilitychange");return b};function oa(a){this.a=a||w.document||document};function G(a,b,c){a.google_image_requests||(a.google_image_requests=[]);var d=a.document.createElement("img");c&&(d.referrerPolicy="no-referrer");d.src=b;a.google_image_requests.push(d)}var pa=function(a){var b=!1,c;return function(){b||(c=a(),b=!0);return c}}(function(){return"referrerPolicy"in w.document.createElement("img")});function H(){this.a=w.document;this.b=null;qa(this)}function qa(a){var b=[];if(z.umi){var c=new C(function(d){a.b=d});b.push(c)}3==F(a.a)&&3==F(a.a)&&b.push(ra(a));a.c=ja(b)}function sa(a){if(z.atsb){var b;if(b=w.navigator)b=w.navigator.userAgent,b=/Chrome/.test(b)&&!/Edge/.test(b)?!0:!1;b&&w.navigator.sendBeacon?w.navigator.sendBeacon(a):G(w,a,!1)}else G(w,a,!1)} function ra(a){return new C(function(b){var c=na(a.a);if(c){var d=function(){if(3!=F(a.a)){var e=a.a;e.removeEventListener&&e.removeEventListener(c,d,!1);b()}};ea(a.a,c,d)}})}H.a=void 0;H.b=function(){return H.a?H.a:H.a=new H};function I(a){if(!a)throw Error("functionToExecute must not be truthy.");};function J(){return/\d+\.\d+\.\d+(-.*)?/.test("1.2.21-google_20191111")}function K(){for(var a=["1","2","21"],b=["1","0","3"],c=0;3>c;c++){var d=parseInt(a[c],10),e=parseInt(b[c],10);if(d>e)break;else if(d<e)return!1}return!0};function M(a,b,c,d){this.b=a;this.method=b;this.version=c;this.a=d}function N(a){return!!a&&void 0!==a.omid_message_guid&&void 0!==a.omid_message_method&&void 0!==a.omid_message_version&&"string"===typeof a.omid_message_guid&&"string"===typeof a.omid_message_method&&"string"===typeof a.omid_message_version&&(void 0===a.omid_message_args||void 0!==a.omid_message_args)}function O(a){return new M(a.omid_message_guid,a.omid_message_method,a.omid_message_version,a.omid_message_args)} function P(a){var b={};b=(b.omid_message_guid=a.b,b.omid_message_method=a.method,b.omid_message_version=a.version,b);void 0!==a.a&&(b.omid_message_args=a.a);return b};function ta(a){this.b=a};function ua(a,b){return a&&(a[b]||(a[b]={}))};function va(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(a){var b=16*Math.random()|0;return"y"===a?(b&3|8).toString(16):b.toString(16)})};function wa(a){for(var b=[],c=0;c<arguments.length;++c)b[c]=arguments[c];xa(function(){throw new (Function.prototype.bind.apply(Error,[null,"Could not complete the test successfully - "].concat(b instanceof Array?b:m(h(b)))));},function(){return console.error.apply(console,b instanceof Array?b:m(h(b)))})}function xa(a,b){"undefined"!==typeof jasmine&&jasmine?a():"undefined"!==typeof console&&console&&console.error&&b()};var Q=eval("this"),R=function(){if("undefined"!==typeof omidGlobal&&omidGlobal)return omidGlobal;if("undefined"!==typeof global&&global)return global;if("undefined"!==typeof window&&window)return window;if("undefined"!==typeof Q&&Q)return Q;throw Error("Could not determine global object context.");}();function ya(a){try{return a.frames?!!a.frames.omid_v1_present:!1}catch(b){return!1}};function S(a){this.b=a;this.handleExportedMessage=S.prototype.c.bind(this)}v(S,ta);S.prototype.sendMessage=function(a,b){b=void 0===b?this.b:b;if(!b)throw Error("Message destination must be defined at construction time or when sending the message.");b.handleExportedMessage(P(a),this)};S.prototype.c=function(a,b){N(a)&&this.a&&this.a(O(a),b)};function za(a){return null!=a&&"undefined"!==typeof a.top&&null!=a.top}function Aa(a){if(a===R)return!1;try{if("undefined"===typeof a.location.hostname)return!0}catch(b){return!0}return!1};function T(a,b){this.b=b=void 0===b?R:b;var c=this;a.addEventListener("message",function(d){if("object"===typeof d.data){var e=d.data;N(e)&&d.source&&c.a&&c.a(O(e),d.source)}})}v(T,ta);T.prototype.sendMessage=function(a,b){b=void 0===b?this.b:b;if(!b)throw Error("Message destination must be defined at construction time or when sending the message.");b.postMessage(P(a),"*")};var Ba=["omid","v1_VerificationServiceCommunication"],Ca=["omidVerificationProperties","serviceWindow"];function Da(a,b){return b.reduce(function(c,d){return c&&c[d]},a)};function U(a){if(!a){var b;"undefined"===typeof b&&"undefined"!==typeof window&&window&&(b=window);b=za(b)?b:R;var c=void 0===c?ya:c;a=[];var d=Da(b,Ca);d&&a.push(d);a.push(za(b)?b.top:R);a:{a=h(a);for(var e=a.next();!e.done;e=a.next()){b:{d=b;e=e.value;var g=c;if(!Aa(e))try{var f=Da(e,Ba);if(f){var k=new S(f);break b}}catch(q){}k=g(e)?new T(d,e):null}if(d=k){a=d;break a}}a=null}}if(this.a=a)this.a.a=this.i.bind(this);else if(c=(c=R.omid3p)&&"function"===typeof c.registerSessionObserver&&"function"=== typeof c.addEventListener?c:null)this.b=c;this.c={};this.f=(c=R.omidVerificationProperties)?c.injectionId:void 0}function Ea(a,b){I(b);a.b?a.b.registerSessionObserver(b,void 0,a.f):a.g("addSessionListener",b,void 0,a.f)} U.prototype.addEventListener=function(a,b){if(!a)throw Error("Value for eventType is undefined, null or blank.");if("string"!==typeof a&&!(a instanceof String))throw Error("Value for eventType is not a string.");if(""===a.trim())throw Error("Value for eventType is empty string.");I(b);this.b?this.b.addEventListener(a,b):this.g("addEventListener",b,a)}; U.prototype.i=function(a){var b=a.method,c=a.b;a=a.a;if("response"===b&&this.c[c]){var d=J()&&K()?a?a:[]:a&&"string"===typeof a?JSON.parse(a):[];this.c[c].apply(this,d)}"error"===b&&window.console&&wa(a)};U.prototype.g=function(a,b,c){for(var d=[],e=2;e<arguments.length;++e)d[e-2]=arguments[e];this.a&&(e=va(),b&&(this.c[e]=b),d=J()&&K()?d:JSON.stringify(d),this.a.sendMessage(new M(e,"VerificationService."+a,"1.2.21-google_20191111",d)))};var V=void 0; if(V=void 0===V?"undefined"===typeof omidExports?null:omidExports:V){var W=["OmidVerificationClient"];W.slice(0,W.length-1).reduce(ua,V)[W[W.length-1]]=U};function Fa(){var a=this.g=new U;this.c=!(!a.a&&!a.b);this.a=null;this.b=this.c?4:1;this.f=this.c} function Ga(a){a.f?(a.a=new C(function(b){var c=!!z.apfa,d=new C(function(g){Ea(a.g,function(f){"sessionStart"==f.type&&(f=f.data,"onePixel"==f.context.impressionType&&(c=!0),g("app"==f.context.environment))})}),e=new C(function(g){a.g.addEventListener("geometryChange",function(f){f=f.data;var k=f.adView.reasons;k&&-1!=k.indexOf("hidden")||(c?(f=f.adView,(f=f.onScreenContainerGeometry||f.onScreenGeometry)&&f.width&&f.height&&(a.b=3,g())):(a.b=2,g()))})});d.then(function(g){g?e.then(function(){b()}): (a.b=1,b())})}),a.a.then(function(){a.f=!1})):a.a=ma()}function Ha(a){a.a||Ga(a);return a.a};function Ia(a,b){if(a)for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&&b.call(void 0,a[c],c,a)};var X=["FRAME","IMG","IFRAME"],Ja=/^[01](px)?$/;function Ka(a,b,c){if(a)for(var d=0;null!=a&&500>d&&!c(a);++d)a=b(a)}function La(a,b){Ka(a,function(c){try{return c===c.parent?null:c.parent}catch(d){}return null},b)}function Ma(a,b){if("IFRAME"==a.tagName)b(a);else{a=a.querySelectorAll("IFRAME");for(var c=0;c<a.length&&!b(a[c]);++c);}}function Na(a){return(a=a.ownerDocument)&&(a.parentWindow||a.defaultView)||null} function Oa(a,b,c){try{var d=JSON.parse(c.data)}catch(f){}if("object"===typeof d&&d&&"creativeLoad"===d.type){var e=Na(a);if(c.source&&e){var g;La(c.source,function(f){try{if(f.parent===e)return g=f,!0}catch(k){}});g&&Ma(a,function(f){if(f.contentWindow===g)return b(d),!0})}}} function Pa(a,b){var c="string"===typeof a?document.getElementById(a):a;if(c)if(c.onCreativeLoad)c.onCreativeLoad(b);else{var d=b?[b]:[],e=function(g){for(var f=0;f<d.length;++f)try{d[f](1,g)}catch(k){}d={push:function(k){k(1,g)}}};c.onCreativeLoad=function(g){d.push(g)};c.setAttribute("data-creative-load-listener","");c.addEventListener("creativeLoad",function(g){e(g.detail)});w.addEventListener("message",function(g){Oa(c,e,g)})}} function Qa(a,b){var c;var d=void 0===d?!0:d;var e=void 0===e?!1:e;if(a="string"===typeof a?document.getElementById(a):a){c||(c=function(A,Va,Wa){A.addEventListener(Va,Wa)});for(var g=!1,f=function(A){g||(g=!0,b(A))},k,q,r=0;r<X.length;++r)if(X[r]==a.tagName){q=3;k=[a];break}k||(k=a.querySelectorAll(X.join(",")),q=2);var B=0;a=!1;for(r=0;r<k.length;r++){var l=k[r];if(!("IMG"!=l.tagName||!l.complete||l.naturalWidth&&l.naturalHeight?Ja.test(l.getAttribute("width"))&&Ja.test(l.getAttribute("height")): 1)){if("IMG"==l.tagName)var L=l.naturalWidth&&l.naturalHeight?!0:!1;else try{L="complete"===(l.readyState?l.readyState:l.contentWindow&&l.contentWindow.document&&l.contentWindow.document.readyState)?!0:!1}catch(A){L=void 0===e?!1:e}L?a=!0:(B++,c(l,"load",function(){B--;B||f(q)}))}}k=null;B||!a?c(w,"load",function(){f(4)}):d&&f(q)}};function Ra(a,b,c){this.B=a;this.i=c||new Fa;this.u=y[z.cvds]||y.n;this.A=this.f=this.b=this.l=!1;this.w=1;this.c=z.eavp?1:0;this.a=z.ebrp?1:0;this.m=this.g=null;this.o=ka();this.s=(new Date).getTime();this.j=this.v=null;Sa(this,b)}var Ta;function Ua(a,b){b&&0!==a.a&&(a.j=(new Date).getTime()-a.s,Xa(a,b).then(function(c){c&&(a.g=c);a.A=!0;Y(a)}))}function Sa(a,b){Ua(a,b);if(0!==a.a||0!==a.c)a.i.f?Ha(a.i).then(function(){Ya(a)}):Ya(a);H.b().c.then(function(){a.b=!0;Y(a)});Y(a)} function Xa(a,b){return new C(function(c){function d(e,g){a.m=e;c(g)}Pa(b,d);Qa(b,d)})}function Ya(a){a.f=!0;Y(a)}function Z(a){return a.b&&a.f&&a.A}function Y(a){a.b&&(a.b&&(0===a.c||a.b&&a.f)&&(0===a.a||Z(a))?Za(a):a.l||(a.l=!0,fa(a.u,function(){a.l=!1;a.u=y.n;Za(a)})))}function Za(a){var b=null,c=0;2!==a.w?b=0:1===a.c&&a.b&&a.f?b=12:1===a.a&&Z(a)&&(b=11);null!=b&&(0===b?1===a.a&&Z(a)?c=2:1===a.c&&a.b&&a.f&&(c=1):12===b&&1===a.a&&Z(a)&&(c=2),$a(a,b,c),0===b&&a.o.a())} function $a(a,b,c){var d=(new Date).getTime(),e={omid:a.i.c?1:0,rm:a.i.b,ctpt:d-a.s};0!==b&&(e.vt=b,e.dtpt=d-(a.v||0));0!==c&&(e.cbvp=c);a.m&&(e.dett=a.m);a.g&&(e.beid=a.g.eventId,e.vend=a.g.vendor);null!=a.j&&(e.cstd=a.j);var g=z.bvst;g&&(e.cisv=g);var f="";Ia(e,function(k,q){f+="&"+q+"="+encodeURIComponent(k)});e=da(a.B,f);0===b&&(a.w=2,a.v=d);if(12===b||c)a.c=2;if(11===b||2===c)a.a=2;sa(e)};window.btrp=function(a,b,c){var d=Ta=new Ra(a,b,c);return function(e){Ua(d,e)}};window.pdib3=function(a,b){Ta.o.b.then(function(){if(b)if(pa())G(window,a,!0);else{var c=w.document;if(c.body){var d=c.getElementById("goog-srcless-iframe");if(!d){d=(new oa(c)).a;var e="IFRAME";"application/xhtml+xml"===d.contentType&&(e=e.toLowerCase());d=d.createElement(e);d.style.display="none";d.id="goog-srcless-iframe";c.body.appendChild(d)}c=d}else c=null;c&&c.contentWindow&&G(c.contentWindow,a,!0)}else G(w,a,!1)})}; window.vv=function(){var a=H.b();if(!a.b)throw Error("aiv::err");a.b()};}).call(this);window.stcc = btrp("https://googleads4.g.doubleclick.net/pcs/view?xai\x3dAKAOjsspg7HEshbZU3rI2SMyOOP3ypyUiwuZtVgYekgw3Dt4Q1qIkJqfbi85vrLOT0p9kL-4jw_4WtueZjzesKMbGBcjmfSA8Xqh9yeOAYXleoDtwj6AW3uqb0k7s-f11gYsY_0vTc10OCDkyT658rV9cV4-\x26sig\x3dCg0ArKJSzLr2LzTWXGnFEAE\x26urlfix\x3d1\x26adurl\x3d", document.getElementById("gcc_N9ztXZ-eGbyX9QO66o6YBw"));</script><noscript><a target="_blank" href="https://adclick.g.doubleclick.net/pcs/click?xai=AKAOjsspg7HEshbZU3rI2SMyOOP3ypyUiwuZtVgYekgw3Dt4Q1qIkJqfbi85vrLOT0p9kL-4jw_4WtueZjzesKMbGBcjmfSA8Xqh9yeOAYXleoDtwj6AW3uqb0k7s-f11gYsY_0vTc10OCDkyT658rV9cV4-&amp;sig=Cg0ArKJSzMmb_vZKh_xtEAE&amp;urlfix=1&amp;rm_eid=5864335&amp;adurl=https://www.toeflgoanywhere.org/destination/au/?utm_campaign=IND&amp;utm_medium=Banner&amp;utm_source=Shiksha&amp;utm_content=context"><img src="https://s0.2mdn.net/8842663/TOEFL_Destination_US_300x250_static2.jpg" width="300" height="250" border="0" /></a><img width="0px" height="0px" style="visibility:hidden" border="0" src="" alt="" /></noscript><script type="text/javascript">(function() {if (!window.GoogleTyFxhY || typeof window.GoogleTyFxhY.push !== 'function') {window.GoogleTyFxhY = [];}window.GoogleTyFxhY.push({'_scs_': 'Bk2OEN9ztXZ-eGbyX9QO66o6YBwAAAAA4AeAEAg','_bgu_': 'https://pagead2.googlesyndication.com/bg/R5ZafKr0PlZ7OmGMCk95d__fihE5gBkhkjuiGGCKDDU.js','_bgp_': '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\x3d','_ifr_': 'false'});var gsodar = document.createElement('script');gsodar.type = 'text/javascript';gsodar.async = true;gsodar.src = '//tpc.googlesyndication.com/sodar/UFYwWwmt.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gsodar, s);})();</script>
+                </ins>
+                </a></td><td>&nbsp;</td></tr></tbody></table>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

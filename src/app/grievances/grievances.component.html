@@ -1,0 +1,189 @@
+<app-header></app-header>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-12">
+      <div class="gri-styl">
+        <div id="content-new">
+        
+      
+
+          <div style="width:98%;">
+
+
+            <form name="form1" enctype="multipart/form-data" method="post" action="grievance_iframe.php"
+              style="margin:0px;" onsubmit="return validateCmplnt_form();">
+              <input type="hidden" name="required" id="required"
+                value="span_Name,span_Email,span_Phone,span_Portal,span_Link,span_Reason,span_Details,span_Attach,">
+
+
+              <div style="float:left;" class="secbx1 compaintForm">
+
+                <div class="lf bxl">
+                  <div class="row4">
+
+
+                    <label><span id="span_err_top" style="color:red;font-size:15px;visibility:none"></span></label>
+                    <span class="cl"></span>
+                  </div>
+
+
+
+                  <div class="row4">
+                    <label> <span id="span_Name"> Your Name: </span></label>
+                    <p><input class="input12" type="text" name="strName" value="" maxlength="35" size="25"
+                        onblur="trimFieldValue(this)"> </p>
+                    <span class="cl"></span>
+                    <span class="cl"></span>
+                  </div>
+
+                  <div class="row4">
+                    <label> <span id="span_Email"> Your E-Mail ID: </span></label>
+                    <p><input class="input12" type="text" name="strEmail" value="" maxlength="100" size="25"
+                        onblur="trimFieldValue(this)"></p>
+                    <span class="cl"></span>
+                  </div>
+
+                  <div class="row4"><label> <span id="span_Phone"> Your Contact Number: </span></label>
+                    <p>
+                      <input class="input12" name="strMobile" type="text" value="" maxlength="15" size="20"
+                        onblur="trimFieldValue(this)">
+                    </p>
+                    <span class="cl"></span>
+                  </div>
+
+
+
+
+                  <div class="row4">
+                    <label> <span id="span_Portal"> Please mark the web portal which hosts the issue(s) encountered by
+                        you : </span></label>
+                    <p name="portal_p"> <input class="radio-margin" type="radio" name="portal" value="11" checked="">naukri.com<br>
+                      <input class="radio-margin" type="radio" name="portal" value="13">99acres.com<br>
+                      <input class="radio-margin" type="radio" name="portal" value="15">Jeevansathi.com<br>
+                      <input class="radio-margin" type="radio" name="portal" value="17">Naukrigulf.com<br>
+                      <input class="radio-margin" type="radio" name="portal" value="19">Firstnaukri.com<br>
+                      <input class="radio-margin" type="radio" name="portal" value="21">Brijj.com<br>
+                      <input class="radio-margin" type="radio" name="portal" value="23">Allcheckdeals.com<br>
+                      <input class="radio-margin" type="radio" name="portal" value="25">Shiksha.com<br>
+                      <input class="radio-margin" type="radio" name="portal" value="27">Infoedge.in<br>
+                      <input class="radio-margin" type="radio" name="portal" value="29">Ambitionbox.com<br>
+                    </p>
+                  </div>
+
+
+                  <div class="row4">
+                    <label><span id="span_Link"> Please share the link (URL) of the Page which you are reporting
+                        against:
+                      </span></label>
+                    <p><input class="input12" type="text" size="25" maxlength="100" value="" name="strLink"></p>
+
+                  </div>
+
+
+                  <div class="row4">
+                    <label><span id="span_Reason">
+                        Please tell us the reason for your complaint/concern.
+                        Choose an option which most closely matches with your concern. If you are unsure
+                        which option to choose, please select the last option. Thanks
+                      </span></label>
+                    <p>
+                      <span class="lf"><input class="check-margin" type="checkbox" id="complaint" name="complaint[]" value="9"></span><span
+                        class="lf" style="width:360px; line-height:18px;">The content exposes personal data while
+                        violating Terms &amp; Conditions and/or Privacy Policy of concerned website.</span>
+                      <br>
+                      <span class="cl"></span>
+                      <span class="lf"><input class="check-margin" type="checkbox" id="complaint" name="complaint[]" value="11"></span><span
+                        class="lf" style="width:360px; line-height:18px;">The content is grossly harmful, harassing,
+                        blasphemous, defamatory, obscene, pornographic and/or unlawful in any manner.</span>
+                      <br><span class="cl"></span>
+                      <span class="lf"><input class="check-margin" type="checkbox" id="complaint" name="complaint[]" value="13"></span><span
+                        class="lf" style="width:360px; line-height:18px;">The content threatens the unity, integrity,
+                        defence, security or sovereignty of India and/or friendly relations with foreign
+                        states.</span><span class="cl"></span>
+                      <span class="lf"><input class="check-margin" type="checkbox" id="complaint" name="complaint[]" value="15"></span><span
+                        class="lf" style="width:360px; line-height:18px;">The content infringes a patent, trademark,
+                        copyright or other proprietary rights.</span>
+                      <br>
+                      <span class="cl"></span>
+                      <span class="lf"><input class="check-margin" type="checkbox" id="complaint" name="complaint[]" value="17"></span><span
+                        class="lf" style="width:360px; line-height:18px;">The content encourages money laundering or
+                        gambling.</span>
+                      <br>
+                      <span class="cl"></span>
+                      <span class="lf"><input class="check-margin" type="checkbox" id="complaint" name="complaint[]" value="19"></span><span
+                        class="lf" style="width:360px; line-height:18px;">The content hosts software viruses or any
+                        other computer code designed to harm the functionality of any computer resource.</span>
+                      <br><span class="cl"></span>
+                      <span class="lf"><input class="check-margin" type="checkbox" id="complaint" name="complaint[]" value="21"></span><span
+                        class="lf" style="width:360px; line-height:18px;">The content harms minors in any way.</span>
+                      <br>
+                      <span class="cl"></span>
+                      <input class="check-margin" type="checkbox" name="otherComplntChkbx" id="otherComplntChkbx">Other
+                      <input class="input12" type="text" name="otherComplntTxt" id="otherCmplntTxt" value="" disabled="true"></p><span
+                      class="cl"></span>
+
+
+                    <div class="row4">
+
+                      <p><textarea style="width:100%;" class="textbox" id="strDetails" name="strDetails" rows="6" cols="50"
+                          onclick="valid('2');"></textarea> </p>
+                      <span class="cl"></span>
+
+
+                      <div class="row4" id="fileCont" style="display: block;">
+                        <label> <span id="span_Attach"> Please upload any supporting document(s) pertaining to the issue
+                            you are reporting: </span></label>
+                        <p class="pmargin-btm">
+                          <input id="fk" name="filekey" value="U5d8cb64810bdf" type="hidden">
+                          <input id="upldst" name="uploadResume" value="failure" type="hidden">
+                          <input class="w200" id="atchRes" name="F53be3226ebcf5[U5d8cb64810bdf]" type="file"
+                            onchange="uploaderQUP.upload();" rel="">
+                        
+                        </p>
+                        <div class="preLod1" id="filePreloader" style="display:none;">Uploading your file. Please
+                          wait...</div>
+                        <i id="atchResErr" class="erLbl1"></i>
+
+                        <!--<INPUT name="userfile" size="32" type="file" onclick="LimitAttach(this.form, this.form.userfile.value)">-->
+                        <br>
+
+                        (Please upload a GIF, PNG, JPG, PDF or JPEG file only and ensure that the file is currently not
+                        in use. [Maximum File Size Limit 2 MB])
+                        <p></p>
+
+                        <br>
+                        <span class="err" id="span_err_files"> </span>
+                      </div>
+
+
+
+
+                      <div class="row4 ml120">
+
+                        <input type="submit" id="Submit" name="Submit" value="Submit" class="button1 pointer gribtn"
+                          style="width:80px"> &nbsp;
+                        <div class="btnsp">&nbsp;</div>
+                      </div>
+                    </div>
+                  </div>
+                  <p></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,571 @@
+<app-header></app-header>
+<div class="review-header_main">
+    <div class="review-landing img">
+        <div class="reviewInn">
+            <div class="container">
+                <div class="top-section col-md-8 col-md-offset-2">
+                    <h1 class="logo-review alignCenter"> <span>College Rev<img
+                                src="https://images.careers360.mobi/sites/all/themes/careers360_new/images/reviews-pen.png"
+                                alt="College Review" class="booksimg">ew</span></h1>
+                    <div class="grid-container clearfix">
+                        <div class="grid grid-4">
+                            <div class="grid-space bg-transparent transition-all radius-5 alignCenter">
+                                <div class="circle transition-all mar-btm-10"><span class="number">1</span></div>
+                                <h1 class="new--review_title">Your College Experience could help others</h1>
+                            </div>
+                        </div>
+                        <div class="grid grid-4">
+                            <div class="row new--review_box">
+
+                                <div class="col-md-6 review--info_bar">
+                                    <div class="col-md-3">
+                                        <div class="review-form-icons review--info_img reviewShare"></div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="right--info_bar">
+                                            <h2 class="info--lable">Share Your Experience</h2>
+                                        </div>
+
+                                        <p class="info--textdata">Talk about the Good, the bad &amp; the missing</p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 review--info_bar">
+                                    <div class="col-md-3">
+                                        <div class="review-form-icons review--info_img reviewPlay"></div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="right--info_bar">
+                                            <h2 class="info--lable">Play The Mentor</h2>
+                                        </div>
+                                        <p class="info--textdata">Help students to decide on the right college &amp;
+                                            course
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid grid-4">
+                            <div class="grid-space bg-transparent radius-5 alignCenter">
+                                <div class="circle transition-all mar-btm-10"><span class="number"></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+
+        <div class="form-details">
+            <p>Your honest &amp; detailed review on Placements Infrastructure and Facilities will help thousands of
+                students make an informed college decision. </p>
+            <!--p>To increase your chances of having your review accepted on Shiksha, make your review HONEST and DETAILED by giving specifics on Placements, Internships, Infrastructure, Curriculum and Faculty.</p-->
+            <p><b>We will accept your review if:</b><br>
+                1. It is descriptive and contains useful information.<br>
+                2. You have not copied text from anywhere else.<br>
+                3. Don’t use junk characters, SMS language, slang or abusive words in your review.<br>
+                4. Your personal &amp; contact details are correct and authentic.<br>
+            </p>
+
+
+            <p class="sectionalHeading topBorder"></p>
+            <ul>
+                <li class="clear-width">
+                    <div class="flLt dummy_autosuggest" id="dummy_autosuggest_1">
+                        <label>College Name</label>
+                        <p>Enter the college name you're about to review</p>
+
+                        <mat-form-field class="optionbox">
+                            <mat-label>Location</mat-label>
+                            <mat-select>
+                                <mat-option  class="optionbox1">
+                                    Volvo
+                                </mat-option>
+                                <mat-option>
+                                    Mercedes
+                                </mat-option>
+                                <mat-option>
+                                    Mercedes
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <div id="search-college-layer1" class="suggestion-box" style="display: none;"></div>
+                    </div>
+
+                    <input type="hidden" name="suggested_institutes[]" id="suggested_institutes_1" value="">
+
+                    <div class="flRt tab" id="locationDiv">
+                        <label id="locLabel">Location</label>
+                        <p id="locHelpText">Select the city in which your college is located. For eg: Mumbai, Agra,
+                            Noida etc</p>
+
+                        <!-- <select matNativeControl [disabled]="disableSelect.value">
+                                    <option value="" selected></option>
+                                    <opselection value="volvo">Volvo</option>
+                                    <option value="saab" disabled>Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                  </select> -->
+
+                        <mat-form-field class="optionbox">
+                            <mat-label>Location</mat-label>
+                            <mat-select>
+                                <mat-option  class="optionbox1">
+                                    Volvo
+                                </mat-option>
+                                <mat-option>
+                                    Mercedes
+                                </mat-option>
+                                <mat-option >
+                                    Mercedes
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                        <div style="display:none;" id="loc_main">
+                            <div class="errorMsg" id="location_1_error" style="*float:left"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="clear-width">
+                    <div class="flLt tab" id="courseDiv">
+                        <label id="courseLabel">Course</label>
+                        <p id="courseHelpText">Select the course along with the specialization</p>
+
+                        <mat-form-field class="optionbox">
+                            <mat-label>Location</mat-label>
+                            <mat-select>
+                                <mat-option  class="optionbox1">
+                                    Volvo
+                                </mat-option>
+                                <mat-option >
+                                    Mercedes
+                                </mat-option>
+                                <mat-option >
+                                    Mercedes
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <div style="display:none;" id="course_main">
+                            <div class="errorMsg" id="course_1_error" style="*float:left"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="flRt">
+                        <label>Year of Completion</label>
+                        <p>Select the year when you completed the course.</p>
+                        <p>If you're currently studying, please enter the year when you will complete the course. </p>
+                        <mat-form-field class="optionbox">
+                            <mat-label>Location</mat-label>
+                            <mat-select>
+                                <mat-option  class="optionbox1">
+                                    Volvo
+                                </mat-option>
+                                <mat-option >
+                                    Mercedes
+                                </mat-option>
+                                <mat-option>
+                                    Mercedes
+                                </mat-option>
+                            </mat-select>
+                        </mat-form-field>
+
+                        <div style="display:none;">
+                            <div class="errorMsg" id="yearOfGraduation_error" style="*float:left"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="camp-review-sec clear-width" id="camp-review-sec">
+                <p class="form-title" style="margin-bottom:0;">Placements <span class="least">(At least 3-4
+                        lines)</span> <span>*</span></p>
+                <p style="display:block;">Provide the information about your batch and course (or of your passing out
+                    batch)</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <ol start="1" class="numericList">
+                                <li>What percent of students were placed in your course?</li>
+                                <li>What was the highest, lowest and average salary offered?</li>
+                                <li>Top Recruiting companies for your course?</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <ol start="4" class="numericList">
+                                <li>Top Roles offered in your course?</li>
+                                <li>What was the highest, lowest and the average package offered in your course?</li>
+                                <li>What percent of students got internship from your course and in which companies?
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <!--p style="display:block;">What percent of students got internship from college? What was the highest, lowest and the average stipend offered during internship?<br>Is there a placement cell? How efficient or useful is it?</p-->
+
+                <div class="write-review-sec">
+                    <textarea id="placementDescription" name="placementDescription" class="write-textarea2"
+                        caption="review about your College Placements" validate="validateReviewFields" required="true"
+                        minlength="250" maxlength="2500"></textarea>
+                    <div style="display:none;">
+                        <div class="errorMsg" id="placementDescription_error" style="*float:left"></div>
+                    </div>
+                    <p class="fieldHintText">(Minimum <label id="placementDescription_count">250</label> characters)</p>
+                </div>
+            </div>
+
+            <div class="camp-review-sec clear-width" id="camp-review-sec">
+                <p class="form-title" style="margin-bottom:0;">Infrastructure for your Course &amp; Hostel<span
+                        class="least">(At least 3-4 lines)</span> <span>*</span></p>
+                <div class="flex-row">
+                    <div>
+                        <ol start="1" class="numericList">
+                            <li>Describe the facilities and infrastructure available for your course/department (e.g.
+                                Wi-Fi, Labs, Classrooms, Library)?</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <ol start="2" class="numericList">
+                            <li>What is/was the quality of the facilities in your hostel, the quality of food available
+                                in the mess and canteen, medical facilities, sports and games?</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="write-review-sec">
+                    <textarea id="infraDescription" name="infraDescription" class="write-textarea2"
+                        caption="review about your College Infrastructure" validate="validateReviewFields"
+                        required="true" minlength="250" maxlength="2500"></textarea>
+                    <div style="display:none;">
+                        <div class="errorMsg" id="infraDescription_error" style="*float:left"></div>
+                    </div>
+                    <p class="fieldHintText">(Minimum <label id="infraDescription_count">250</label> characters)</p>
+                </div>
+            </div>
+
+            <div class="camp-review-sec clear-width" id="camp-review-sec">
+                <p class="form-title" style="margin-bottom:0;">Faculty &amp; Course Curriculum for your course <span
+                        class="least">(At least 3-4 lines)</span> <span>*</span></p>
+                <div>
+                    <ol class="numericList">
+                        <li>Were the teachers helpful, qualified, and knowledgeable? How was the teaching quality?</li>
+                        <li>Is this course curriculum relevant? Does it make the students industry ready?</li>
+                    </ol>
+                </div>
+                <div class="write-review-sec">
+                    <textarea id="facultyDescription" name="facultyDescription" class="write-textarea2"
+                        caption="review about your College Faculty" validate="validateReviewFields" required="true"
+                        minlength="250" maxlength="2500"></textarea>
+                    <div style="display:none;">
+                        <div class="errorMsg" id="facultyDescription_error" style="*float:left"></div>
+                    </div>
+                    <p class="fieldHintText">(Minimum <label id="facultyDescription_count">250</label> characters)</p>
+                </div>
+            </div>
+
+            <div class="camp-review-sec clear-width" id="camp-review-sec">
+                <p class="form-title" style="margin-bottom:0;">Other Details for your course</p>
+                <div>
+                    <ol class="numericList">
+                        <li>Why did you choose this course? What are the best things about your course? </li>
+                        <li>What things you wish would be better/improve about your course?</li>
+                        <li>Events, Fest, Campus Crowd, Connectivity, Campus Surroundings, Scholarship, Extracurricular
+                            Activities, etc.</li>
+                    </ol>
+                </div>
+                <div class="write-review-sec">
+                    <textarea id="review-ugcollege" name="reviewDescription" class="write-textarea2"
+                        caption="review about your College" validate="validateReviewFields" minlength="0"
+                        maxlength="2500"></textarea>
+                    <div style="display:none;">
+                        <div class="errorMsg" id="review-ugcollege_error" style="*float:left"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="camp-review-sec clear-width" id="camp-review-sec">
+                <p class="form-title" style="margin-bottom:0;">Title of Review <span>*</span></p>
+                <p style="display:block;">Give a short headline that summarizes your college review. e.g. Absolutely
+                    dissatisfied because of faculty, good placements in 2015, really good infrastructure and facilities
+                    etc.</p>
+                <div class="write-review-sec">
+                    <input id="titleReview" class="text-width" value="" validate="validateReviewFields"
+                        name="titleReview" maxlength="100" minlength="25" caption="Title of the Review" required="true"
+                        type="text">
+                    <div style="display:none;">
+                        <div class="errorMsg" id="titleReview_error" style="*float:left"></div>
+                    </div>
+                    <p class="fieldHintText">(Minimum <label id="titleReview_count">25</label> characters)</p>
+                </div>
+            </div>
+
+            <div id="reviewRatingFormId" class="camp-rating clear-width">
+                <input name="ratingParam" id="ratingParam"
+                    value="K0YzS1A3WmcyRS9JZG5xc2JKMGNXQ3h0aWVva1VCSXM5Y0dHK2QvZGpqaldYZnYrSVErMkpUUlUrZWxFS0IvZlZMRXJrdUM5WS9rd2xQenJQcjV6TGpudWVlREVKSUxnWUg0VmlubG5DRkVld2NCU3h3VTZmR2NSeGZzV0lzeHNCdFJWeGIxOGpXV3BXWXZPRHc4QjhpSVBFdkZWUmxBa3Z2T2FySml6TmFSbUVvK0ZDM3Y2anE5Tk5MeFJBSWc3alR1WEZ5ZFRJWlA4dkt0ZEpQVVZQUT09"
+                    type="hidden">
+                <p class="form-title">Rate Your College On The Following Parameters <span>*</span></p>
+                <ul>
+                    <input name="Rating_1" class="ratingParams" id="Rating_1" value="" type="hidden">
+                    <li class="clear-width">
+                    <div class="row">
+                    <div class="col-md-4">
+                        
+                        
+                            <span class="flLt" style="width:240px;"> a. Value for Money</span>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="flLt">
+                            <ol class="rating-list">
+                                <li id="1_1"><a href="" class="campus-sprite  star-icon"></a></li>
+                                <li id="1_2" onclick="markStarRating(2,'1');" onmouseover="showStarRating(2,'1');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="1_3" onclick="markStarRating(3,'1');" onmouseover="showStarRating(3,'1');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="1_4" onclick="markStarRating(4,'1');" onmouseover="showStarRating(4,'1');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="1_5" onclick="markStarRating(5,'1');" onmouseover="showStarRating(5,'1');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                            </ol>
+                            <span class="flRt review-comment" id="1_rating" style="padding-top:5px;"></span>
+                        </div>
+
+
+                    </div>
+                    </div>
+</li>
+                    <input name="Rating_2" class="ratingParams" id="Rating_2" value="" type="hidden">
+                    <li class="clear-width">
+
+                    <div class="row">
+                    <div class="col-md-4">
+                        <span class="flLt" style="width:240px;"> b. Crowd &amp; Campus Life</span></div>
+
+                    <div class="col-md-8">
+                        <div class="flLt">
+                            <ol class="rating-list" onmouseout="hideStarRating('2');">
+                                <li id="2_1" onclick="markStarRating(1,'2');" onmouseover="showStarRating(1,'2');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="2_2" onclick="markStarRating(2,'2');" onmouseover="showStarRating(2,'2');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="2_3" onclick="markStarRating(3,'2');" onmouseover="showStarRating(3,'2');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="2_4" onclick="markStarRating(4,'2');" onmouseover="showStarRating(4,'2');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="2_5" onclick="markStarRating(5,'2');" onmouseover="showStarRating(5,'2');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                            </ol>
+                            <span class="flRt review-comment" id="2_rating" style="padding-top:5px;"></span>
+                        </div>
+
+                    </div>
+                    </div>
+                    </li>
+                    <input name="Rating_3" class="ratingParams" id="Rating_3" value="" type="hidden">
+                    <li class="clear-width">
+
+                    <div class="row">
+                    <div class="col-md-4">
+                        <span class="flLt" style="width:240px;"> c. Placements</span></div>
+                    <div class="col-md-8">
+                        <div class="flLt">
+                            <ol class="rating-list" onmouseout="hideStarRating('3');">
+                                <li id="3_1" onclick="markStarRating(1,'3');" onmouseover="showStarRating(1,'3');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="3_2" onclick="markStarRating(2,'3');" onmouseover="showStarRating(2,'3');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="3_3" onclick="markStarRating(3,'3');" onmouseover="showStarRating(3,'3');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="3_4" onclick="markStarRating(4,'3');" onmouseover="showStarRating(4,'3');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="3_5" onclick="markStarRating(5,'3');" onmouseover="showStarRating(5,'3');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                            </ol>
+                            <span class="flRt review-comment" id="3_rating" style="padding-top:5px;"></span>
+                        </div>
+                    </div>
+                    </div>
+                    </li>
+                    <input name="Rating_4" class="ratingParams" id="Rating_4" value="" type="hidden">
+                    <li class="clear-width">
+
+                    <div class="row">
+                    <div class="col-md-4">
+                        <span class="flLt" style="width:240px;"> d. Infrastructure</span> </div>
+                    <div class="col-md-8">
+                        <div class="flLt">
+                            <ol class="rating-list" onmouseout="hideStarRating('4');">
+                                <li id="4_1" onclick="markStarRating(1,'4');" onmouseover="showStarRating(1,'4');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="4_2" onclick="markStarRating(2,'4');" onmouseover="showStarRating(2,'4');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="4_3" onclick="markStarRating(3,'4');" onmouseover="showStarRating(3,'4');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="4_4" onclick="markStarRating(4,'4');" onmouseover="showStarRating(4,'4');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                                <li id="4_5" onclick="markStarRating(5,'4');" onmouseover="showStarRating(5,'4');"><a
+                                        href="javascript:void(0);" class="campus-sprite  star-icon"></a></li>
+                            </ol>
+                            <span class="flRt review-comment" id="4_rating" style="padding-top:5px;"></span>
+                        </div>
+                    </div>
+                    </div>
+</li>
+
+                    <div style="display:none;">
+                        <div class="errorMsg" id="starRating_error" style="*float:left"></div>
+                    </div>
+                </ul>
+            </div>
+
+            <div id="recommend" style="margin-bottom:10px;">
+                <ul>
+                    <li>
+                        <p class="l-txt form-title" style="margin-bottom:5px;">Would you recommend others to take
+                            admission in your college? <span>*</span></p>
+                            <label >
+                        <input type="radio" class="recommendCollegeFlag" name="recommendCollegeFlag" value="YES"> Yes
+                    </label>
+                    <label>
+                        <input type="radio" class="recommendCollegeFlag" name="recommendCollegeFlag" value="NO"> No
+                    </label>
+                        <div style="display:none;">
+                            <div class="errorMsg" id="recommend_error" style="*float:left"></div>
+                        </div>
+                    </li>
+
+
+                    <li class="clear-width  camp-review-sec">
+                        <div class="flLt">
+                            <label>What was/is the approximate Total Fees charged by your College for this course?
+                                <span>*</span></label>
+                            <p>1. Please write below the Total Fees which includes Tuition, Hostel, Library, Admission
+                                fees, Mess and any other charges (e.g Rs 150000)<br>
+                                2. Please enter numbers only
+                            </p>
+                            Rs. <input type="text" class="text-width" value="" id="fees" name="fees" maxlength="20"
+                                minlength="1" validate="validateFeesReviews" caption="Fees" required="true"
+                                placeholder="e.g 150000">
+                            <div style="display: none;">
+                                <div class="errorMsg" id="fees_error" style="*float:left; width:280px">You can’t leave
+                                    this empty.</div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="connect-form clear-width">
+        <div class="form-details">
+            <p class="sectionalHeading personal">Personal Details</p>
+            <p style="margin-bottom:15px">Students trust a review when it comes from a genuine person. Please give us
+                few basic details about yourself which we will verify.</p>
+            <div style="position:relative;">
+                <ul>
+                    <li class="clear-width">
+                        <div class="flLt">
+                            <label>First Name <span>*</span></label>
+                            <input type="text" class="text-width" value="" id="firstname" name="firstname"
+                                maxlength="50" minlength="2" validate="validateFirstLastNameReviews"
+                                caption="First Name" required="true">
+                            <div style="display:none;">
+                                <div class="errorMsg" id="firstname_error" style="*float:left; width:280px"></div>
+                            </div>
+                        </div>
+                        <div class="flRt">
+                            <label>Last Name <span>*</span></label>
+                            <input type="text" class="text-width" value="" id="lastname" name="lastname" maxlength="50"
+                                minlength="2" validate="validateFirstLastNameReviews" caption="Last Name"
+                                required="true">
+                            <div style="display:none">
+                                <div class="errorMsg" id="lastname_error" style="*float:left; width:280px"></div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="clear-width">
+                        <div class="flLt">
+                            <label>Personal Email ID <span>*</span></label>
+                            <input type="text" class="text-width" value="" id="email" name="email"
+                                validate="validateEmailReview" required="true" caption="email address" maxlength="125">
+                            <div style="display:none;">
+                                <div class="errorMsg" id="email_error" style="*float:left"></div>
+                            </div>
+                        </div>
+
+                        <div class="flRt">
+                            <label>Facebook / LinkedIn Profile URL <span>*</span></label>
+                            <p style="display:block;">
+                            </p>
+                            <div class="mbSpace">Please enter the link of your Facebook or LinkedIn profile that carry
+                                your name &amp; your college name. Please make sure that the link you submit (Facebook
+                                or LinkedIn), is updated with your college &amp; course name, as we will publish your
+                                review only after verifying the same.</div>
+                            <p>How to get the URL for your Facebook/Linkedin profile:</p>
+                            <div class="fnt12">1. Log into Facebook/Linkedin (on a browser), then click on your name
+                                (near profile pic)<br>2. Copy the Facebook/Linkedin profile URL in the address bar of
+                                your browser<br>3. Paste it in the space provided below</div>
+                            <p></p>
+                            <input type="text" placeholder="https://www.facebook.com/abhijit.bh3" class="text-width"
+                                value="" name="facebookURL" id="facebookURL" validate="validateReviewFields"
+                                minlength="3" maxlength="200" required="true" caption="Facebook/LinkedIn profile URL">
+                            <div style="display:none;" placeholder="https://www.facebook.com/abhijit.bh3">
+                                <div class="errorMsg" id="facebookURL_error" style="*margin-left:3px;"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear-width">
+                        <div class="flLt">
+                            <label>Mobile Number <span>*</span></label>
+                            <p style="display:block;">Your phone number will not be shared with anyone. </p>
+                            <div style="width:16%;" class="flLt">
+                                <div style="display:none;">
+                                    <div class="errorMsg" id="isdCode_error"
+                                        style="float:left;width:100%;display:block"></div>
+                                </div>
+                            </div>
+
+                            <div style="float:left; width:31%;">
+                                <!--<label>Mobile Number</label>-->
+                                <input type="text" class="text-width" value="" id="mobile" name="mobile"
+                                    validate="validateMobileIntegerReview" maxlength="10" minlength="10"
+                                    caption="mobile" required="true" style="width:112%;height:41px">
+                            </div>
+                            <div style="display:none;">
+                                <div class="errorMsg" id="mobile_error" style="float:left; width:100%;"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <a style="margin:20px 0 0 0px !important; height:43px;font-weight: 600" href="javascript:void(0);"
+                class="orange-button continue-btn"  id="reviewSubmitButton">Submit Review
+            </a>
+            &nbsp;<span id="waitingDiv" style="display:none"><img src="/public/images/working.gif" border="0"
+                    align=""></span>
+
+            <div class="clear-width" style="margin-top:20px;">
+                <p><a href="#">Are you concerned about Privacy?
+                    </a></p>
+                    <input type="textarea" class="message1" placeholder="Write Here">
+               
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

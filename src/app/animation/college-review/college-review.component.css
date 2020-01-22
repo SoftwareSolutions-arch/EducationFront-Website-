@@ -1,0 +1,270 @@
+.page-colleges-reviews .full-col1 * {
+    box-sizing: content-box;
+}
+.review-header_main {
+    position: relative;
+}
+
+.review-landing.img{
+background-image: url('/src/assets/images/review-landing.jpg');
+padding: 72px;
+height: 30% !important;
+}
+.page-colleges-reviews .full-col1 * {
+    box-sizing: content-box;
+}
+.review-landing {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    display: inline-block;
+}
+review-landing .reviewInn {
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 40px 0;
+    width: 100%;
+    min-height: 300px;
+}
+.page-colleges-reviews .full-col1 * {
+    box-sizing: content-box;
+}
+#content .container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.page-colleges-reviews .full-col1 * {
+    box-sizing: content-box;
+}
+.container {
+    width: 1140px;
+}
+.page-colleges-reviews .logo-review.alignCenter {
+    margin: 20px 0px;
+}
+.page-colleges-reviews .full-col1 * {
+    box-sizing: content-box;
+}
+.text-center, .alignCenter, .block-admission-buddy h5 {
+    text-align: center;
+}
+.page-colleges-reviews .full-col1 * {
+    box-sizing: content-box;
+}
+.logo-review span {
+    font-family: 'robotoregular',sans-serif;
+    color: #fff;
+    font-size: 80px;
+    text-shadow: 0 0 1px rgba(0,0,0,1);
+    font-size: 55px;
+
+}
+.page-colleges-reviews .full-col1 * {
+    box-sizing: content-box;
+}
+.new--review_title {
+    font-size: 28px;
+    line-height: 36px;
+    color: #fff;
+}
+h1 {
+    font-weight: 700
+}
+.new--review_box {
+    justify-content: center;
+    margin-top: 30px;
+}
+.reviewShare {
+    background-position: 10px 0;
+}ssss
+.review--info_img {
+    width: 80px;
+    height: 60px;
+}
+.review-form-icons {
+    background: transparent url('/src/assets/images/review-form-icons.svg');
+}
+.right--info_bar {
+    text-align: left;
+    width: calc(100% - 90px);
+    color: #fff;
+}
+.campus-rep-header h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.info--textdata {
+    font-size: 14px;
+    line-height: 21px;
+}
+.review--info_bar {
+    padding: 0 10px;
+}
+.reviewPlay {
+    background-position: -64px 0;
+}
+.review--info_img {
+    width: 70px;
+    height: 60px;
+}
+.right--info_bar {
+    text-align: left;
+    width: calc(100% - 90px);
+    color: #fff;
+}
+.campus-rep-header h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.info--textdata {
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+}
+h2.info--lable {
+    font-weight: 900;
+    margin: 0 0 20px 0;
+    color: #ffffff;
+    font-family: 'robotoregular',sans-serif;
+    font-size: 140%;
+
+}
+img.booksimg {
+    /* max-width: 100%; */
+    /* height: auto; */
+    width: 10%;
+    width: 21px;
+
+}
+.top-section {
+    background: #000000ab;
+    padding: 20px;
+    margin-top: 50px;
+}
+.form-details .sectionalHeading, .sectionalHeading {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.optionbox{
+    border-color: rgb(169, 169, 169);
+}
+p.form-title, p.l-txt {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+p.form-title {
+    margin-top: 10px;
+}
+textarea#placementDescription {
+    width: 50%;
+}
+textarea#infraDescription {
+    width: 50%;
+}
+textarea#facultyDescription {
+    width: 50%;
+}
+textarea#review-ugcollege {
+    width: 50%;
+}
+input#titleReview {
+    width: 
+    50%;
+
+    }
+    .form-details ul li {
+        margin-bottom: 0;
+    }
+    .clear-width {
+        float: left;
+        width: 100%;
+        padding-bottom: 11px;
+
+    }
+    .campus-sprite {
+        background: url('//images.shiksha.ws/public/images/campusAmbassador/campus-sprite.png') no-repeat;
+        vertical-align: middle;
+        position: relative;
+        font-style: none;
+        display: inline-block;
+    }
+    s-sprite {
+        background: url('//images.shiksha.ws/public/images/campusAmbassador/campus-sprite.png') no-repeat;
+        vertical-align: middle;
+        position: relative;
+        font-style: none;
+        display: inline-block;
+    }
+    .rated-star-icon, .star-icon {
+        background-position: -179px -133px;
+        width: 19px;
+        height: 19px;
+    }
+    ol.rating-list li {
+        list-style: none;
+        display: inline-block;
+        margin: 0px 3px;
+    }
+    input[type=radio] {
+        vertical-align: text-bottom;
+        float: right;
+         width: 199%;
+    
+
+
+    }
+    #recommend .camp-review-sec {
+        margin-top: 20px;
+    }
+    li.clear-width>div.flLt, li.clear-width>div.flRt {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .flLt {
+        float: left;
+    }
+    .camp-rating>div>li>p, .form-details ul li label, p.font-18 label {
+        color: #000;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+
+.form-details ul li label {
+    display: block;
+    margin-bottom: 4px;
+}
+.form-details ul li .text-width {
+    padding: 10px;
+    width: 500px;
+    margin-bottom: 0;
+    margin-top: 5px;
+    height: 41px;
+}
+.form-details ul li .text-width{
+    outline: 0;
+    border: 1px solid #caccce;
+    background: #fff;
+    color: #8e8a8a;
+}
+.orange-button, .orangeButtonStyle, .orangeButtonStyle_disabled, a.orange-button {
+    background-color: #f37921;
+    overflow: visible;
+    font: 400 14px 'Open Sans',sans-serif;
+    line-height: normal;
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+
+
+
+}
+input.message1 {
+    width: 50%;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,463 @@
+.rightSidebar .contentPart {
+    width: 885px;
+    padding: 0 10px 0 15px;
+}
+
+
+.cardBlk {
+    overflow: hidden;
+}
+.cardBlk {
+    padding: 20px 20px 30px;
+}
+.cardBlk {
+    overflow-wrap: break-word;
+    background-color: #fff;
+}
+.cardBlk>.headingContainer {
+    margin-bottom: 14px;
+}
+
+.cardBlk>.headingContainer {
+    margin-top: -9px;
+}
+.totalNo {
+    padding: 15px 0;
+    line-height: 21px;
+    font-size: 12px;
+    color: #999;
+}
+.cardBlk {
+    overflow-wrap: break-word;
+}
+.display-table {
+    display: table;
+    width: 100%;
+}
+.artiListing .display-cell.leftBlk {
+    width: 180px;
+}
+.vtop .display-cell, .vtop .display-inlineBlock {
+    vertical-align: top;
+}
+.display-cell {
+    display: table-cell;
+}
+.col-img {
+    min-width: 180px;
+    margin-right: 20px;
+    max-height: 123px;
+}
+img {
+    max-width: 100%;
+}
+img {
+    border: 0;
+}
+.vtop .display-cell, .vtop .display-inlineBlock {
+    vertical-align: top;
+}
+
+.artiTitle {
+    font-size: 1.6rem;
+    color: #3a4d95;
+    line-height: 28px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+strong {
+    font-weight: 600;
+}
+a {
+    background-color: transparent;
+    color: #3a4d95;
+    text-decoration: none;
+    display: inline-block;
+    zoom: 1;
+}
+.artiLis-MainBlock p {
+    color: #333;
+}
+.margin0 {
+    margin: 0;
+}
+p {
+    line-height: 14px;
+}
+.arti-Bottom {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+.nxtpageLink:after {
+    font-family: careers-fonts!important;
+    content: "\e933";
+    padding-left: 5px;
+    font-size: 9px;
+}
+.arti-Bottom span {
+    color: #999;
+}
+.pull-right {
+    float: right;
+}
+.artiLis-MainBlock .display-table:not(:first-child) {
+    margin-top: 26px;
+    padding-top: 26px;
+}
+
+.artiListing .display-cell.leftBlk {
+    width: 180px;
+}
+
+.display-cell {
+    display: table-cell;
+}
+.topImg + .cardBlk.cardBlkTop {
+    margin-top: -5px;
+}
+.cardBlk {
+    overflow-wrap: break-word;
+    background-color: #fff;
+    padding: 30px 20px;
+}
+.profileBand {
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.profileBand .profile {
+    float: left;
+    overflow: hidden;
+}
+.profileBand .profile .thumb {
+    float: left;
+    height: 40px;
+    margin-right: 15px;
+    width: 40px;
+}
+.imgBlk {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 37px;
+}
+.imgBlk {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+.imgBlk .noImg {
+    background-color: #e5e5e5;
+      border-radius: 50%;
+    position: relative;
+    z-index: 99;
+}
+.noImg {
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.noImg i {
+    border: 1px solid #eee;
+    font-size: 2em !important;
+    border-radius: 50%;
+    padding: 4px;
+}
+.profileBand .profile .author {
+    float: left;
+    color: #333333;
+    margin-top: 10px;
+}
+a, a:link {
+    text-decoration: none!important;
+}
+a {
+    background-color: transparent;
+    color: #3A4D95;
+    display: inline-block;
+    zoom: 1;
+}
+.article_body:not(.textAd), .article_body:not(.storyApplyForm) {
+    font-size: 1.6rem !important;
+    line-height: 32px;
+    font-family: "Open Sans" !important;
+}
+h3 {
+    /* width: 10px; */
+    width: 734px;
+}
+.article_body h3, .article_body h3 a, .article_body h3 span {
+    font-size: 22px !important;
+    line-height: 24px;
+    text-align: justify;
+
+}
+.article_body{
+    font-size: 1.6rem !important;
+    line-height: 32px;
+    font-family: "Open Sans" !important;
+}
+.story-responsive {
+    overflow: auto;
+}
+
+table {
+    border: 1px solid #e0e0e0;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+table tbody tr:first-child {
+    border-top: none;
+}
+.article_body{
+    font-size: 1.6rem !important;
+    line-height: 32px;
+    font-family: "Open Sans" !important;
+
+}
+.contentPart table tbody tr td {
+    text-align: left;
+    max-width: 400px;
+    background: #fff;
+}
+.p{
+    color: #666;
+}
+b, strong {
+    font-weight: 600;
+}
+span {
+    color: rgb(229, 108, 91);
+}
+.storyApplyForm {
+    width: 450px;
+    margin: 30px auto;
+}
+button, select {
+    text-transform: none;
+}
+button {
+    overflow: visible;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: none !important;
+}
+.article_body ul {
+    margin: 0;
+    padding: 0px 0px 0px 15px !important;
+}
+li {
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.article_body *, .article_body:not(.textAd), .article_body:not(.storyApplyForm) {
+    font-family: "Open Sans" !important;
+    overflow-x: hidden;
+}
+td {
+    text-align: left;
+    max-width: 400px;
+    background: #fff;
+}
+table tbody tr:first-child {
+    border-top: none;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.contentPart table tbody tr td {
+    text-align: left;
+    max-width: 400px;
+    background: #fff;
+}
+table tbody tr td {
+    padding: 10px;
+    border-left: 1px solid #0000003d;
+    vertical-align: top;
+    min-width: 100px !important;
+}
+.story-responsive {
+    overflow: auto;
+}
+table {
+    border: 1px solid #e0e0e0;
+}
+table tbody tr:first-child {
+    border-top: none;
+}
+.cardBlk {
+    overflow-wrap: break-word;
+    background-color: #fff;
+    padding: 30px 20px;
+}
+.cardBlk:not(:first-child) {
+    margin-top: 20px;
+}
+.moreArticle-block {
+    overflow: hidden;
+}
+.cardBlk>.headingContainer {
+    margin-top: -9px;
+    margin-bottom: 13px;
+}
+.moreArticle-block .blockHeading {
+    margin-top: 0;
+}
+.blockHeading {
+    position: relative;
+}
+.mainHeading, .sidebarHeading, .blockHeading {
+    font-weight: 600;
+    margin: 0;
+    color: #333333;
+}
+h2, .heading2, .mainHeading, .blockHeading {
+    font-size: 24px;
+}
+.boxWithShadow.boxWithShadow.owl-carousel {
+    overflow: initial;
+    margin: 0;
+}
+.owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel {
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+}
+.owl-carousel .owl-stage {
+    position: relative;
+}
+.boxWithShadow.boxWithShadow.owl-carousel .owl-item {
+    margin: 5px 0;
+}
+.owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+.boxWithShadow .box > div {
+    height: 100%;
+    position: relative;
+    min-width: 260px;
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 4px;
+        box-shadow: 0 0 6px 0 rgba(102, 102, 102, 0.3);
+}
+.pull-right {
+    float: right;
+}
+a, a:link {
+    text-decoration: none!important;
+}
+.readMore a {
+    margin: 10px 0px;
+    text-align: right;
+    font-size: 12px;
+    padding: 20px;
+
+}
+.button.btn-green {
+    background-color: #02A569;
+    color: #fff;
+    border: 1px solid #02A569;
+}
+
+.ebookCarousel .ebookInfo {
+    width: calc(100% - 160px);
+    float: left;
+}
+.eBookDetail .ebookInfo .topheading {
+    height: 155px;
+}
+.eBookDetail .ebookInfo .countbottomReview {
+    font-size: 12px;
+    margin: 10px 0 0;
+    color: #999999;
+}
+span {
+    color: rgb(229, 108, 91);
+}
+.eBookDetail .ebookInfo .countbottomReview span i {
+    margin: 0 10px 0 0;
+}
+.eBookDetail .ebookInfo h5 a {
+    color: #333333;
+}
+
+a {
+    background-color: transparent;
+    display: inline-block;
+    zoom: 1;
+}
+.heads{
+    color: #666;
+
+}
+table.line td:last-child{
+   border-right:1px solid rgb(179, 179, 179);
+}
+table.line2 td:last-child{
+    border-right:1px solid rgb(179, 179, 179);
+ }
+ table.line3 td:last-child{
+    border-right:1px solid rgb(179, 179, 179);
+ }
+ .ebookCarousel .ebookInfo .dowloads {
+    width: 150px;
+    float: left;
+    font-size: 13px;
+    color: #666666;
+    text-align: center;
+}
+.ebookCarousel .ebookInfo .dowloads a {
+    float: left;
+}
+.button.btn-primary {
+    background-color: #e56c5b;
+    color: #fff;
+    border: 1px solid #e56c5b;
+}
+/* .linkList .display-table .colgTitle {
+    position: relative;
+    display: none;
+    padding-right: 15px!important;
+} */
+
+.artical_box {
+    padding-top: 50px;
+}.social a {
+    width: 30px;
+    margin-left: 5px;
+}
+.artical_box .article_body h3.heads, 
+.artical_box .article_body h3.heads strong,
+.artical_box .article_body h3.heads a {
+    font-size: 14px !important;
+}

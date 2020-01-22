@@ -1,0 +1,63 @@
+<app-header></app-header>
+<p>&nbsp;</p>
+
+<div id="allExams" class="all-exam-grid desktop ">
+    <div class="pwa_breadcumbs"><span> <a href="/"> <span class="bredcrumbs_span"><i
+                        class="pwaIcon homeType1"></i></span> </a> </span><span class="breadcrumb_arw">›</span><span>
+            <span class="bredcrumbs_span">All MBA Exams</span></span></div>
+    <div class="exam_Sticky_head">
+        <div class="exams__container">
+            <h1>Top MBA Entrance Exams In India</h1>
+            <p>Get MBA exam dates, syllabus, exam pattern, question papers, application dates, admit card dates, answer
+                keys and result announcements for upcoming MBA entrance exams in India in 2019</p>
+        </div>
+    </div>
+    <div class="all-exam-tuples">
+        <div class="pwaexams_container">
+            <h2>Popular MBA Entrance Exams</h2>
+            <div class="listof_exams auto_clear" *ngFor="let exam of ExamsData">
+                <div class="uilp_exam_card">
+                    <div class="exam_topcol">
+                        <div class="exam_date auto_clear">
+                            <div class="exam_name_width">
+                                <p class="hide-examname"><a title="Common Admission Test" class="exam_title"
+                                        href="/mba/cat-exam">{{exam.ExamName}}</a></p><a class="exam_flnm" href="javascript:;"
+                                    title="Common Admission Test">{{exam.ExamName}}</a>
+                            </div><button id="getUpdatesTop" class="button button--orange eApplyNow9">Download
+                                Guide</button>
+                        </div>
+                        <div class="exam_impdates">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="fix-tdwidth">
+                                            <p>{{exam.date}}</p>
+                                        </td>
+                                        <td class="fix-textlength">
+                                            <p>CAT 2019 Registrations</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fix-tdwidth">
+                                            <p>{{exam.date}}</p>
+                                        </td>
+                                        <td class="fix-textlength">
+                                            <p>Tutorial of CAT 2019 exam to be released</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        In This :-
+                        <div class="exams_a"><a class="quick-links">Dates</a> <b> | </b> <a
+                                class="quick-links">Application Form</a> <b> |
+                            </b> <a class="quick-links">Syllabus</a> <b> | </b> <a
+                                class="quick-links">Question Papers</a> <b> | </b>
+                            <a class="quick-links">Admit Card</a> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,44 @@
+@media (min-width: 1200px){
+.container {
+    width: 510px;
+}
+}
+.rc-anchor-light.rc-anchor-normal {
+    border: 1px solid #d3d3d3;
+}
+.rc-anchor-light {
+    background: #f9f9f9;
+    color: #000;
+}
+.rc-anchor-normal {
+    height: 74px;
+    width: 300px;
+}
+.input12{
+    width: 100%;
+    height: 42px;
+}
+
+.radio-margin{
+    margin: 10px 10px 0px 0px;
+}
+
+.check-margin{
+    margin: 10px 10px 0px 0px;
+}
+
+.pmargin-btm{
+    margin-bottom: 0px;
+}
+
+.gribtn{
+    width: 120px!important;
+    background: #002147;
+    border: navajowhite;
+    padding: 10px;
+    color: #fff;
+}
+
+.lf{
+    line-height: 27px!important;
+}

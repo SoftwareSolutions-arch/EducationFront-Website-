@@ -1,0 +1,126 @@
+.n-lognSgnBx>.n-loginSgnup2 {
+  padding-left: 35px;
+  height: 28px;
+}
+
+.n-loginSgnup2 {
+  display: inline-block;
+  margin-left: 20px;
+  max-width: 115px;
+  position: relative;
+  padding-left: 35px;
+  width: 95px;
+  margin-top: 35px;
+  padding-bottom: 20px
+}
+
+.user_initial {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 50%;
+  background: #fff;
+  vertical-align: middle;
+  margin-right: 1em;
+  color: #008489;
+  width: 28px;
+  height: 28px;
+  left: 0;
+  font-weight: 600;
+  top: -8px;
+  position: absolute;
+}
+
+.n-loginSgnup2 a.n-username {
+  text-decoration: none;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  width: 60px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  color: #fff;
+  padding-right: 11px;
+}
+
+.n-loginSgnup2:hover .n-profileBx {
+  -webkit-transform: perspective(1300px) rotateX(0);
+  opacity: 1;
+  transform: perspective(1300px) rotateX(0);
+  opacity: 1;
+  display: inline-block !important;
+  padding: 0;
+  position: absolute;
+  width: 179px;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 5px 2px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 5px 2px rgba(0, 0, 0, 0.12);
+  top: 28px;
+  right: -12px;
+  text-align: left;
+}
+
+.n-profileBx a {
+  font-size: 14px;
+  color: #999 !important;
+  font-weight: 600 !important;
+  cursor: pointer;
+  display: block;
+  padding: 0 32px;
+  line-height: 48px;
+  border-bottom: 1px solid rgba(218, 218, 218, 0.38);
+  background: #fff;
+  text-decoration: none;
+}
+
+.n-loginSgnup2 a.n-username-icon {
+  cursor: pointer;
+  padding-right: 12px;
+  margin-left: 16px;
+  display: inline-block;
+  border-right: 0 solid #00a5b5;
+  position: relative;
+  top: 0;
+  padding-bottom: 12px;
+  display: none;
+}
+
+.n-loginSgnup2 .n-profileBx {
+  -webkit-transform: perspective(1300px) rotateX(-90deg);
+  transform: perspective(1300px) rotateX(-90deg);
+  opacity: 0;
+  display: none !important;
+}
+nav.navbar.bg-primary{
+  margin: 0px !important;
+  border-radius: 0px;
+}
+li.apply_btn {
+  /* line-height: 60px; */
+  margin-top: 23px;
+}
+.apply-btn-area a.apply-now-btn {
+  padding: 5px 10px !important;
+}
+.navbar-toggle {
+  border: 1px solid white;
+}
+.navbar-toggle .icon-bar {
+  background: #fff;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .service-box1 {
+    margin-top: 20px;
+  }
+}
+
+li.dropdown.dropdown-submenu.open ul.dropdown-menu {
+  left: 100%;
+  right: auto;
+  top: -8px;
+}

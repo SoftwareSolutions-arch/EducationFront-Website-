@@ -1,0 +1,42 @@
+
+<app-header></app-header>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row"><h1>Articles and Design </h1>
+        <div class="artiLis-MainBlock" *ngFor="let article of articles| paginate: { itemsPerPage: 10, currentPage: p }">
+            <div class="display-table vtop">
+                <!-- <div class="display-cell leftBlk">
+                    <div class="col-img">
+                        <img src='././assets/images/UCEED-2020.jpg'
+                            alt="UCEED 2020" data-pagespeed-url-hash="60721435">
+                    </div>
+                </div> -->
+                <div class="display-cell rightBlk">
+                    <div class="artiTitle headingContainer">
+                        <a (click)=redirect(); ><b>{{article.title}}</b></a>
+                    </div>
+                    <p class="margin0">{{article.detailText}}<a href="/articles/uceed" class="morelink nxtpageLink">Read More</a></p>
+                    <div class="arti-Bottom">
+                        <span>
+                            5 hours ago
+                        </span>
+                        <span class="pull-right">
+                            By:
+                            <a href="/user/5053877">Richa Kapoor</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
+        </div>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

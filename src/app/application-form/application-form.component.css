@@ -1,0 +1,114 @@
+@media (min-width: 768px){
+.col-sm-9 {
+    width: 75%;
+}
+}
+@media (min-width: 768px){
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+}
+}
+.col-sm-9{
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.collageList {
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #45622ce8;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+.collageList .thumb {
+    width: 50px;
+    margin-right: 20px;
+    float: left;
+}
+.collageList .thumb img {
+    display: block;
+}
+img {
+    max-width: 100%;
+}
+img {
+    border: 0;
+}
+.collageList .content {
+    float: left;
+    width: calc(100% - 170px);
+    position: relative;
+}
+.collageList .content .heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 21px;
+}
+.showHideTxt.heightFound {
+    height: auto;
+}
+.showHideTxt {
+    overflow: hidden;
+    position: relative;
+}
+.showHideTxt ul {
+    padding: 0;
+}
+ .showHideTxt li {
+    position: relative;
+    padding-left: 13px;
+    list-style: none;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+ .showHideTxt li:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+b, strong {
+    font-weight: 600;
+}
+.collageList .BtnBox {
+    float: left;
+    width: 80px;
+    margin-left: 20px;
+}
+.collageList .BtnBox .button {
+    min-width: 80px;
+}
+.button.btn-primary {
+    background-color: #e56c5b;
+    color: #fff;
+    border: 1px solid #e56c5b;
+}
+.button {
+    position: relative;
+    overflow: hidden;
+}
+.button {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    height: 30px;
+    padding: 0 5px;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    line-height: 28px
+}
+.box {
+    padding-top: 118px;
+}

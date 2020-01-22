@@ -1,0 +1,73 @@
+<ngx-spinner></ngx-spinner>
+
+<nav class="navbar bg-primary">
+    <div class="container">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" routerLink="/"><img class="img-responsive" src="assets/img/logo.png" alt="logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a routerLink="../animation" routerLinkActive="active">Animation and Design</a>
+                    </li>
+                    <li><a routerLink="../engineering" routerLinkActive="active">Engineering And Architecture</a></li>
+                    <li><a routerLink="../law" routerLinkActive="active">Law</a></li>
+                    <li><a routerLink="../mass_comm" routerLinkActive="active">Mass Comm/journalism</a>
+                    </li>
+                    <!-- <li><a routerLink="../mass_medicine" routerLinkActive="active">Medicine and Allied Sciences</a></li> -->
+                    <li><a routerLink="../mba" routerLinkActive="active">MBA</a></li>
+                    <li><a routerLink="../arts" routerLinkActive="active">Arts & Science</a></li>
+                    <li><a routerLink="../it" routerLinkActive="active">Computer Application and IT</a>
+                    </li>
+                    <li><a routerLink="../tourism" routerLinkActive="active">Hospitality and Tourism</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Counseling <b class="caret"></b></a> 
+                <ul class="dropdown-menu">
+                    <li class="kopie"><a routerLink="../question">Ask Question</a></li>
+                    <li class="kopie"><a routerLink="../career">Science</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">National Boards <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a routerLink="../national_broad">CBSE</a></li>
+                    <li><a routerLink="../icse">ICSE</a></li>
+                    <li><a routerLink="../nios"> NIOS</a></li>
+                </ul>
+            </li>  
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Other Courses <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a (click)="redirect('Engineering')">Top Engineering College</a>
+                    </li>
+                    <li><a (click)="redirect('Medical')">Top Medical College</a>
+                    </li>
+                    <li><a (click)="redirect('Management')">Top MBA College</a>
+                    </li>
+                    <li><a routerLink="../study_abroad" routerLinkActive="active">Study Abroad</a></li>
+                    <li><a routerLink="../top_college" routerLinkActive="active">Top Colleges</a></li>
+                    <li><a routerLink="../exam" routerLinkActive="active"> Top Entrance Exams In India</a>
+                    </li>
+                </ul>
+            </li> 
+            <li><a routerLink="../contact" routerLinkActive="active">Contact</a>
+            </li>
+            <li class="apply_btn">
+                <div class="apply-btn-area">
+                    <a href="#" class="apply-now-btn">Apply Now</a>
+                </div>
+            </li>
+        </ul> 
+        </div> 
+    </div>
+</nav>

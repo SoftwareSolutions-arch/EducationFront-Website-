@@ -1,0 +1,417 @@
+<app-header></app-header>
+<br>
+<br>
+<br>
+<div class="ana-main-wrapper">
+<div class="ana-container tag-detailpage">
+    <div class="row">
+        <div class="ana-wrap">
+            <div class="breadcrumb3">
+                <span><a href="https://www.shiksha.com"><span><i class="icons ic_brdcrm homeType1"></i></span></a></span>
+                <span class="breadcrumb-arrow">›</span>
+                <span class="page-t"><a href="https://www.shiksha.com/tags">Tags</a></span>
+                <span class="breadcrumb-arrow">›</span>
+                <span class="page-t">Hospitality &amp; Travel</span>
+            </div>
+        </div>
+    </div>
+    <div class="ana-col-md-8">
+        <div class="row">
+            <div id="closeDeletelayer" class="posting-layer" style="/* width:580px; */display: none;">
+                <div class="tag-body">
+                    <p class="msg" id="responseHeading"></p>
+                    <div class="btns-col">
+                        <span class="right-box">
+                            <a class="prime-btn" href="javascript:void(0);">Ok</a>
+                        </span>
+                        <p class="clr"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="ana-selection">
+                <div class="post-col cta-block">
+                    <div class="tag-head">
+                        <h1 class="tag-p">Hospitality & Travel</h1>
+                        <p class="tag-bind">Get insights from 4.4k questions on Hospitality & Travel, answered by
+                            students, alumni,
+                            and experts. You may also ask and answer any question you like about Hospitality &
+                            Travel</p>
+                        <a class="ana-btns f-btn" id="tag_follow_btn" curclass="f-btn" reverseclass="un-btn"
+                            callforaction="follow" href="javascript:void(0);">Follow</a>
+                        <span style="display:none;" class="followersCountTextArea" curClass="" revClass=""
+                            valueCount=10584>10584</span>
+                        <a class="ana-btns a-btn" mat-raised-button (click)="openDialog()">Ask Question</a>
+                    </div>
+                    <div class="ana-table">
+                        <div class="ana-cell">
+                            <div class="rl-div">
+                                <b>4.4k</b>
+                                <h2>Questions</h2>
+                            </div>
+                        </div>
+                        <div class="ana-cell">
+                            <div class="rl-div">
+                                <b>1</b>
+                                <h2>Discussions</h2>
+                            </div>
+                        </div>
+                        <div class="ana-cell">
+                            <div class="rl-div">
+                                <b>209</b>
+                                <h2>Active Users</h2>
+                            </div>
+                        </div>
+                        <div class="ana-cell">
+                            <div class="rl-div">
+                                <b class="followCnt followersCountTextArea" valueCount=10584>10.6k</b>
+                                <h2>Followers</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabSection" style="margin:30px 0 0">
+                    <mat-tab-group>
+                        <mat-tab label="All"><div class="tabs-content">
+                            <div class="active" data-index="1">
+                                <div>
+                                    <div *ngFor="let question of QuestionList | paginate: { itemsPerPage: 10, currentPage: p }" class="post-col" questionid="5771031" answerid="5771613" type="Q" tracking="true">
+                                        <div class="col-head">
+                                            <p class="titl">New answer posted</p>
+                                            <span> 3 hours ago </span>
+                                            <p class="clr"></p>
+                                        </div>
+                                        <div class="ana-qstn-block">
+                                            <div class="qstn-row">
+                                                <a href="https://www.shiksha.com/tags/hospitality-travel-tdp-429003">Hospitality & Travel</a>
+                                                <a href="https://www.shiksha.com/tags/hotel-hospitality-management-tdp-445295">Hotel/ Hospitality Management</a>
+                                            </div>
+                                        </div>
+                                        <div class="dtl-qstn">
+                                            <a href="https://ask.shiksha.com/best-college-for-mba-in-hotel-management-please-mention-some-of-them-which-are-currently-providing-this-course-qna-5771031">{{question.title}}</a>
+                                        </div>
+                                        <div class="new-column cta-block">
+                                            <div class="right-cl">
+                                                <span class="viewers-span followersCountTextArea" revClass="follower"
+                                                    curClass="viewers-span" valueCount="0" listElement="list_5771031">0
+                                                    Follower</span>
+                                                <Span class="viewers-span">21 Views</Span>
+                                            </div>
+                                            <div class="left-cl">
+                                                <ul class="nav-discussion">
+                                                    <li class="nav-item"><a class="ana-btns f-btn" curclass="f-btn" reverseclass="un-btn" callforaction="follow" href="javascript:void(0);">Follow</a>
+                                                    </li>
+                                                    <li class="nav-item"><a class="ana-btns a-btn">Answer</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <p class="clr"></p>
+                                            <div id="entityPostingCol_5771031" style="display:none;">
+                                                <form id="postEntityAnA_5771031" action="" accept-charset="utf-8"
+                                                    method="post" novalidate="novalidate" name="postAnswerAnA">
+                                                    <div class="ans-block">
+                                                        <p class="txt-count" id="entityTxtCounter5771031"
+                                                            style="display:block;top:11px">
+                                                            Characters <span id="entity_text_5771031_counter">0</span>/2500
+                                                        </p>
+                                                        <textarea placeholder="Type Your Answer" validate="validateStr"
+                                                            minlength=15 maxlength=2500 caption="Answer"
+                                                            id="entity_text_5771031" required="true"></textarea>
+                                                        <div>
+                                                            <p class="err0r-msg" id="entity_text_5771031_error"></p>
+                                                        </div>
+                                                        <div class="btns-col">
+                                                            <span class="right-box">
+                                                                <a class="exit-btn" href="javascript:void(0);">Cancel</a>
+                                                                <a class="prime-btn" href="javascript:void(0);"
+                                                                    id="entityPostingButton5771031">Post</a>
+                                                            </span>
+                                                            <p class="clr"></p>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="avatar-col">
+                                            <a href=''>
+                                                <div class="new-avatar">
+                                                    <img src='././assets/images/1533042774phpzEJd5e_s.jpeg' style="width: 55px;height: 55px;cursor:pointer;">
+                                                </div>
+                                            </a>
+                                            <div class="inf-block">
+                                                <a href='' class="avatar-name">Nilay
+                                                    Pandit<span class=""></span></a>
+                                                <p class="g-l">Contributor-Level 8</p>
+                                                <div class="rp-txt">
+                                                    {{question.detailText}}
+                                                </div>
+                                                <div class="opinion-col">
+                                                    <a class="up-thumb like-a" href="javascript:void(0)"
+                                                        callforaction="upvote"><i class="g-like" reverseclass="b-like" disabledclass="g1-like"></i>0</a>
+                                                    <a class="up-thumb like-d" href="javascript:void(0)"
+                                                        callforaction="downvote">
+                                                        <i class="g-dislike" reverseclass="b-dislike" disabledclass="g1-dislike"></i>0</a>
+                                                </div>
+                                            </div>
+                                            <div class="v-cmnts"><a href="">{{question.foll_views}}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="n-pagination">
+                                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                            </div>
+                        </div>
+                    </mat-tab>
+                        <mat-tab label="Discussions"><div class="active" data-index="1">
+                            <div>
+                                <div *ngFor="let question of QuestionList | paginate: { itemsPerPage: 10, currentPage: p }" class="post-col" questionid="5771031" answerid="5771613" type="Q" tracking="true">
+                                    <div class="col-head">
+                                        <p class="titl">New answer posted</p>
+                                        <span> 3 hours ago </span>
+                                        <p class="clr"></p>
+                                    </div>
+                                    <div class="ana-qstn-block">
+                                        <div class="qstn-row">
+                                            <a href="https://www.shiksha.com/tags/hospitality-travel-tdp-429003">Hospitality & Travel</a>
+                                            <a href="https://www.shiksha.com/tags/hotel-hospitality-management-tdp-445295">Hotel/ Hospitality Management</a>
+                                        </div>
+                                    </div>
+                                    <div class="dtl-qstn">
+                                        <a href="https://ask.shiksha.com/best-college-for-mba-in-hotel-management-please-mention-some-of-them-which-are-currently-providing-this-course-qna-5771031">{{question.title}}</a>
+                                    </div>
+                                    <div class="new-column cta-block">
+                                        <div class="right-cl">
+                                            <span class="viewers-span followersCountTextArea" revClass="follower"
+                                                curClass="viewers-span" valueCount="0" listElement="list_5771031">0
+                                                Follower</span>
+                                            <Span class="viewers-span">21 Views</Span>
+                                        </div>
+                                        <div class="left-cl">
+                                            <ul class="nav-discussion">
+                                                
+                                                <li class="nav-item"><a class="ana-btns f-btn" curclass="f-btn" reverseclass="un-btn" callforaction="follow" href="javascript:void(0);">Follow</a>
+                                                </li>
+                                                <li class="nav-item"><a class="ana-btns a-btn">Answer</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="clr"></p>
+                                        <div id="entityPostingCol_5771031" style="display:none;">
+                                            <form id="postEntityAnA_5771031" action="" accept-charset="utf-8"
+                                                method="post" novalidate="novalidate" name="postAnswerAnA">
+                                                <div class="ans-block">
+                                                    <p class="txt-count" id="entityTxtCounter5771031"
+                                                        style="display:block;top:11px">
+                                                        Characters <span id="entity_text_5771031_counter">0</span>/2500
+                                                    </p>
+                                                    <textarea placeholder="Type Your Answer" validate="validateStr"
+                                                        minlength=15 maxlength=2500 caption="Answer"
+                                                        id="entity_text_5771031" required="true"></textarea>
+                                                    <div>
+                                                        <p class="err0r-msg" id="entity_text_5771031_error"></p>
+                                                    </div>
+                                                    <div class="btns-col">
+                                                        <span class="right-box">
+                                                            <a class="exit-btn" href="javascript:void(0);">Cancel</a>
+                                                            <a class="prime-btn" href="javascript:void(0);"
+                                                                id="entityPostingButton5771031">Post</a>
+                                                        </span>
+                                                        <p class="clr"></p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="avatar-col">
+                                        <a href=''>
+                                            <div class="new-avatar">
+                                                <img src='././assets/images/1533042774phpzEJd5e_s.jpeg' style="width: 55px;height: 55px;cursor:pointer;">
+                                            </div>
+                                        </a>
+                                        <div class="inf-block">
+                                            <a href='' class="avatar-name">Nilay
+                                                Pandit<span class=""></span></a>
+                                            <p class="g-l">Contributor-Level 8</p>
+                                            <div class="rp-txt">
+                                                {{question.detailText}}
+                                            </div>
+                                            <div class="opinion-col">
+                                                <a class="up-thumb like-a" href="javascript:void(0)"
+                                                    callforaction="upvote"><i class="g-like" reverseclass="b-like" disabledclass="g1-like"></i>0</a>
+                                                <a class="up-thumb like-d" href="javascript:void(0)"
+                                                    callforaction="downvote">
+                                                    <i class="g-dislike" reverseclass="b-dislike" disabledclass="g1-dislike"></i>0</a>
+                                            </div>
+                                        </div>
+                                        <div class="v-cmnts"><a href="">{{question.foll_views}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="n-pagination">
+                            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                        </div></mat-tab>
+                        <mat-tab label="Unanswered Questions"> <div class="active" data-index="1">
+                            <div>
+                                <div *ngFor="let question of QuestionList | paginate: { itemsPerPage: 10, currentPage: p }" class="post-col" questionid="5771031" answerid="5771613" type="Q" tracking="true">
+                                    <div class="col-head">
+                                        <p class="titl">New answer posted</p>
+                                        <span> 3 hours ago </span>
+                                        <p class="clr"></p>
+                                    </div>
+                                    <div class="ana-qstn-block">
+                                        <div class="qstn-row">
+                                            <a href="https://www.shiksha.com/tags/hospitality-travel-tdp-429003">Hospitality & Travel</a>
+                                            <a href="https://www.shiksha.com/tags/hotel-hospitality-management-tdp-445295">Hotel/ Hospitality Management</a>
+                                        </div>
+                                    </div>
+                                    <div class="dtl-qstn">
+                                        <a href="https://ask.shiksha.com/best-college-for-mba-in-hotel-management-please-mention-some-of-them-which-are-currently-providing-this-course-qna-5771031">{{question.title}}</a>
+                                    </div>
+                                    <div class="new-column cta-block">
+                                        <div class="right-cl">
+                                            <span class="viewers-span followersCountTextArea" revClass="follower"
+                                                curClass="viewers-span" valueCount="0" listElement="list_5771031">0
+                                                Follower</span>
+                                            <Span class="viewers-span">21 Views</Span>
+                                        </div>
+                                        <div class="left-cl">
+                                            <ul class="nav-discussion">
+                                                
+                                                <li class="nav-item"><a class="ana-btns f-btn" curclass="f-btn" reverseclass="un-btn" callforaction="follow" href="javascript:void(0);">Follow</a>
+                                                </li>
+                                                <li class="nav-item"><a class="ana-btns a-btn">Answer</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="clr"></p>
+                                        <div id="entityPostingCol_5771031" style="display:none;">
+                                            <form id="postEntityAnA_5771031" action="" accept-charset="utf-8"
+                                                method="post" novalidate="novalidate" name="postAnswerAnA">
+                                                <div class="ans-block">
+                                                    <p class="txt-count" id="entityTxtCounter5771031"
+                                                        style="display:block;top:11px">
+                                                        Characters <span id="entity_text_5771031_counter">0</span>/2500
+                                                    </p>
+                                                    <textarea placeholder="Type Your Answer" validate="validateStr"
+                                                        minlength=15 maxlength=2500 caption="Answer"
+                                                        id="entity_text_5771031" required="true"></textarea>
+                                                    <div>
+                                                        <p class="err0r-msg" id="entity_text_5771031_error"></p>
+                                                    </div>
+                                                    <div class="btns-col">
+                                                        <span class="right-box">
+                                                            <a class="exit-btn" href="javascript:void(0);">Cancel</a>
+                                                            <a class="prime-btn" href="javascript:void(0);"
+                                                                id="entityPostingButton5771031">Post</a>
+                                                        </span>
+                                                        <p class="clr"></p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="avatar-col">
+                                        <a href=''>
+                                            <div class="new-avatar">
+                                                <img src='././assets/images/1533042774phpzEJd5e_s.jpeg' style="width: 55px;height: 55px;cursor:pointer;">
+                                            </div>
+                                        </a>
+                                        <div class="inf-block">
+                                            <a href='' class="avatar-name">Nilay
+                                                Pandit<span class=""></span></a>
+                                            <p class="g-l">Contributor-Level 8</p>
+                                            <div class="rp-txt">
+                                                {{question.detailText}}
+                                            </div>
+                                            <div class="opinion-col">
+                                                <a class="up-thumb like-a" href="javascript:void(0)"
+                                                    callforaction="upvote"><i class="g-like" reverseclass="b-like" disabledclass="g1-like"></i>0</a>
+                                                <a class="up-thumb like-d" href="javascript:void(0)"
+                                                    callforaction="downvote">
+                                                    <i class="g-dislike" reverseclass="b-dislike" disabledclass="g1-dislike"></i>0</a>
+                                            </div>
+                                        </div>
+                                        <div class="v-cmnts"><a href="">{{question.foll_views}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="n-pagination">
+                            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+                        </div>
+                    </mat-tab>
+                      </mat-tab-group>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ana-col-md-4">
+        <div class="ana-right" id="rightSideWidgets">
+            <div class="search-block txt-cntr">
+                <p class="signup-h3">Taking an Exam? Selecting a College?</p>
+                <p class="inf-txts">Get authentic answers from experts, students and alumni that you
+                    <strong>won't</strong>
+                    find anywhere else</p>
+                <a class="nw-btn" ga-attr="REGISTER_RHSWIDGET_TAGDETAIL_DESKAnA" id="qnaRegstr"
+                    data-trackingKey="833">Sign
+                    Up on Shiksha </a>
+                <p class="background-brdr"><span>On Shiksha, get access to</span></p>
+                <ul class="inf-li">
+                    <li><strong>18k</strong> Colleges</li>
+                    <li><strong>447</strong> Exams</li>
+                    <li><strong>152k</strong> Reviews</li>
+                    <li><strong>700k</strong> Answers</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <p class="clr"></p>
+    <a href="javascript:void(0);" class="scrollToTop"></a>
+    <div data-enhance="false">
+    </div>
+
+    <div class="compare-bot-sticky " id="_cmpSticky" style="display: none;">
+        <div class="compare-sticky-items" id="cmpItemList">
+            <div class="cmploader"><img></div>
+            <div class="clgs-added" id="addItems">
+                <div class="added-clgs">
+                    <div class="num-to-add">1</div>
+                </div>
+                <div class="added-clgs">
+                    <div class="num-to-add">2</div>
+                </div>
+                <div class="added-clgs">
+                    <div class="num-to-add">3</div>
+                </div>
+                <div class="added-clgs">
+                    <div class="num-to-add">4</div>
+                </div>
+            </div>
+            <div class="added-clgs btn-col" id="compare-orng-btn">
+                <div class="cmpre-col">
+                    <a href="javascript:void(0);" class="cmpre-btn">Compare</a>
+                    <a href="javascript:void(0);" class="link rmAll">Remove All</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cmpLyr" class="cmp-show-layer" style="display: none;">
+        <div class="cmn-head">
+            <div class="cmn-header">
+                <p>College Comparison</p>
+            </div>
+            <div class="alert-div">
+                <p id="err_lyr" style="position:relative;"></p>
+                <div style="text-align:right;">
+                    <a id="cancelBtn" class="pop cb">Cancel</a>
+                    <a id="okBtn" class="pop">Ok</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

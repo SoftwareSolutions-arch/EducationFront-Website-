@@ -1,0 +1,560 @@
+<app-header></app-header>
+
+<header class="header has-transparent has-sticky sticky-jump transparent">
+  <div class="mainContainer">
+    <div class="headingBanner">
+      <div class="container">
+        <h1 class="h1">Hospitality and Tourism</h1>
+      </div>
+    </div>
+    <section class="sectionLayout grayBg companionSection">
+      <div class="container">
+        <div id="sticky-anchor"></div>
+        <div class="row domainWrap">
+          <div class="">
+            <div class="leftCol" id="sticky">
+              <form [formGroup]="AddUserForm" class="example-form">
+                <div class="col-md-12">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <mat-form-field class="example-full-width">
+                        <input matInput id="FirstName" formControlName="FirstName" name="FirstName"
+                          placeholder="Enter Name" required>
+                        <mat-error>
+                          <span *ngIf="AddUserForm.get('FirstName').hasError('required')">Please enter
+                            First Name.
+                          </span>
+                          <span *ngIf="AddUserForm.get('FirstName').hasError('minlength')">First Name
+                            should be 3 character long.</span>
+                        </mat-error>
+                      </mat-form-field>
+                    </div><br><br>
+                    <span layout="row">
+                      <hr flex /></span>
+                    <div class="col-md-12">
+                      <mat-form-field class="example-full-width">
+                        <input matInput type="Email" formControlName="Email" placeholder="Enter Email*" id="Email"
+                          name="Email" required>
+                        <mat-error>
+                          <span *ngIf="AddUserForm.get('Email').hasError('required')">Please enter
+                            valid email</span>
+                        </mat-error>
+                      </mat-form-field>
+                    </div><br><br>
+                    <span layout="row">
+                      <hr flex /></span>
+                    <div class="col-md-12">
+                      <mat-form-field class="example-full-width">
+                        <input matInput type="ContactNo" formControlName="ContactNo" placeholder="Enter Contact No"
+                          id="ContactNo" name="ContactNo" required>
+                        <mat-error>
+                          <span *ngIf="AddUserForm.get('ContactNo').hasError('required')">Please enter
+                            contact no.
+                          </span>
+                          <span *ngIf="AddUserForm.get('ContactNo').hasError('pattern')">Please enter
+                            only numeric
+                            value.</span><br />
+                          <span *ngIf="AddUserForm.get('ContactNo').hasError('minlength')">Contact no
+                            not
+                            exceed more then 10 digit.</span>
+                        </mat-error>
+                      </mat-form-field>
+                    </div><br>
+                    <div class="row col-md-12 mt-3">
+                      <div class="col-md-6">
+                        <button class="mb-2 mr-2 mb-1 btn btn-success" mat-raised-button color="primary"
+                          (click)="CreateUser()">Save</button>
+                      </div>
+                    </div>
+                  </div><br>
+
+                  <!--****************************************************************************-->
+
+                  <!--**********************************************@*******************************-->
+
+
+                  <!--****************************************************************************-->
+                  <div class="col-md-12 g_add">
+                          <a href="http://www.ieplads.com/bmsjs/bms_hits.php?banner=150250" target="_blank">
+                           
+                          </a>
+                          <iframe data-creative-load-listener="" id="200_264_express_html_inpage_0.if"
+                          src="https://s0.2mdn.net/8842663/1555969192203/index.html" width="300" height="250"
+                          frameborder="0" scrolling="no" allowfullscreen="true"
+                          style="width: 300px; height: 250px;"></iframe>
+                  </div>
+                  <div class="col-md-12 g_add">
+                    <a href="http://www.ieplads.com/bmsjs/bms_hits.php?banner=150250" target="_blank">
+                     
+                    </a>
+                    <iframe data-creative-load-listener="" id="200_264_express_html_inpage_0.if"
+                    src="https://s0.2mdn.net/8842663/1555969192203/index.html" width="300" height="250"
+                    frameborder="0" scrolling="no" allowfullscreen="true"
+                    style="width: 300px; height: 250px;"></iframe>
+                  </div>
+                  <!--*****************************************************************************-->
+                </div> 
+              </form>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="rightCol">
+              <div class="cardBlk" id="latestArticle">
+                <h3 class="heading"><span>Featured Articles</span> <a href="/articles" target="_blank">VIEW ALL</a></h3>
+                <div class="article withTime">
+                  <div class="banner">
+                    <img src="././assets/img/tour.jpg" alt="" data-pagespeed-url-hash="3251571546"
+                      onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
+                    <div class="caption">
+                      <a href="/articles/how-crack-nift-entrance">Career in Hospitality: How Growing QSR brings Bright
+                        Career Options</a>
+                    </div>
+                  </div>
+                  <div class="articleBox withImg">
+                    <div class="articleBoxInn">
+                      <div class="thumb">
+                        <a href="/articles/nid-dat-last-minute-tips-important-things-carry"><img
+                            src="https://static.careers360.mobi/media/presets/45X45/article_images/2018/01/04/NID-DAT_prep_tips.jpg"
+                            alt="" data-pagespeed-url-hash="1994991954"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></div>
+                      <a href="/articles/nid-dat-last-minute-tips-important-things-carry" class="arTitle">
+                        <div class="detail">
+                          NID DAT: Last Minute Tips &amp; Important...
+                        </div>
+                      </a>
+                      <div class="bottomStrip">
+                        <span class="timeStrip">04 Jan 2018</span>
+                        <span class="userStrip">By: <a href="/user/367477">Nancy Johri</a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="articleBox withImg">
+                    <div class="articleBoxInn">
+                      <div class="thumb">
+                        <a href="/articles/design-careers-you-should-look-out-for"><img
+                            src="https://static.careers360.mobi/media/presets/45X45/article_images/2017/12/28/Design_Careers.jpg"
+                            alt="" data-pagespeed-url-hash="3631946205"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></div>
+                      <a href="/articles/design-careers-you-should-look-out-for" class="arTitle">
+                        <div class="detail">
+                          Design Careers you should look out for
+                        </div>
+                      </a>
+                      <div class="bottomStrip">
+                        <span class="timeStrip">28 Dec 2017</span>
+                        <span class="userStrip">By: <a href="/user/">Team Careers360</a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="articleBox withImg">
+                    <div class="articleBoxInn">
+                      <div class="thumb">
+                        <a
+                          href="/articles/design-internship-experience-how-nift-kannur-student-rishabh-nayak-learned-apply-theory"><img
+                            src="https://static.careers360.mobi/media/presets/45X45/article_images/2017/10/23/NIFT-Kannur_internship_experience.jpg"
+                            alt="" data-pagespeed-url-hash="671938241"
+                            onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></div>
+                      <a href="/articles/design-internship-experience-how-nift-kannur-student-rishabh-nayak-learned-apply-theory"
+                        class="arTitle">
+                        <div class="detail">
+                          Design Internship Experience: How NIF...
+                        </div>
+                      </a>
+                      <div class="bottomStrip">
+                        <span class="timeStrip">23 Oct 2017</span>
+                        <span class="userStrip">By: <a href="/user/367477">Nancy Johri</a></span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cardBlk" id="latestArticle">
+              <h3 class="heading"><span>Latest News</span> <a href="/articles" target="_blank">VIEW ALL</a></h3>
+              <div class="article withTime">
+                <div class="banner">
+                  <img src="././assets/img/news7.jpg" alt="" data-pagespeed-url-hash="3251571546"
+                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);" />
+                  <div class="caption">
+                    <a href="/articles/how-crack-nift-entrance">NTA announces NCHMCT JEE 2020 exam date, Registration to
+                      begin from January 1</a>
+                  </div>
+                </div>
+                <div class="articleBox withImg">
+                  <div class="articleBoxInn">
+                    <div class="thumb">
+                      <a href="/articles/nid-dat-last-minute-tips-important-things-carry"><img
+                          src="https://static.careers360.mobi/media/presets/45X45/article_images/2018/01/04/NID-DAT_prep_tips.jpg"
+                          alt="" data-pagespeed-url-hash="1994991954"
+                          onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></div>
+                    <a href="/articles/nid-dat-last-minute-tips-important-things-carry" class="arTitle">
+                      <div class="detail">
+                        NID DAT: Last Minute Tips &amp; Important...
+                      </div>
+                    </a>
+                    <div class="bottomStrip">
+                      <span class="timeStrip">04 Jan 2018</span>
+                      <span class="userStrip">By: <a href="/user/367477">Nancy Johri</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="articleBox withImg">
+                  <div class="articleBoxInn">
+                    <div class="thumb">
+                      <a href="/articles/design-careers-you-should-look-out-for"><img
+                          src="https://static.careers360.mobi/media/presets/45X45/article_images/2017/12/28/Design_Careers.jpg"
+                          alt="" data-pagespeed-url-hash="3631946205"
+                          onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></div>
+                    <a href="/articles/design-careers-you-should-look-out-for" class="arTitle">
+                      <div class="detail">
+                        Design Careers you should look out for
+                      </div>
+                    </a>
+                    <div class="bottomStrip">
+                      <span class="timeStrip">28 Dec 2017</span>
+                      <span class="userStrip">By: <a href="/user/">Team Careers360</a></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="articleBox withImg">
+                  <div class="articleBoxInn">
+                    <div class="thumb">
+                      <a
+                        href="/articles/design-internship-experience-how-nift-kannur-student-rishabh-nayak-learned-apply-theory"><img
+                          src="https://static.careers360.mobi/media/presets/45X45/article_images/2017/10/23/NIFT-Kannur_internship_experience.jpg"
+                          alt="" data-pagespeed-url-hash="671938241"
+                          onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /></a></div>
+                    <a href="/articles/design-internship-experience-how-nift-kannur-student-rishabh-nayak-learned-apply-theory"
+                      class="arTitle">
+                      <div class="detail">
+                        Design Internship Experience: How NIF...
+                      </div>
+                    </a>
+                    <div class="bottomStrip">
+                      <span class="timeStrip">23 Oct 2017</span>
+                      <span class="userStrip">By: <a href="/user/367477">Nancy Johri</a></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="cardBlk" id="exam">
+              <h3 class="heading"><span>Exams</span> <a href="./exam_in_india/" target="_blank">VIEW ALL</a></h3>
+              <div class="examBock">
+                <div class="block" *ngFor="let exam of Exams">
+                  <div class="thumb">
+                    <img src='././assets/images/iit-jam-2020.jpg' style="height: auto">
+                  </div>
+                  <div class="detail">
+                    <div class="contBlk">
+                      <label class="title">{{exam.name}}</label>
+                      <p>Application Process: <span>{{exam.applicationprocess}}</span></p>
+                      <p>Exam Date: <span>{{exam.declarationofresult}}</span></p>
+                      <p>Declaration of Result: <span>{{exam.date}}</span></p>
+                    </div>
+                    <div class="btnGroup">
+                      <button class="button btn-lineGray popup" mat-raised-button (click)="openDialog()">Get Updates
+                      </button>
+                      <button class="button btn-primary popup" mat-raised-button (click)="openDialog()">Download
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="qna" class="cardBlk">
+              <h3 class="heading"><span>QnA</span></h3>
+              <div class="qnaBlks">
+                <div class="question-data" id="question-data-section">
+                  <div class="showResult">Showing 54837 out of 54837 Questions</div>
+                  <div class="cardBlk noAnswer">
+                    <div class="views viewAllRight"><span class="careers-eye"></span> 2 Views</div>
+                    <a href="">
+                      <h3 class="cardSubHeading">what is JNU BA Hons 2nd year entrance exam dates 2019-20?</h3>
+                    </a>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <div class="authorWidget ans-img">
+                          <div class="authorDetail">
+                            <span>
+                              <img class="authorImg" src='././assets/images/picture-8961799-1557485040.jpg' alt=""
+                                data-pagespeed-url-hash="472414121">
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="detail">
+                          <div class="disTable">
+                            <div class="vMiddle">
+                              <span class="authorName"><a href="/user/8981086">Roshni Reddy</a></span>
+                              <span> Student Expert</span>
+                              <span class="postTime">20th Sep, 2019</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="badge">
+                        <img src="https://static.careers360.mobi/images/frontend/desktop/badge.svg" alt=""
+                          data-pagespeed-url-hash="3811783931">
+                        <img src="https://static.careers360.mobi/images/frontend/desktop/badge.svg" alt=""
+                          data-pagespeed-url-hash="3811783931">
+                        <img src="https://static.careers360.mobi/images/frontend/desktop/badge.svg" alt=""
+                          data-pagespeed-url-hash="3811783931">
+                        <img src="https://static.careers360.mobi/images/frontend/desktop/badge.svg" alt=""
+                          data-pagespeed-url-hash="3811783931">
+                        <img src="https://static.careers360.mobi/images/frontend/desktop/badge.svg" alt=""
+                          data-pagespeed-url-hash="3811783931">
+                      </div>
+                    </div>
+                    <div class="questionListData">
+                      <p>
+                        Hello Aspirant,
+                      </p>
+                      <p>
+                        Jawaharlal Nehru University Entrance Exam (JNUEE) test will be directed from May 11 to May 14,
+                        2020. JNUEE alongside JNU CEEB will be led by the National Testing Agency (NTA), this year. Till
+                        2018, Jawaharlal Nehru University (JNU) directed both JNUEE and JNU CEEB tests.
+                      </p>
+                      <p>
+                        NTA will direct JNUET 2020 as a PC based test (CBT). JNUEE is directed to offer admission to
+                        applicants in undergrad and postgraduate projects offered by it.
+                      </p>
+                      <p>
+                        While filling the application structure for JNU confirmations wannabes can select to show up in
+                        the passageway test for a limit of three courses arranged by their inclination. Since the seats
+                        accessible for affirmation in projects offered at JNU is restricted, competitors are shortlisted
+                        for confirmation premise their exhibition in Jawaharlal Nehru University Entrance Exam (JNUEE)
+                        just as viva-voce.
+                      </p>
+                    </div>
+
+                    <div class="requestFollow">
+                      <a class="request add-answer-listing" mat-raised-button>Answer </a>
+
+                      <div><a class="popup report_question" href="javascript:;" rel="reportQuestionPopup"
+                          data-question_id="605354" report_question_id="605354"><i class="careers-report"></i>
+                          Report</a></div>
+                    </div>
+                  </div>
+                  <div class="cardBlk noAnswer">
+                    <div class="views viewAllRight"><span class="careers-eye"></span> 3 Views</div>
+                    <a href="">
+                      <h3 class="cardSubHeading">I got M.tech seat in Acharya Nagarjuna University through APPGECET
+                        should I have to pay any fees</h3>
+                    </a>
+                    <div class="authorWidget ans-img">
+                      <div class="authorDetail">
+                        <div class="row">
+                          <div class="col-md-2">
+                            <span>
+                              <img class="authorImg" src='././assets/images/picture-8961799-1557485040.jpg'>
+                            </span>
+                          </div>
+
+                          <div class="col-md-8">
+                            <div class="detail">
+                              <div class="disTable">
+                                <div class="vMiddle">
+                                  <span class="authorName"><a href="/user/8961799">Sonali </a></span>
+                                  <span> Student Expert</span>
+                                  <span class="postTime">20th Sep, 2019</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="badge">
+                              <img src="https://static.careers360.mobi/images/frontend/desktop/badge.svg" alt=""
+                                data-pagespeed-url-hash="3811783931">
+                              <img src="https://static.careers360.mobi/images/frontend/desktop/badge.svg" alt=""
+                                data-pagespeed-url-hash="3811783931">
+                              <img src="https://static.careers360.mobi/images/frontend/desktop/badge.svg" alt=""
+                                data-pagespeed-url-hash="3811783931">
+                              <img src="https://static.careers360.mobi/images/frontend/desktop/badge.svg" alt=""
+                                data-pagespeed-url-hash="3811783931">
+                              <img src="https://static.careers360.mobi/images/frontend/desktop/badge.svg" alt=""
+                                data-pagespeed-url-hash="3811783931">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="questionListData">
+                      <p>
+                        Hello,
+                      </p>
+                      <p>
+                        Yes you have to pay fees during the admission time. If don't pay the minimum amount then they
+                        won't allow you to join. These details will be shared to you when the joining procedure will
+                        start. The college will send you mail or messages regarding it.
+                      </p>
+                      <p>
+                        M.tech course is 2 years long duration and average fees incurred is INR 25000-2lakhs per annum.
+                      </p>
+                      <p>
+                        For Acharya Nagarjuna University, Fee Structure for MTECH is :- (US $) 4000(Per year. For more
+                        details you can visit the link:-
+                        https://nagarjunauniversity.ac.in/isc2014/Annexure%20-%20II%20-%20fee%202015-16.pdf
+                      </p>
+                      <p>
+                        When you will go for admission you can collect the fee structure from the account section where
+                        you will get the other details also like how to pay,deadline and all.
+                      </p>
+                      <p>
+                        For information you can read the file:-
+                        https://www.nagarjunauniversity.ac.in/affilinoti16/affilinoti15/affiliationfee201415.pdf
+                      </p>
+                      <p>
+                        Hope it helps!
+                      </p>
+                    </div>
+
+                    <div class="requestFollow">
+                      <div class="request add-answer-listing" action-location="question-listing-view"><a
+                          href="javascript:;" class="edit_answer_permit popup"
+                          data-url="/qna/question/605311/answer/0/load"><i class="careers-edit"></i> Answer </a></div>
+
+                      <div><a class="popup report_question" href="javascript:;" rel="reportQuestionPopup"
+                          data-question_id="605311" report_question_id="605311"><i class="careers-report"></i>
+                          Report</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-right marginT20">
+                <a (click)=redirect_question(); class="viewAllBtn nxtpageLink">View
+                  All Questions</a>
+              </div>
+            </div>
+            <div class="cardBlk commonQna-Block">
+              <a class="ask popup" action-location="domain_homepage" href="javascript:void(0)" rel="askQuestion"
+                data-url="/qna/question/add">
+                Still have queries ask your question here...
+                <span class="button btn-green btn-small">Ask Now</span>
+              </a>
+              <div class="popupbox modal" id="askQuestion"></div>
+            </div>
+            <div class="cardBlk" id="admissionOpen">
+              <h3 class="heading">
+                <span>Applications Open Now</span>
+                <a href="https://www.careers360.com/application-forms/colleges?domain=animation-and-design"
+                  class="viewAllBtn nxtpageLink">View All Application Forms</a>
+              </h3>
+              <div ip="Esi--MP_Indore">
+              </div>
+              <div class="admissionOuter">
+                <div class="block">
+                  <div class="content">
+
+                    <img class="thumb"
+                      src="https://static.careers360.mobi/media/1200px-Logo_of_Symbiosis_International_University.svg.png"
+                      height="50px" width="50px" alt="SNAP 2019" data-pagespeed-url-hash="2037791635"
+                      onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    <h5> SNAP 2019 </h5>
+                    <a class="button btn-primary" target='_blank' href="https://bit.ly/2Z6cxED"
+                      data-submit-url="http://bit.ly/2Z6cxED" data-form-id="470" data-camp-id="495">Apply</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cardBlk" id="collegePredictor">
+              <h3 class="heading"><span>College Predictors</span> <a
+                  href="https://medicine.careers360.com/college-predictor" target="_blank">VIEW ALL</a></h3>
+              <div class="article predictorBlk">
+                <div class="banner orangeGradient">
+                  <div class="detailBanner">
+                    <h3>Predict your College Admission <br>chances in your preferred Colleges</h3>
+                    <h5>Download your personalized report with<br> your Admission chances based on <br>cutoffs, caste,
+                      gender, home state<br> and other quotas</h5>
+                  </div>
+                  <img src="https://static.careers360.mobi/images/home/cPredictorBanner.svg" alt="" class="banrAbsolute"
+                    width="222" height="138" data-pagespeed-url-hash="2845491649"
+                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="articleBox">
+                  <a href="https://medicine.careers360.com/neet-college-predictor?icn=neet-clgpd_landing-page&amp;ici=prediction-section_medicine_domain_home"
+                    target="_blank">
+                    <div class="detail">NEET College Predictor</div>
+                  </a>
+                  <a href="https://medicine.careers360.com/neet-pg-college-predictor?icn=neet-pg-clgpd_landing-page&amp;ici=prediction-section_medicine_domain_home"
+                    target="_blank">
+                    <div class="detail">NEET PG College Predictor</div>
+                  </a>
+                  <a href="https://medicine.careers360.com/neet-mds-college-predictor?icn=neet-mds-clgpd_landing-page&amp;ici=prediction-section_medicine_domain_home"
+                    target="_blank">
+                    <div class="detail">NEET MDS College Predictor</div>
+                  </a>
+                  <a href="https://medicine.careers360.com/aiims-mbbs-college-predictor?icn=aiims-mbbs-clgpd_landing-page&amp;ici=prediction-section_medicine_domain_home"
+                    target="_blank">
+                    <div class="detail">AIIMS MBBS College Predictor</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+
+            &nbsp;
+            &nbsp;
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="popupbox modal" id="editAnswer"></div>
+  <div class="popupbox modal" id="requestAnswer"></div>
+  <div class="popupbox modal" id="reportQuestionPopup">
+    <div class="headerPopup">
+      Report Question
+      <i class="closebtn careers-cross"></i>
+    </div>
+    <div class="contentSecPopup">
+      <div class="requestAns">
+        <p class="smallHeading">Select your reason of reporting</p>
+        <form class="askQuestionForm reportquestionform" action="" method="POST">
+          <div class="radiodivOuter">
+            <input id="1" name="radio" type="radio" value="1">
+            <label for="1">Inappropriate/Abusive</label>
+            <p class="para">The Question containing Inaapropriate or Abusive Words</p>
+          </div>
+          <hr>
+          <div class="radiodivOuter">
+            <input id="2" name="radio" type="radio" value="2">
+            <label for="2">Can be made better</label>
+            <p class="para">Question lacks the basic details making it difficult to answer</p>
+          </div>
+          <hr>
+          <div class="radiodivOuter">
+            <input id="3" name="radio" type="radio" value="3">
+            <label for="3">Incorrect Topic</label>
+            <p class="para">Topic Tagged to the Question are not relevant to Question</p>
+          </div>
+          <hr>
+          <div class="radiodivOuter">
+            <input id="4" name="radio" type="radio" value="4">
+            <label for="4">Spam</label>
+            <p class="para">Question drives traffic to external sites for promotional or commercial purposes</p>
+          </div>
+          <hr>
+          <div class="radiodivOuter">
+            <input id="5" name="radio" type="radio" value="5">
+            <label for="5">Irrelevant </label>
+            <p class="para">The Question is not relevant to User</p>
+          </div>
+          <div class="formBtn"><button disabled>Submit</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <iframe marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="no" bordercolor="#000000" id="MIDDLE" height="94" width="730" src="https://www.ieplads.com/bmsjs/bms_display_final.php?zonestr=722&amp;showall=1&amp;data=&amp;shikshaCriteria=1508||1|BMS_CHINA_PG " style="display:block;margin:0 auto;"></iframe>
+
+  <app-footer></app-footer>

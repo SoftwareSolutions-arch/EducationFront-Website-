@@ -1,0 +1,140 @@
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container-fluid:before {
+    content: " ";
+    display: table;
+}
+.ana-main-wrapper .ana-container {
+    padding: 0!important;
+}
+@media (min-width: 1200px){
+.new-container {
+    width: 1200px!important;
+}
+}
+.new-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+.new-container:before {
+    content: " ";
+    display: table;
+}
+.new-row {
+    margin: 0 -10px;
+}
+.admisn-pg:before, .new-row:after, .new-row:before {
+    content: " ";
+    display: table;
+}
+.new-breadcomb .breadcrumb3 {
+    padding: 20px 30px;
+    padding-left: 0;
+}
+.breadcrumb3 a:link, .breadcrumb3 a:visited {
+    color: #008489;
+}
+.new-row {
+    margin: 0 -10px;
+}
+.admisn-pg:before, .new-row:after, .new-row:before {
+    content: " ";
+    display: table;
+}
+.no-pad {
+    padding-left: 0;
+    padding-right: 0;
+}
+.clrTpl {
+    width: 100%;
+    float: left;
+}
+.group-card {
+    background: #fff;
+    padding: 12px 16px;
+    position: relative;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.16), 0 0 0 1px rgba(0,0,0,.08);
+}
+.gap {
+    margin: 0 0 16px;
+}
+.art-div {
+    padding: 0 16px;
+}
+.clrTpl {
+    width: 100%;
+    float: left;
+}
+.art-div .col-md-8 {
+    padding: 0;
+}
+.col-md-8 {
+    position: relative;
+}
+@media (min-width: 992px){
+.col-md-8 {
+    width: 66.66667%;
+}
+}
+.art-div {
+    padding: 0 16px;
+}
+.clrTpl {
+    width: 100%;
+    float: left;
+}
+.art-div .head-1 {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 8px;
+    color: #000;
+    margin: 0 0 10px;
+
+}
+.head-1 a:link, .head-1 a:visited {
+    color: #000;
+}
+span.art-count {
+    font-size: 20px;
+    margin-top: 8px;
+    color: #999;
+}
+.grade-p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.grade-p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.grade-p {
+    color: #666;
+    font-size: 14px;
+}
+.tp-block {
+    position: relative;
+    display: inline-block;
+    margin-left: 0;
+}
+a.shrt-list.active:before, a.shrt-list:hover:before {
+    background-position: -105px -230px;
+}
+a.shrt-list:before {
+    content: ' ';
+    background: url('//images.shiksha.ws/public/images/shiksha-icons-5.png');
+    background-position: -73px -262px;
+    width: 19px;
+    height: 22px;
+    display: inline-block;
+    left: 0;
+    top: 4px;
+    position: relative;
+    margin-right: 5px;
+}
